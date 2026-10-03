@@ -1,0 +1,13 @@
+# Large media: the input film is downloaded by the pipeline; generated audio is reproducible.
+data/input/*.mp4
+data/input/*.webm
+outputs/**/audio/
+outputs/**/narration/
+outputs/**/_recap_*
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/

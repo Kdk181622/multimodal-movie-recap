@@ -1,0 +1,3 @@
+{"note": "Measured on the reference machine (8-core CPU, no GPU); from the pipeline logs and stage_timings.json.",
+ "labels": ["Speech-to-text (Whisper)", "LLM summary (Qwen2.5-7B)", "Multimodal features", "Peaks + segment planning", "OpenCV rendering", "Evaluation (incl. re-ASR)"],
+ "minutes": [21.8, 30.6, 2.9, 0.8, 3.4, 6.3]}

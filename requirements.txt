@@ -1,0 +1,34 @@
+# Tested with Python 3.12-3.14 on Windows 11 (CPU only).
+# Ollama (https://ollama.com) is a separate install: `ollama pull qwen2.5:3b`.
+
+# media
+yt-dlp>=2026.8
+imageio-ffmpeg>=0.6        # bundled ffmpeg binary, no system install required
+opencv-python>=4.10
+soundfile>=0.12
+
+# speech / audio
+faster-whisper>=1.2
+librosa>=0.10
+numba>=0.68                 # librosa JIT; needed for numpy >= 2.3
+pyttsx3>=2.98              # offline narration (Windows SAPI / espeak / nsss)
+
+# text / NLP
+sentence-transformers>=3.0
+transformers>=4.45
+torch>=2.3
+requests>=2.31
+
+# evaluation and reporting
+nltk>=3.9
+sacrebleu>=2.4
+matplotlib>=3.8
+pillow>=10.1
+numpy>=1.26
+pyyaml>=6.0
+
+# tests and notebook
+pytest>=8.0
+nbformat>=5.9
+nbconvert>=7.16
+ipykernel>=6.29

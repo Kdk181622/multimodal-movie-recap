@@ -1,0 +1,332 @@
+{
+  "reference": {
+    "source": "Wikipedia - Detour (1945 film), Plot section",
+    "words": 526
+  },
+  "summary_vs_reference": {
+    "Summary story (ours)": {
+      "bleu4": 0.0399,
+      "bleu1": 0.3741,
+      "bleu4_nltk": 0.0399,
+      "sacrebleu": 0.035,
+      "precisions": [
+        0.5629,
+        0.1235,
+        0.0262,
+        0.0072
+      ],
+      "brevity_penalty": 0.6646,
+      "rouge1": 0.4027,
+      "rouge2": 0.0867,
+      "rougeL": 0.1911,
+      "semantic_similarity": 0.8122,
+      "plot_coverage@0.5": 0.72,
+      "words": 361
+    },
+    "Extractive TextRank": {
+      "bleu4": 0.0171,
+      "bleu1": 0.2735,
+      "bleu4_nltk": 0.0171,
+      "sacrebleu": 0.0125,
+      "precisions": [
+        0.4258,
+        0.0657,
+        0.0073,
+        0.0024
+      ],
+      "brevity_penalty": 0.6422,
+      "rouge1": 0.3036,
+      "rouge2": 0.0488,
+      "rougeL": 0.1251,
+      "semantic_similarity": 0.4642,
+      "plot_coverage@0.5": 0.16,
+      "words": 362
+    },
+    "Lead-N (first words)": {
+      "bleu4": 0.0142,
+      "bleu1": 0.251,
+      "bleu4_nltk": 0.0142,
+      "sacrebleu": 0.0085,
+      "precisions": [
+        0.3521,
+        0.0293,
+        0.0068,
+        0.0023
+      ],
+      "brevity_penalty": 0.7128,
+      "rouge1": 0.2233,
+      "rouge2": 0.0094,
+      "rougeL": 0.1011,
+      "semantic_similarity": 0.3102,
+      "plot_coverage@0.5": 0.0,
+      "words": 361
+    },
+    "Uniform segments": {
+      "bleu4": 0.0111,
+      "bleu1": 0.2273,
+      "bleu4_nltk": 0.0111,
+      "sacrebleu": 0.0063,
+      "precisions": [
+        0.4032,
+        0.0531,
+        0.0027,
+        0.0027
+      ],
+      "brevity_penalty": 0.5639,
+      "rouge1": 0.2427,
+      "rouge2": 0.0243,
+      "rougeL": 0.1092,
+      "semantic_similarity": 0.4653,
+      "plot_coverage@0.5": 0.12,
+      "words": 321
+    },
+    "Random segments": {
+      "bleu4": 0.0139,
+      "bleu1": 0.2582,
+      "bleu4_nltk": 0.0139,
+      "sacrebleu": 0.0094,
+      "precisions": [
+        0.4079,
+        0.0467,
+        0.0049,
+        0.0025
+      ],
+      "brevity_penalty": 0.6332,
+      "rouge1": 0.288,
+      "rouge2": 0.0256,
+      "rougeL": 0.1208,
+      "semantic_similarity": 0.368,
+      "plot_coverage@0.5": 0.12,
+      "words": 361
+    }
+  },
+  "constraints": {
+    "film_duration_seconds": 4058.29,
+    "recap_duration_seconds": 520.62,
+    "under_10_minutes": true,
+    "compression_ratio": 7.8,
+    "footage_seconds": 348.06,
+    "n_peaks": 24
+  },
+  "ablation": {
+    "text_only_profile": {
+      "semantic": 0.7681,
+      "centrality": 0.6081,
+      "text_emotion": 0.555,
+      "audio": 0.5195,
+      "visual": 0.4039
+    },
+    "multimodal_profile": {
+      "semantic": 0.7219,
+      "centrality": 0.675,
+      "text_emotion": 0.8025,
+      "audio": 0.5769,
+      "visual": 0.4563
+    },
+    "peaks_changed": 13,
+    "mean_shift_seconds": 11.61,
+    "text_only_timestamps": [
+      "00:06:58",
+      "00:07:14",
+      "00:08:13",
+      "00:12:18",
+      "00:12:58",
+      "00:17:54",
+      "00:20:12",
+      "00:24:13",
+      "00:24:16",
+      "00:31:19",
+      "00:31:37",
+      "00:34:34",
+      "00:36:07",
+      "00:36:33",
+      "00:39:40",
+      "00:43:38",
+      "00:47:18",
+      "00:49:57",
+      "00:56:51",
+      "00:57:03",
+      "00:57:08",
+      "01:02:08",
+      "01:02:21",
+      "01:05:56"
+    ]
+  },
+  "recap_fidelity": {
+    "overall_bleu": 0.8361,
+    "mean_clip_bleu": 0.7399,
+    "median_clip_bleu": 0.7581,
+    "peak_hit_rate@0.6": 0.9583,
+    "mean_narration_bleu": 0.9877,
+    "clips": [
+      {
+        "peak": 1,
+        "bleu": 0.7804,
+        "peak_line_recall": 1.0,
+        "expected": "Mr. Padarovsky, I presume. It's beautiful. You're going to make Carnegie Hall yet, Al? Yeah. As a janitor. I'll make my debut in the basement. I don't blame you for being bitter, darling, but you mustn't give up hope. Why, someday... Yeah, someday.",
+        "heard": "It's beautiful. You're going to make Carnegie Hall yet, Al? Yeah, as a janitor. I'll make my debut in the basement. I don't blame you for being bitter, darling, but you mustn't give up hope. Why, some day... Yeah, some day..."
+      },
+      {
+        "peak": 2,
+        "bleu": 0.5346,
+        "peak_line_recall": 0.4,
+        "expected": "I don't get you. We've been struck out. It's a funny way to talk, darling.",
+        "heard": "I don't get you we've been struck out it's a funny way to talk darling"
+      },
+      {
+        "peak": 3,
+        "bleu": 0.8399,
+        "peak_line_recall": 0.8571,
+        "expected": "Don't you want to marry me? Al, look, I love you. You know I do. And I want to marry you. But? But not now.",
+        "heard": "Don't you want to marry me? Ah, look, I love you. You know I do, and I want to marry you. But? But not now."
+      },
+      {
+        "peak": 4,
+        "bleu": 0.7349,
+        "peak_line_recall": 1.0,
+        "expected": "Long distance. I'd like to put a call through to Los Angeles. Miss Harvey, Sue Harvey, H-A-R-P-E-Y. The number is Crestview 65723.",
+        "heard": "Long distance. I'd like to put a call through to Los Angeles. Miss Harvey. Sue Harvey. H-A-R-B-E-Y. The number is Christview 65723."
+      },
+      {
+        "peak": 5,
+        "bleu": 1.0,
+        "peak_line_recall": 1.0,
+        "expected": "This is Al. Oh, baby, it's great to hear from you, too. What's that? You do? Oh, me too, darling. I thought I'd go batty without you. I just had to... Huh? You're working as a hashlinger. Gee, honey, that's tough.",
+        "heard": "This is Al. Oh, baby, it's great to hear from you, too. What's that? You do? Oh, me too, darling. I thought I'd go batty without you. I just had to... Huh? You're working as a hashlinger. Gee, honey, that's tough."
+      },
+      {
+        "peak": 6,
+        "bleu": 0.4804,
+        "peak_line_recall": 1.0,
+        "expected": "a draw. You know there ought to be a law against James with claws. I tossed her out of the car in her ear. Was I wrong. Give a lift to a tomato you expected to be nice don't you. After all what kind of",
+        "heard": "It certainly wasn't a draw You know, there ought to be a law against games with claws. Yeah, I tossed her out of the car in her ear Was that wrong? Give a lift to a tomato you expect it to be nice, don't you? Yeah After all what kind of dame some"
+      },
+      {
+        "peak": 7,
+        "bleu": 0.7358,
+        "peak_line_recall": 1.0,
+        "expected": "Make it all right He did most of the talking during the half-hour. We were in the place. I ate He rambled on about his old man whom we hadn't heard from since he ran away as a kid Now we happen to become a bookie and then all about how he got rooked in Miami",
+        "heard": "Come on, you'll make it all right. He did most of the talking during the half hour we were in the place. I ate. He rambled on about his old man whom we hadn't heard from since he ran away as a kid. Now we happen to become a bookie. And then all about how he got rooked in Miami."
+      },
+      {
+        "peak": 8,
+        "bleu": 0.5197,
+        "peak_line_recall": 0.9286,
+        "expected": "fell out of the car why if Haskell came to which of course he couldn't even he would swear I conked him over the head for his dough yes I was in for it",
+        "heard": "Who would believe he fell out of the car? Why, if Haskell came too, which of course he couldn't even, he would swear I conked him over the head for his doe. Yes, I was in for it."
+      },
+      {
+        "peak": 9,
+        "bleu": 0.7209,
+        "peak_line_recall": 1.0,
+        "expected": "instinct told me to run but then I realized it was hopeless there were lots of people back down the road who could identify me that gas station guy and the",
+        "heard": "Instinct told me to run, but then I realized it was hopeless. There were lots of people back down the road who could identify me. That gas station guy and the waitress."
+      },
+      {
+        "peak": 10,
+        "bleu": 0.8707,
+        "peak_line_recall": 1.0,
+        "expected": "that he wasn't the open-handed, easygoing bigshot who went around buying dinners for strange hitchhikers. Before I got done reading it, I saw him more as a chisler. It was written to his old man in California, the one he hadn't seen in so many years.",
+        "heard": "in his bag, that he wasn't the open-handed, easygoing big shot who went around buying dinners for strange hitchhikers. Before I got done reading it, I saw him more as a chisler. It was written to his old man in California, the one he hadn't seen in so many years."
+      },
+      {
+        "peak": 11,
+        "bleu": 0.6048,
+        "peak_line_recall": 1.0,
+        "expected": "But it saved him from taking a flyer in sacred literature preferred water desert center. I pulled up for water",
+        "heard": "know it but it saved him from taking a flyer in sacred literature preferred Here's the airport at Desert Center, I pulled up for water"
+      },
+      {
+        "peak": 12,
+        "bleu": 0.911,
+        "peak_line_recall": 1.0,
+        "expected": "Then suddenly, she turned to face me. How far did you say you were going? Los Angeles. LA? L.A.? L.A.'s good enough for me, mister. That's what I was afraid of. What'd you say? Oh, nothing. Just thinking out loud. People get in trouble for doing that.",
+        "heard": "Then suddenly, she turned to face me. How far did you say you were going? Los Angeles. L.A.? L.A.'s good enough for me, mister. That's what I was afraid of. What'd you say? Oh, nothing. Just thinking out loud. People getting in trouble for doing that."
+      },
+      {
+        "peak": 13,
+        "bleu": 0.4843,
+        "peak_line_recall": 0.625,
+        "expected": "You rode? You heard me. Then it all came back to me. All the talk about dueling and scars and scratches. There was no doubt about it. Vera must be the woman Haskell had mentioned. She must have passed me while I slept. Well? Well, I'm waiting.",
+        "heard": "This report you wrote you heard me and it all came back. All the talk about doing the scars and scratches. There was no doubt about it there must be the woman has got mentioned she must have passed me while I slept well. Well I'm waiting."
+      },
+      {
+        "peak": 14,
+        "bleu": 0.8086,
+        "peak_line_recall": 1.0,
+        "expected": "She had me. That Haskell guy wasn't dead yet. He wasn't stretched out stiff and cold in any Arizona gully. He was sitting right there in the car laughing like mad while he haunted me. There was nothing I could say. It was her move.",
+        "heard": "She had me. That Haskell guy wasn't dead yet. He wasn't stretched out stiff and cold in any Arizona gully. He was sitting right there in the car laughing like mad while he haunted me. Well? There was nothing I could say. It was her move. Vera, whatever her name..."
+      },
+      {
+        "peak": 15,
+        "bleu": 0.5744,
+        "peak_line_recall": 1.0,
+        "expected": "So your idea was to drive the car a little way, maybe into San Bernardino, and then leave it. You weren't going to sell it? Sell it? You think I'm crazy, somebody else's car? See, all I want to do is leave it somewhere and forget I ever saw it. Not only don't you have any scruples, you don't have any brains. I don't get you.",
+        "heard": "so your idea was to drive the car a little way maybe into San Bernardino and then leave it you weren't gonna sell it sell it you think I'm crazy somebody else's car see all I want to do is leave it somewhere and forget I ever saw it not only don't you have any scruples you don't have any brains I don't get you"
+      },
+      {
+        "peak": 16,
+        "bleu": 0.8734,
+        "peak_line_recall": 1.0,
+        "expected": "Anyway, I never could understand this worrying about something that's over and done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right. So it'll make you sociable?",
+        "heard": "Anyway, I never could understand this worrying about something that's all been done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was there before he fell out of the car. I don't know. Sure, Sherry died of old age. All right. So it'll make you sociable?"
+      },
+      {
+        "peak": 17,
+        "bleu": 0.6868,
+        "peak_line_recall": 0.7692,
+        "expected": "Rock and liquor. You got a mean car, if I were to do something about it. I'll be all right. That's what Camille said.",
+        "heard": "You got a mean car, you ought to do something about it. I'll be all right. That's what Camille said."
+      },
+      {
+        "peak": 18,
+        "bleu": 0.8001,
+        "peak_line_recall": 1.0,
+        "expected": "as she'd been the night before. All right, all right, I'm coming. Look, Vera, it's almost noon. So what? The dealers will be there all day? They'll be there all year, too, but they're just gonna wait that long. Shut up. You make us like a husband.",
+        "heard": "in the morning and she'd been the night before. All right, all right, I'm coming. Look, Mary, it's almost noon. So what? The dealers will be there all day? They'll be there all year too, but they just don't wait that long. Shut up. You make us like a husband."
+      },
+      {
+        "peak": 19,
+        "bleu": 0.6114,
+        "peak_line_recall": 0.8333,
+        "expected": "I won't have anything to do with it. I think you will. Look, Vera, I'll do anything within reason. But not that. So forget it. Find yourself another stooge. You sack! You'll be fixed for the rest of your life as Charlie Haskell. You can take your inheritance and go away.",
+        "heard": "Vera I won't have anything to do with it. I think you will. But Vera I'll do anything within reason but not that so forget it find yourself another stooge you said you'll be fixed for the rest of your life is Charlie Haskell you can take your inheritance and go away."
+      },
+      {
+        "peak": 20,
+        "bleu": 0.6898,
+        "peak_line_recall": 1.0,
+        "expected": "But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night.",
+        "heard": "But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us would have a part of her scheme."
+      },
+      {
+        "peak": 21,
+        "bleu": 0.9718,
+        "peak_line_recall": 1.0,
+        "expected": "Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera.",
+        "heard": "of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera."
+      },
+      {
+        "peak": 22,
+        "bleu": 0.8148,
+        "peak_line_recall": 1.0,
+        "expected": "Please open the door. Vera, open the door. Don't use the phone. Listen to me. I don't like you, Roberts. You're no gentleman, see? You hurt my hand. And I'm going to get even with you.",
+        "heard": "Vera, open the door. Please open the door. Vera, open the door. Don't use the phone. Listen to me. I don't like you, Robert. You're no gentleman, see? You hurt my hand. And I'm going to get even-"
+      },
+      {
+        "peak": 23,
+        "bleu": 0.815,
+        "peak_line_recall": 1.0,
+        "expected": "And I'm going to get even with you. If you don't open the door, I'm going to kick it down, Vera. Vera, don't call the cops. Listen to me. I'll do anything you say. Vera, let me in. I'll break the phone.",
+        "heard": "If you don't open the door, I'm going to kick it down, Vera. Vera, don't call the cops. Listen to me. I'll do anything you say. Vera, let me in. I'll break the phone."
+      },
+      {
+        "peak": 24,
+        "bleu": 0.8941,
+        "peak_line_recall": 1.0,
+        "expected": "I had to stay away from New York for all time. Because Al Roberts was listed as dead and had to stay dead. And I could never go back to Hollywood. Someone might recognize me as Haskell. Then, too, there was Sue.",
+        "heard": "I had to stay away from New York for all time because Al Roberts was listed as dead and had to stay dead. And I could never go back to Hollywood. Someone might recognize me as Haskell. Then too, there was Sue."
+      }
+    ]
+  }
+}

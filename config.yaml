@@ -1,0 +1,76 @@
+# Multimodal Movie Recap - pipeline configuration
+# Every path is relative to the project root (the folder holding this file).
+
+input:
+  # YouTube source. The download step is skipped when local_path already exists.
+  url: "https://www.youtube.com/watch?v=tap67KjjPu8"
+  local_path: "data/input/detour_1945.mp4"
+  title: "Detour (1945)"
+  # Cast list from the film's opening credits (metadata, not plot). Transcripts carry no speaker
+  # labels, so naming the narrator stops a small LLM from inventing extra characters.
+  cast: "Al Roberts (the narrator, a New York nightclub pianist); Sue Harvey (his girlfriend, a singer); Charles Haskell Jr. (a man who gives Al a ride); Vera (a hitchhiker)"
+  # Human-written plot summary used as the BLEU / ROUGE reference.
+  reference_summary: "data/reference/detour_1945_wikipedia_plot.txt"
+
+output_dir: "outputs/detour_1945"
+
+asr:
+  # faster-whisper (CTranslate2) model; small.en is a good accuracy/speed balance on CPU.
+  model: "small.en"
+  device: "cpu"
+  compute_type: "int8"
+  beam_size: 5
+  language: "en"
+  vad_filter: true
+  word_timestamps: true
+
+features:
+  # Frames analysed per second of video for shot / motion features.
+  visual_sample_fps: 2
+  # Histogram (Bhattacharyya) distance above which a shot boundary is declared.
+  shot_threshold: 0.35
+  # Text emotion model (Hugging Face); intensity = 1 - P(neutral).
+  emotion_model: "j-hartmann/emotion-english-distilroberta-base"
+
+summary:
+  # "ollama" = abstractive map-reduce with a local LLM; "extractive" = TextRank only.
+  backend: "ollama"
+  ollama_model: "qwen2.5:7b"
+  ollama_url: "http://localhost:11434"
+  # Near-zero temperature keeps the LLM output deterministic (see Day 4 notes).
+  temperature: 0.0
+  seed: 42
+  # Each ~5 min chunk contributes 1-2 story sentences, written with the story so far as context.
+  chunk_seconds: 300
+  sentences_per_chunk: 2
+
+peaks:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  # Sliding transcript windows used to align story sentences with the film.
+  window_seconds: 30
+  window_hop_seconds: 10
+  # Search radius (seconds) around the aligned window when picking the peak segment.
+  search_radius: 45
+  # Post-fusion weights for the peak score (normalised to sum to 1).
+  weights:
+    semantic: 0.40     # similarity between story sentence and transcript segment
+    centrality: 0.15   # TextRank importance of the segment in the whole film
+    text_emotion: 0.15 # emotional intensity of the dialogue
+    audio: 0.15        # loudness / onset energy (arousal)
+    visual: 0.15       # motion + shot-cut activity
+
+recap:
+  # Hard limit from the assignment is < 600 s; the target leaves a safety margin.
+  max_duration_seconds: 570
+  clip_min_seconds: 8
+  clip_max_seconds: 32
+  clip_pad_seconds: 0.6
+  # Chapter cards that narrate the summary story between clips.
+  title_cards: true
+  narration: true          # Windows SAPI via pyttsx3; silent cards if unavailable
+  card_min_seconds: 2.5
+  output_name: "movie_recap.mp4"
+
+evaluation:
+  retranscribe_recap: true
+  seed: 42
