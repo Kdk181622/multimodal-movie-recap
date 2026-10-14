@@ -276,9 +276,11 @@ pres.addSection({ title: "Results" });
 s = addSlide("CONTENT", "Results");
 s.addText("Final movie recap output", { placeholder: "title" });
 s.addImage({ path: A("recap_card.jpg"), x: 0.5, y: 1.1, w: 3.6, h: 2.7, altText: "Chapter card narrating a story sentence" });
-s.addImage({ path: A("recap_clip.jpg"), x: 4.25, y: 1.1, w: 3.6, h: 2.7, altText: "Recap clip with original timecode and peak badges" });
+// Embedded 42 s excerpt (chapter card 5 + clip 5) so the recap plays inside the slide show while recording.
+s.addMedia({ type: "video", path: A("recap_excerpt.mp4"), x: 4.25, y: 1.1, w: 3.6, h: 2.7,
+  cover: "image/jpeg;base64," + fs.readFileSync(A("recap_clip.jpg")).toString("base64") });
 s.addText("Chapter card (narrated story sentence)", body({ x: 0.5, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
-s.addText("Clip with original timecode, peak badge, film-position bar", body({ x: 4.25, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
+s.addText("▶ Click to play: 42 s excerpt (chapter 5 + its clip)", body({ x: 4.25, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
 stat(s, 8.1, 1.05, 1.5, mmss(cons.recap_duration_seconds), "recap (< 10:00)");
 stat(s, 8.1, 2.3, 1.5, (cons.footage_seconds / 60).toFixed(1), "minutes of original footage");
 stat(s, 8.1, 3.55, 1.5, `${cons.compression_ratio.toFixed(1)}×`, "compression");

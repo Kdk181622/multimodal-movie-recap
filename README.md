@@ -168,8 +168,10 @@ with rolling context was the only one producing a coherent story from start to e
 
 ## 7b. Presentation material
 
-- `docs/Movie_Recap_Presentation.pptx`: 15-slide deck covering all required topics (speaker notes included)
-- `docs/Speaker_Script.docx`: word-for-word narration, about 16 minutes with recap playback
+- `docs/Movie_Recap_Presentation.pptx`: 15-slide deck covering all required topics, with speaker notes and a
+  42 s recap excerpt embedded in slide 11 (built by `docs/build_deck.js`)
+- `docs/Speaker_Script.docx`: word-for-word narration plus recording steps, about 16.5 minutes including the
+  excerpt (built by `docs/make_speaker_script.py` from `docs/speaker_notes.json`)
 - `notebooks/Movie_Recap_Walkthrough.ipynb`: executed stage-by-stage walkthrough for a live demo
 
 ## 8. Testing
