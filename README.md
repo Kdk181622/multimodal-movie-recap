@@ -12,6 +12,9 @@ YouTube Video -> Movie -> Audio + Video -> Transcript -> Summary Story -> Peak P
              -> Time Index -> Video Segment Extraction -> Movie Recap (< 10 min) -> BLEU Evaluation
 ```
 
+**Explanation videos:** [`docs/Project_Explanation_Video.mp4`](docs/Project_Explanation_Video.mp4) (12 min 39 s, US-English voice) and
+[`docs/Explanation_Video_Karthikeyan_K.mp4`](docs/Explanation_Video_Karthikeyan_K.mp4) (16 min 08 s, Indian-English voice); see section 7b.
+
 ![Pipeline architecture](docs/architecture.png)
 
 ---
@@ -173,6 +176,16 @@ with rolling context was the only one producing a coherent story from start to e
 - `docs/Speaker_Script.docx`: word-for-word narration plus recording steps, about 16.5 minutes including the
   excerpt (built by `docs/make_speaker_script.py` from `docs/speaker_notes.json`)
 - `notebooks/Movie_Recap_Walkthrough.ipynb`: executed stage-by-stage walkthrough for a live demo
+- `docs/Project_Explanation_Video.mp4`: **project explanation video (12 min 39 s, Full HD, inside the required 8-20 minutes)**.
+  It walks through all 15 slides and covers the problem statement, objectives, proposed solution, architecture,
+  technologies, implementation, summary and peak-point identification, timestamp mapping and segment extraction,
+  the final recap output (with the 42 s excerpt played on slide 11), evaluation results, and conclusions.
+  The narration is the text of `docs/Speaker_Script.docx`, voiced with the offline Piper TTS model (en-US ryan-high);
+  the per-slide narration tracks are in `docs/video_narration/`.
+- `docs/Explanation_Video_Karthikeyan_K.mp4`: alternative explanation video (16 min 08 s, Full HD) with the same
+  15 slides and script, voiced by the neural Indian-English voice en-IN-PrabhatNeural, with the 42 s recap excerpt
+  shown full screen after slide 11. Built by `docs/make_explanation_video.py` from the exported slide images and
+  `docs/speaker_notes.json`.
 
 ## 8. Testing
 
