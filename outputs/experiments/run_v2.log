@@ -1,0 +1,243 @@
+17:50:59 | INFO | === 1. Ingest & A/V extraction ===
+17:50:59 | INFO | Input video already present: detour_1945.mp4
+17:50:59 | INFO | Audio extracted -> audio_16k_mono.wav
+17:50:59 | INFO | === 2. Speech-to-text ===
+17:50:59 | INFO | Using cached transcript: transcript.json
+17:50:59 | INFO | === 3. Multimodal features ===
+17:50:59 | INFO | Features ready: 312 shot boundaries detected
+17:50:59 | INFO | === 4. Summarisation ===
+17:51:45 | INFO | TensorFlow version 2.20.0 available.
+17:51:52 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+17:51:52 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+17:51:52 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+17:51:52 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+17:51:52 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+17:51:52 | INFO | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+17:51:53 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+17:51:54 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:54 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+17:51:54 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+17:51:54 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:54 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+17:51:55 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:55 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  90%|█████████ | 93/103 [00:00<00:00, 921.67it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 952.89it/s]
+17:51:56 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+17:51:56 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+17:51:56 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+17:51:57 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+17:51:57 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:57 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+17:51:57 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:58 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+17:51:58 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:58 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+17:51:58 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:58 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+17:51:59 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+17:51:59 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+17:51:59 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+17:51:59 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+17:52:00 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+17:52:13 | INFO | Reusing chunk notes, draft and editor output from outputs\experiments\summary_qwen2.5-7b_v2c.json
+17:53:39 | INFO | Key-event check: chunk 8 (00:36:50-00:41:50) -> added
+17:54:18 | INFO | Key-event check: chunk 9 (00:41:54-00:46:53) -> added
+17:55:01 | INFO | Key-event check: chunk 13 (01:01:48-01:07:24) -> added
+17:55:01 | INFO | Summary story: 24 sentences, 410 words (ollama:qwen2.5:7b)
+17:55:01 | INFO | === 5. Peak points & time index ===
+17:55:29 | INFO | Peak  1 @ 00:03:02  fused=0.73  | Al complains about the music at his club, causing a conflict with the 
+17:55:29 | INFO | Peak  2 @ 00:04:19  fused=0.61  | Al reflects on his time at the old break at Dawn Club, missing his for
+17:55:29 | INFO | Peak  3 @ 00:08:13  fused=0.70  | Al loses his appetite at the club, while Sue decides to leave for Holl
+17:55:29 | INFO | Peak  4 @ 00:13:21  fused=0.63  | Al continues his journey by thumbing rides, hoping to reach Los Angele
+17:55:29 | INFO | Peak  5 @ 00:13:35  fused=0.39  | Al calls his girlfriend Sue, promising to see her soon.
+17:55:29 | INFO | Peak  6 @ 00:18:54  fused=0.58  | Al throws a hitchhiker out of his car, then reminisces about his fathe
+17:55:29 | INFO | Peak  7 @ 00:20:12  fused=0.65  | Al feels optimistic about reaching Hollywood soon.
+17:55:29 | INFO | Peak  8 @ 00:24:13  fused=0.71  | Al hides Haskell's body in a gully, contemplating the consequences of 
+17:55:29 | INFO | Peak  9 @ 00:31:12  fused=0.75  | Al drives cautiously, suspecting he is being followed, and interacts w
+17:55:29 | INFO | Peak 10 @ 00:36:23  fused=0.61  | Al and Vera are in the car together, and Al realizes Vera is Haskell, 
+17:55:29 | INFO | Peak 11 @ 00:36:26  fused=0.53  | The situation is worsening for Al as he must now deal with Haskell's p
+17:55:29 | INFO | Peak 12 @ 00:36:50  fused=0.66  | Al believes Vera might have killed the man they picked up, though she 
+17:55:29 | INFO | Peak 13 @ 00:40:55  fused=0.76  | Al and Vera argue in a Hollywood apartment about selling the car to av
+17:55:29 | INFO | Peak 14 @ 00:43:39  fused=0.74  | Al suspects Vera might have accidentally caused the man's death by pus
+17:55:29 | INFO | Peak 15 @ 00:43:41  fused=0.69  | Al cleans himself in the bathtub, feeling refreshed but still trapped 
+17:55:29 | INFO | Peak 16 @ 00:46:06  fused=0.59  | They argue about their predicament, with Al maintaining his innocence.
+17:55:29 | INFO | Peak 17 @ 00:49:57  fused=0.71  | Vera threatens Al, forcing him to stay.
+17:55:29 | INFO | Peak 18 @ 00:50:09  fused=0.68  | Al argues with Vera over the car's price.
+17:55:29 | INFO | Peak 19 @ 00:55:25  fused=0.61  | Al and Vera argue over the car, Al decides to keep it, proposes a plan
+17:55:29 | INFO | Peak 20 @ 00:56:22  fused=0.74  | Al stands firm on his decision, while Vera becomes increasingly desper
+17:55:29 | INFO | Peak 21 @ 00:57:03  fused=0.72  | Al and Vera argue intensely about Vera's plan to call the police and A
+17:55:29 | INFO | Peak 22 @ 01:02:08  fused=0.76  | Vera's threats to involve the police escalate the tension, while Al's 
+17:55:29 | INFO | Peak 23 @ 01:03:19  fused=0.85  | Al kills Vera accidentally, and now the police suspect him of her murd
+17:55:29 | INFO | Peak 24 @ 01:05:56  fused=0.71  | Al contemplates his next move, planning to destroy evidence and flee B
+17:55:29 | INFO | === 6. Segment planning ===
+17:55:29 | INFO | Imported existing <module 'comtypes.gen' from 'C:\\Users\\HP PC\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+17:55:29 | INFO | Using writeable comtypes cache directory: 'C:\Users\HP PC\AppData\Local\Programs\Python\Python310\lib\site-packages\comtypes\gen'
+17:55:40 | INFO | Planned 24 clips, 331.4 s of footage (budget 376.6 s, target 15.7 s per clip)
+17:55:40 | INFO | === 7. Recap rendering (OpenCV) ===
+17:55:50 | INFO | Clip  1/24  00:03:00-00:03:16  -> recap 00:00:11
+17:55:52 | INFO | Clip  2/24  00:04:10-00:04:26  -> recap 00:00:35
+17:55:53 | INFO | Clip  3/24  00:08:13-00:08:29  -> recap 00:00:57
+17:55:55 | INFO | Clip  4/24  00:13:21-00:13:32  -> recap 00:01:20
+17:55:56 | INFO | Clip  5/24  00:13:32-00:13:44  -> recap 00:01:36
+17:55:59 | INFO | Clip  6/24  00:18:43-00:18:59  -> recap 00:01:57
+17:56:00 | INFO | Clip  7/24  00:20:12-00:20:26  -> recap 00:02:19
+17:56:02 | INFO | Clip  8/24  00:24:00-00:24:16  -> recap 00:02:43
+17:56:05 | INFO | Clip  9/24  00:31:12-00:31:25  -> recap 00:03:17
+17:56:07 | INFO | Clip 10/24  00:36:23-00:36:32  -> recap 00:03:39
+17:56:08 | INFO | Clip 11/24  00:36:32-00:36:41  -> recap 00:03:54
+17:56:11 | INFO | Clip 12/24  00:36:47-00:37:04  -> recap 00:04:10
+17:56:13 | INFO | Clip 13/24  00:40:44-00:41:00  -> recap 00:04:36
+17:56:14 | INFO | Clip 14/24  00:43:31-00:43:38  -> recap 00:04:58
+17:56:16 | INFO | Clip 15/24  00:43:38-00:43:45  -> recap 00:05:12
+17:56:17 | INFO | Clip 16/24  00:46:01-00:46:17  -> recap 00:05:25
+17:56:19 | INFO | Clip 17/24  00:49:57-00:50:06  -> recap 00:05:45
+17:56:20 | INFO | Clip 18/24  00:50:06-00:50:16  -> recap 00:05:59
+17:56:22 | INFO | Clip 19/24  00:55:25-00:55:41  -> recap 00:06:18
+17:56:24 | INFO | Clip 20/24  00:56:21-00:56:37  -> recap 00:06:40
+17:56:27 | INFO | Clip 21/24  00:56:49-00:57:08  -> recap 00:07:07
+17:56:29 | INFO | Clip 22/24  01:02:07-01:02:24  -> recap 00:07:35
+17:56:31 | INFO | Clip 23/24  01:03:15-01:03:30  -> recap 00:07:57
+17:56:33 | INFO | Clip 24/24  01:05:50-01:06:05  -> recap 00:08:24
+17:57:50 | INFO | Recap written: movie_recap.mp4 (524.3 s = 00:08:44)
+17:57:50 | INFO | === 8. Evaluation ===
+17:57:56 | INFO | Summary story (ours)     BLEU-4 0.0403 | BLEU-1 0.4066 | ROUGE-L 0.1909 | sem 0.810
+17:57:56 | INFO | Extractive TextRank      BLEU-4 0.0205 | BLEU-1 0.3241 | ROUGE-L 0.1341 | sem 0.452
+17:57:56 | INFO | Lead-N (first words)     BLEU-4 0.0158 | BLEU-1 0.2853 | ROUGE-L 0.1069 | sem 0.305
+17:57:56 | INFO | Uniform segments         BLEU-4 0.0141 | BLEU-1 0.2712 | ROUGE-L 0.1244 | sem 0.465
+17:57:56 | INFO | Random segments          BLEU-4 0.0149 | BLEU-1 0.2936 | ROUGE-L 0.1187 | sem 0.377
+17:58:14 | INFO | Peak  1 @ 00:03:39  fused=0.84  | Al complains about the music at his club, causing a conflict with the 
+17:58:14 | INFO | Peak  2 @ 00:04:13  fused=0.80  | Al reflects on his time at the old break at Dawn Club, missing his for
+17:58:14 | INFO | Peak  3 @ 00:08:13  fused=0.75  | Al loses his appetite at the club, while Sue decides to leave for Holl
+17:58:14 | INFO | Peak  4 @ 00:12:18  fused=0.68  | Al continues his journey by thumbing rides, hoping to reach Los Angele
+17:58:14 | INFO | Peak  5 @ 00:13:17  fused=0.71  | Al calls his girlfriend Sue, promising to see her soon.
+17:58:14 | INFO | Peak  6 @ 00:18:25  fused=0.67  | Al throws a hitchhiker out of his car, then reminisces about his fathe
+17:58:14 | INFO | Peak  7 @ 00:20:12  fused=0.84  | Al feels optimistic about reaching Hollywood soon.
+17:58:14 | INFO | Peak  8 @ 00:24:13  fused=0.88  | Al hides Haskell's body in a gully, contemplating the consequences of 
+17:58:14 | INFO | Peak  9 @ 00:31:12  fused=0.91  | Al drives cautiously, suspecting he is being followed, and interacts w
+17:58:14 | INFO | Peak 10 @ 00:36:07  fused=0.87  | Al and Vera are in the car together, and Al realizes Vera is Haskell, 
+17:58:14 | INFO | Peak 11 @ 00:36:18  fused=0.83  | The situation is worsening for Al as he must now deal with Haskell's p
+17:58:14 | INFO | Peak 12 @ 00:36:33  fused=0.83  | Al believes Vera might have killed the man they picked up, though she 
+17:58:14 | INFO | Peak 13 @ 00:40:55  fused=0.88  | Al and Vera argue in a Hollywood apartment about selling the car to av
+17:58:14 | INFO | Peak 14 @ 00:43:35  fused=0.82  | Al suspects Vera might have accidentally caused the man's death by pus
+17:58:14 | INFO | Peak 15 @ 00:43:41  fused=0.68  | Al cleans himself in the bathtub, feeling refreshed but still trapped 
+17:58:14 | INFO | Peak 16 @ 00:46:08  fused=0.66  | They argue about their predicament, with Al maintaining his innocence.
+17:58:14 | INFO | Peak 17 @ 00:49:57  fused=0.84  | Vera threatens Al, forcing him to stay.
+17:58:14 | INFO | Peak 18 @ 00:50:47  fused=0.72  | Al argues with Vera over the car's price.
+17:58:14 | INFO | Peak 19 @ 00:54:37  fused=0.80  | Al and Vera argue over the car, Al decides to keep it, proposes a plan
+17:58:14 | INFO | Peak 20 @ 00:56:22  fused=0.84  | Al stands firm on his decision, while Vera becomes increasingly desper
+17:58:14 | INFO | Peak 21 @ 00:56:51  fused=0.89  | Al and Vera argue intensely about Vera's plan to call the police and A
+17:58:14 | INFO | Peak 22 @ 01:02:08  fused=0.84  | Vera's threats to involve the police escalate the tension, while Al's 
+17:58:14 | INFO | Peak 23 @ 01:03:19  fused=0.89  | Al kills Vera accidentally, and now the police suspect him of her murd
+17:58:14 | INFO | Peak 24 @ 01:05:56  fused=0.85  | Al contemplates his next move, planning to destroy evidence and flee B
+17:58:14 | INFO | Re-transcribing the recap for the fidelity check...
+17:58:15 | INFO | Loading faster-whisper 'small.en' (cpu, int8)
+17:58:15 | INFO | HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small.en/revision/main "HTTP/1.1 200 OK"
+17:58:19 | INFO | Processing audio with duration 00:05.510
+17:58:23 | INFO | Transcribed 1 segments in 4.2 s
+17:58:24 | INFO | Processing audio with duration 00:06.300
+17:58:27 | INFO | Transcribed 1 segments in 4.1 s
+17:58:28 | INFO | Processing audio with duration 00:16.120
+17:58:35 | INFO | Transcribed 11 segments in 7.3 s
+17:58:35 | INFO | Processing audio with duration 00:07.510
+17:58:39 | INFO | Transcribed 2 segments in 4.3 s
+17:58:39 | INFO | Processing audio with duration 00:15.410
+17:58:45 | INFO | Transcribed 5 segments in 5.7 s
+17:58:45 | INFO | Processing audio with duration 00:06.310
+17:58:49 | INFO | Transcribed 1 segments in 4.4 s
+17:58:50 | INFO | Processing audio with duration 00:15.780
+17:58:55 | INFO | Transcribed 5 segments in 5.9 s
+17:58:56 | INFO | Processing audio with duration 00:07.170
+17:59:00 | INFO | Transcribed 1 segments in 4.7 s
+17:59:00 | INFO | Processing audio with duration 00:11.350
+17:59:05 | INFO | Transcribed 4 segments in 5.3 s
+17:59:06 | INFO | Processing audio with duration 00:05.300
+17:59:09 | INFO | Transcribed 1 segments in 3.9 s
+17:59:10 | INFO | Processing audio with duration 00:12.350
+17:59:14 | INFO | Transcribed 4 segments in 4.7 s
+17:59:15 | INFO | Processing audio with duration 00:08.410
+17:59:19 | INFO | Transcribed 2 segments in 4.1 s
+17:59:19 | INFO | Processing audio with duration 00:16.850
+17:59:25 | INFO | Transcribed 7 segments in 5.7 s
+17:59:25 | INFO | Processing audio with duration 00:04.670
+17:59:29 | INFO | Transcribed 1 segments in 3.8 s
+17:59:29 | INFO | Processing audio with duration 00:14.610
+17:59:35 | INFO | Transcribed 8 segments in 6.6 s
+17:59:36 | INFO | Processing audio with duration 00:09.510
+17:59:40 | INFO | Transcribed 2 segments in 4.3 s
+17:59:40 | INFO | Processing audio with duration 00:16.150
+17:59:46 | INFO | Transcribed 4 segments in 5.6 s
+17:59:46 | INFO | Processing audio with duration 00:18.650
+17:59:51 | INFO | Transcribed 4 segments in 4.9 s
+17:59:51 | INFO | Processing audio with duration 00:13.280
+17:59:56 | INFO | Transcribed 4 segments in 5.2 s
+17:59:57 | INFO | Processing audio with duration 00:08.380
+18:00:00 | INFO | Transcribed 1 segments in 3.9 s
+18:00:01 | INFO | Processing audio with duration 00:08.940
+18:00:05 | INFO | Transcribed 3 segments in 4.2 s
+18:00:05 | INFO | Processing audio with duration 00:05.910
+18:00:09 | INFO | Transcribed 1 segments in 3.7 s
+18:00:09 | INFO | Processing audio with duration 00:09.810
+18:00:18 | INFO | Transcribed 2 segments in 9.0 s
+18:00:19 | INFO | Processing audio with duration 00:05.840
+18:00:40 | INFO | Transcribed 1 segments in 22.7 s
+18:00:42 | INFO | Processing audio with duration 00:16.650
+18:01:20 | INFO | Transcribed 5 segments in 39.1 s
+18:01:21 | INFO | Processing audio with duration 00:09.340
+18:01:43 | INFO | Transcribed 2 segments in 23.4 s
+18:01:45 | INFO | Processing audio with duration 00:15.850
+18:02:13 | INFO | Transcribed 4 segments in 29.0 s
+18:02:14 | INFO | Processing audio with duration 00:06.640
+18:02:34 | INFO | Transcribed 2 segments in 21.7 s
+18:02:36 | INFO | Processing audio with duration 00:07.310
+18:02:59 | INFO | Transcribed 2 segments in 24.2 s
+18:03:00 | INFO | Processing audio with duration 00:06.340
+18:03:20 | INFO | Transcribed 1 segments in 20.9 s
+18:03:21 | INFO | Processing audio with duration 00:07.300
+18:03:43 | INFO | Transcribed 3 segments in 22.8 s
+18:03:44 | INFO | Processing audio with duration 00:05.510
+18:04:03 | INFO | Transcribed 1 segments in 20.4 s
+18:04:04 | INFO | Processing audio with duration 00:16.080
+18:04:27 | INFO | Transcribed 2 segments in 23.4 s
+18:04:28 | INFO | Processing audio with duration 00:04.410
+18:04:55 | INFO | Transcribed 1 segments in 28.0 s
+18:04:56 | INFO | Processing audio with duration 00:09.570
+18:05:20 | INFO | Transcribed 3 segments in 24.8 s
+18:05:21 | INFO | Processing audio with duration 00:04.170
+18:05:41 | INFO | Transcribed 1 segments in 21.3 s
+18:05:42 | INFO | Processing audio with duration 00:09.980
+18:06:07 | INFO | Transcribed 4 segments in 25.4 s
+18:06:08 | INFO | Processing audio with duration 00:09.370
+18:06:29 | INFO | Transcribed 2 segments in 22.1 s
+18:06:30 | INFO | Processing audio with duration 00:15.850
+18:07:01 | INFO | Transcribed 6 segments in 31.9 s
+18:07:02 | INFO | Processing audio with duration 00:06.280
+18:07:25 | INFO | Transcribed 1 segments in 24.0 s
+18:07:26 | INFO | Processing audio with duration 00:16.410
+18:08:01 | INFO | Transcribed 9 segments in 35.1 s
+18:08:02 | INFO | Processing audio with duration 00:09.850
+18:08:24 | INFO | Transcribed 2 segments in 23.3 s
+18:08:25 | INFO | Processing audio with duration 00:18.520
+18:08:52 | INFO | Transcribed 5 segments in 27.6 s
+18:08:53 | INFO | Processing audio with duration 00:09.900
+18:09:17 | INFO | Transcribed 2 segments in 25.1 s
+18:09:18 | INFO | Processing audio with duration 00:16.290
+18:09:54 | INFO | Transcribed 3 segments in 37.0 s
+18:15:28 | INFO | Processing audio with duration 00:06.040
+18:15:46 | INFO | Transcribed 1 segments in 21.2 s
+18:15:46 | INFO | Processing audio with duration 00:15.210
+18:15:58 | INFO | Transcribed 4 segments in 11.9 s
+18:15:58 | INFO | Processing audio with duration 00:11.850
+18:16:08 | INFO | Transcribed 2 segments in 9.9 s
+18:16:08 | INFO | Processing audio with duration 00:15.750
+18:16:16 | INFO | Transcribed 5 segments in 7.8 s
+18:16:16 | INFO | Processing audio with duration 00:03.670
+18:16:22 | INFO | Transcribed 1 segments in 5.7 s
+18:16:22 | INFO | Fidelity: mean clip BLEU 0.731, peak hit rate 0.92
+18:16:25 | INFO | Done. Recap: E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\outputs\detour_1945\movie_recap.mp4 (00:08:44). Report: E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\outputs\detour_1945\REPORT.md
+wrote E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\notebooks\Movie_Recap_Walkthrough.ipynb with 77 cells

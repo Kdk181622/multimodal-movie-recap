@@ -1,0 +1,26 @@
+PYTHONS 
+ -V:3.14 *        C:\Users\HP PC\AppData\Local\Programs\Python\Python314\python.exe
+ -V:3.12          C:\Users\HP PC\AppData\Local\Programs\Python\Python312\python.exe
+ -V:3.10          C:\Users\HP PC\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\HP PC\AppData\Local\Programs\Python\Python310\python.exe
+C:\Users\HP PC\AppData\Local\Programs\Python\Python312\python.exe
+C:\Users\HP PC\AppData\Local\Programs\Python\Python314\python.exe
+C:\Users\HP PC\anaconda3\python.exe
+C:\Users\HP PC\AppData\Local\Microsoft\WindowsApps\python.exe
+==== 3.14 
+{'sacrebleu': False, 'faster_whisper': False, 'sentence_transformers': False, 'transformers': True, 'torch': True, 'cv2': True, 'librosa': False, 'nltk': False, 'pyttsx3': False, 'yaml': True, 'pytest': False, 'nbconvert': True, 'nbformat': True, 'ipykernel': True, 'jupyter': True, 'matplotlib': True, 'pandas': True}
+==== 3.13 
+No suitable Python runtime found
+Pass --list (-0) to see all detected environments on your machine
+or set environment variable PYLAUNCHER_ALLOW_INSTALL to use winget
+or open the Microsoft Store to the requested version.
+==== 3.12 
+{'sacrebleu': False, 'faster_whisper': False, 'sentence_transformers': True, 'transformers': True, 'torch': True, 'cv2': True, 'librosa': False, 'nltk': True, 'pyttsx3': False, 'yaml': True, 'pytest': False, 'nbconvert': False, 'nbformat': False, 'ipykernel': True, 'jupyter': True, 'matplotlib': True, 'pandas': True}
+==== 3.11 
+No suitable Python runtime found
+Pass --list (-0) to see all detected environments on your machine
+or set environment variable PYLAUNCHER_ALLOW_INSTALL to use winget
+or open the Microsoft Store to the requested version.
+==== 3.10 
+{'sacrebleu': False, 'faster_whisper': False, 'sentence_transformers': True, 'transformers': True, 'torch': True, 'cv2': True, 'librosa': True, 'nltk': True, 'pyttsx3': True, 'yaml': True, 'pytest': False, 'nbconvert': True, 'nbformat': True, 'ipykernel': True, 'jupyter': True, 'matplotlib': True, 'pandas': True}
+DONE 

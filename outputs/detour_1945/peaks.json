@@ -9,12 +9,36 @@
   "peaks": [
     {
       "index": 1,
-      "story_sentence": "Al plays a song that reminds him of his girlfriend, Sue, causing him distress and leading him to argue with the club's owner.",
+      "story_sentence": "Al complains about the music at his club, causing a conflict with the DJ.",
       "aligned_window": [
-        250.0,
-        280.0
+        170.0,
+        200.0
       ],
-      "window_similarity": 0.3095,
+      "window_similarity": 0.3521,
+      "peak_segment_id": 20,
+      "timestamp": 182.36,
+      "timestamp_hms": "00:03:02",
+      "segment_end": 183.26,
+      "transcript": "That music, it stinks!",
+      "emotion_label": "disgust",
+      "scores": {
+        "semantic": 1.0,
+        "centrality": 0.2875,
+        "text_emotion": 0.9909,
+        "audio": 0.5626,
+        "visual": 0.343,
+        "fused": 0.7276
+      },
+      "candidates": 29
+    },
+    {
+      "index": 2,
+      "story_sentence": "Al reflects on his time at the old break at Dawn Club, missing his former life and his girlfriend Sue.",
+      "aligned_window": [
+        260.0,
+        290.0
+      ],
+      "window_similarity": 0.2935,
       "peak_segment_id": 46,
       "timestamp": 259.81,
       "timestamp_hms": "00:04:19",
@@ -22,23 +46,23 @@
       "transcript": "Sue, she was always selling it too.",
       "emotion_label": "disgust",
       "scores": {
-        "semantic": 0.8272,
+        "semantic": 0.6933,
         "centrality": 0.6086,
         "text_emotion": 0.7951,
         "audio": 0.4232,
         "visual": 0.4101,
-        "fused": 0.6664
+        "fused": 0.6129
       },
-      "candidates": 18
+      "candidates": 16
     },
     {
-      "index": 2,
-      "story_sentence": "Al's girlfriend Sue decides to leave for Hollywood, causing a heated argument about their future plans and leaving Al dejected and bitter.",
+      "index": 3,
+      "story_sentence": "Al loses his appetite at the club, while Sue decides to leave for Hollywood.",
       "aligned_window": [
-        480.0,
-        510.0
+        450.0,
+        480.0
       ],
-      "window_similarity": 0.3168,
+      "window_similarity": 0.2646,
       "peak_segment_id": 97,
       "timestamp": 493.8,
       "timestamp_hms": "00:08:13",
@@ -46,71 +70,119 @@
       "transcript": "Al, look, I love you. You know I do.",
       "emotion_label": "joy",
       "scores": {
-        "semantic": 0.8202,
+        "semantic": 0.7697,
         "centrality": 0.6755,
         "text_emotion": 0.9286,
         "audio": 0.5142,
         "visual": 0.5112,
-        "fused": 0.7225
+        "fused": 0.7023
       },
-      "candidates": 43
+      "candidates": 36
     },
     {
-      "index": 3,
-      "story_sentence": "Al calls Sue, learns she's working as a hashlinger in Hollywood, and decides to hitchhike to Los Angeles, reflecting on the dangers and unpredictability of thumbing rides.",
+      "index": 4,
+      "story_sentence": "Al continues his journey by thumbing rides, hoping to reach Los Angeles despite the risks.",
+      "aligned_window": [
+        750.0,
+        780.0
+      ],
+      "window_similarity": 0.4155,
+      "peak_segment_id": 147,
+      "timestamp": 801.71,
+      "timestamp_hms": "00:13:21",
+      "segment_end": 810.83,
+      "transcript": "you'll click no don't try to stop me just expect me train who knows train plane",
+      "emotion_label": "neutral",
+      "scores": {
+        "semantic": 0.5805,
+        "centrality": 0.6352,
+        "text_emotion": 0.632,
+        "audio": 0.413,
+        "visual": 0.9685,
+        "fused": 0.6295
+      },
+      "candidates": 14
+    },
+    {
+      "index": 5,
+      "story_sentence": "Al calls his girlfriend Sue, promising to see her soon.",
       "aligned_window": [
         770.0,
         800.0
       ],
-      "window_similarity": 0.5682,
-      "peak_segment_id": 138,
-      "timestamp": 780.41,
-      "timestamp_hms": "00:13:00",
-      "segment_end": 782.11,
-      "transcript": "Oh, baby, it's great to hear from you, too.",
-      "emotion_label": "joy",
+      "window_similarity": 0.4099,
+      "peak_segment_id": 149,
+      "timestamp": 815.01,
+      "timestamp_hms": "00:13:35",
+      "segment_end": 823.21,
+      "transcript": "and then let's get married right away huh that's the stuff that's what I've been",
+      "emotion_label": "neutral",
       "scores": {
-        "semantic": 0.548,
-        "centrality": 0.6688,
-        "text_emotion": 0.9831,
-        "audio": 0.6789,
-        "visual": 0.3636,
-        "fused": 0.6234
+        "semantic": 0.3466,
+        "centrality": 0.7141,
+        "text_emotion": 0.1911,
+        "audio": 0.2458,
+        "visual": 0.5019,
+        "fused": 0.3866
       },
-      "candidates": 15
+      "candidates": 2
     },
     {
-      "index": 4,
-      "story_sentence": "Al picks up Vera, a hitchhiker, and debates whether to keep her or drop her off, deciding to continue driving her to Los Angeles, hoping it will bring him closer to Sue.",
+      "index": 6,
+      "story_sentence": "Al throws a hitchhiker out of his car, then reminisces about his father's sabers, hinting at a violent past.",
       "aligned_window": [
-        1070.0,
-        1100.0
+        1110.0,
+        1140.0
       ],
-      "window_similarity": 0.352,
-      "peak_segment_id": 208,
-      "timestamp": 1074.12,
-      "timestamp_hms": "00:17:54",
-      "segment_end": 1078.96,
-      "transcript": "I tossed her out of the car in her ear. Was I wrong. Give",
-      "emotion_label": "anger",
+      "window_similarity": 0.3897,
+      "peak_segment_id": 218,
+      "timestamp": 1134.11,
+      "timestamp_hms": "00:18:54",
+      "segment_end": 1139.37,
+      "transcript": "a door. You get me in the arm here. Pretty mean cut.",
+      "emotion_label": "disgust",
       "scores": {
-        "semantic": 0.5742,
-        "centrality": 0.8747,
-        "text_emotion": 0.9278,
-        "audio": 0.3117,
-        "visual": 0.3552,
-        "fused": 0.6001
+        "semantic": 0.6014,
+        "centrality": 0.7193,
+        "text_emotion": 0.9528,
+        "audio": 0.3718,
+        "visual": 0.2429,
+        "fused": 0.5836
       },
-      "candidates": 16
+      "candidates": 13
     },
     {
-      "index": 5,
-      "story_sentence": "Al realizes he must hide Charles Haskell's body and take his car to avoid being implicated, deciding to drive away despite the risks.",
+      "index": 7,
+      "story_sentence": "Al feels optimistic about reaching Hollywood soon.",
       "aligned_window": [
-        1440.0,
-        1470.0
+        1200.0,
+        1230.0
       ],
-      "window_similarity": 0.5182,
+      "window_similarity": 0.3071,
+      "peak_segment_id": 230,
+      "timestamp": 1212.61,
+      "timestamp_hms": "00:20:12",
+      "segment_end": 1215.17,
+      "transcript": "If I got him down on me, I'd buy a ticket to Hollywood.",
+      "emotion_label": "neutral",
+      "scores": {
+        "semantic": 0.8634,
+        "centrality": 0.7833,
+        "text_emotion": 0.4955,
+        "audio": 0.3146,
+        "visual": 0.4129,
+        "fused": 0.6463
+      },
+      "candidates": 26
+    },
+    {
+      "index": 8,
+      "story_sentence": "Al hides Haskell's body in a gully, contemplating the consequences of his actions, fearing he might be identified by the police.",
+      "aligned_window": [
+        1430.0,
+        1460.0
+      ],
+      "window_similarity": 0.5211,
       "peak_segment_id": 283,
       "timestamp": 1453.14,
       "timestamp_hms": "00:24:13",
@@ -118,95 +190,167 @@
       "transcript": "fell out of the car why if Haskell came to which of course he couldn't even he",
       "emotion_label": "surprise",
       "scores": {
-        "semantic": 1.0,
+        "semantic": 0.9461,
         "centrality": 0.677,
         "text_emotion": 0.7549,
         "audio": 0.5075,
         "visual": 0.275,
-        "fused": 0.7322
+        "fused": 0.7106
       },
       "candidates": 26
     },
     {
-      "index": 6,
-      "story_sentence": "Al drives to the California state line, where he hides Charles Haskell's body and takes his car, then checks into a hotel to rest and gather information, discovering Haskell was a con artist.",
+      "index": 9,
+      "story_sentence": "Al drives cautiously, suspecting he is being followed, and interacts with an officer who confirms his identity as Charles Haskell, Jr. Al finds $768 and a letter that reveals Haskell's deceitful nature, leading him to decide to investigate further.",
       "aligned_window": [
-        1830.0,
-        1860.0
+        1850.0,
+        1880.0
       ],
-      "window_similarity": 0.6316,
-      "peak_segment_id": 336,
-      "timestamp": 1821.86,
-      "timestamp_hms": "00:30:21",
-      "segment_end": 1825.56,
-      "transcript": "Not have to be Charles Haskell until I got to some city where I could leave the car and be swallowed up.",
-      "emotion_label": "neutral",
+      "window_similarity": 0.5592,
+      "peak_segment_id": 346,
+      "timestamp": 1872.9,
+      "timestamp_hms": "00:31:12",
+      "segment_end": 1876.02,
+      "transcript": "And then I found out from a letter Haskell was cutting around in his bag",
+      "emotion_label": "surprise",
       "scores": {
-        "semantic": 0.9486,
-        "centrality": 0.9296,
-        "text_emotion": 0.6714,
-        "audio": 0.5335,
-        "visual": 0.3324,
-        "fused": 0.7495
+        "semantic": 0.9116,
+        "centrality": 0.89,
+        "text_emotion": 0.9529,
+        "audio": 0.4904,
+        "visual": 0.2402,
+        "fused": 0.7507
       },
-      "candidates": 17
+      "candidates": 19
     },
     {
-      "index": 7,
-      "story_sentence": "Al picks up Vera, who turns out to be Charles Haskell's accomplice, complicating his plan to avoid suspicion.",
+      "index": 10,
+      "story_sentence": "Al and Vera are in the car together, and Al realizes Vera is Haskell, making him feel trapped and cornered.",
       "aligned_window": [
         2140.0,
         2170.0
       ],
-      "window_similarity": 0.5272,
-      "peak_segment_id": 426,
-      "timestamp": 2167.04,
-      "timestamp_hms": "00:36:07",
-      "segment_end": 2168.52,
-      "transcript": "Vera must be the woman Haskell had mentioned.",
-      "emotion_label": "neutral",
+      "window_similarity": 0.4728,
+      "peak_segment_id": 434,
+      "timestamp": 2183.72,
+      "timestamp_hms": "00:36:23",
+      "segment_end": 2186.54,
+      "transcript": "He was sitting right there in the car laughing like mad while he haunted me.",
+      "emotion_label": "fear",
       "scores": {
-        "semantic": 1.0,
-        "centrality": 0.4937,
-        "text_emotion": 0.1386,
-        "audio": 0.5177,
-        "visual": 0.2559,
-        "fused": 0.6109
+        "semantic": 0.4753,
+        "centrality": 0.7756,
+        "text_emotion": 0.8754,
+        "audio": 0.5859,
+        "visual": 0.5771,
+        "fused": 0.6122
       },
       "candidates": 41
     },
     {
-      "index": 8,
-      "story_sentence": "Al and Vera decide to sell Charles Haskell's car to avoid suspicion, with Vera insisting on accompanying Al to ensure he doesn't get caught.",
+      "index": 11,
+      "story_sentence": "The situation is worsening for Al as he must now deal with Haskell's presence.",
       "aligned_window": [
-        2380.0,
-        2410.0
+        2150.0,
+        2180.0
       ],
-      "window_similarity": 0.4911,
-      "peak_segment_id": 504,
-      "timestamp": 2378.73,
-      "timestamp_hms": "00:39:38",
-      "segment_end": 2379.93,
-      "transcript": "They wonder where the owner is.",
-      "emotion_label": "surprise",
+      "window_similarity": 0.4531,
+      "peak_segment_id": 435,
+      "timestamp": 2186.54,
+      "timestamp_hms": "00:36:26",
+      "segment_end": 2191.04,
+      "transcript": "There was nothing I could say.",
+      "emotion_label": "sadness",
       "scores": {
-        "semantic": 0.6462,
-        "centrality": 0.5118,
-        "text_emotion": 0.9877,
-        "audio": 0.5195,
-        "visual": 0.6074,
-        "fused": 0.6524
+        "semantic": 0.343,
+        "centrality": 0.7916,
+        "text_emotion": 0.8305,
+        "audio": 0.3613,
+        "visual": 0.6528,
+        "fused": 0.5326
       },
-      "candidates": 36
+      "candidates": 8
     },
     {
-      "index": 9,
-      "story_sentence": "Al and Vera discuss their situation, with Vera urging Al to sell the car and leave quickly, while Al struggles with his guilt and the reality of their predicament.",
+      "index": 12,
+      "story_sentence": "Al believes Vera might have killed the man they picked up, though she denies it.",
       "aligned_window": [
-        2610.0,
-        2640.0
+        2170.0,
+        2200.0
       ],
-      "window_similarity": 0.3029,
+      "window_similarity": 0.4786,
+      "peak_segment_id": 443,
+      "timestamp": 2210.96,
+      "timestamp_hms": "00:36:50",
+      "segment_end": 2218.49,
+      "transcript": "I told her everything, but she didn't believe my story.",
+      "emotion_label": "anger",
+      "scores": {
+        "semantic": 0.6333,
+        "centrality": 0.6462,
+        "text_emotion": 0.9747,
+        "audio": 0.4292,
+        "visual": 0.6908,
+        "fused": 0.6645
+      },
+      "candidates": 12
+    },
+    {
+      "index": 13,
+      "story_sentence": "Al and Vera argue in a Hollywood apartment about selling the car to avoid suspicion, with Al reluctantly agreeing to share the profits.",
+      "aligned_window": [
+        2440.0,
+        2470.0
+      ],
+      "window_similarity": 0.4214,
+      "peak_segment_id": 532,
+      "timestamp": 2455.27,
+      "timestamp_hms": "00:40:55",
+      "segment_end": 2457.57,
+      "transcript": "A dealer might think something was funny",
+      "emotion_label": "surprise",
+      "scores": {
+        "semantic": 0.9117,
+        "centrality": 0.795,
+        "text_emotion": 0.7512,
+        "audio": 0.6236,
+        "visual": 0.4555,
+        "fused": 0.7585
+      },
+      "candidates": 28
+    },
+    {
+      "index": 14,
+      "story_sentence": "Al suspects Vera might have accidentally caused the man's death by pushing him out of the car.",
+      "aligned_window": [
+        2620.0,
+        2650.0
+      ],
+      "window_similarity": 0.4055,
+      "peak_segment_id": 568,
+      "timestamp": 2619.58,
+      "timestamp_hms": "00:43:39",
+      "segment_end": 2621.34,
+      "transcript": "Maybe he was dead before he fell out of the car. I don't know.",
+      "emotion_label": "neutral",
+      "scores": {
+        "semantic": 0.8469,
+        "centrality": 0.7025,
+        "text_emotion": 0.6284,
+        "audio": 0.6726,
+        "visual": 0.6873,
+        "fused": 0.7424
+      },
+      "candidates": 19
+    },
+    {
+      "index": 15,
+      "story_sentence": "Al cleans himself in the bathtub, feeling refreshed but still trapped with Vera.",
+      "aligned_window": [
+        2630.0,
+        2660.0
+      ],
+      "window_similarity": 0.271,
       "peak_segment_id": 569,
       "timestamp": 2621.72,
       "timestamp_hms": "00:43:41",
@@ -214,71 +358,143 @@
       "transcript": "Sure, Sherry, died of old age.",
       "emotion_label": "sadness",
       "scores": {
-        "semantic": 0.6368,
+        "semantic": 0.6753,
         "centrality": 0.6904,
         "text_emotion": 0.9794,
         "audio": 0.4607,
         "visual": 0.6873,
-        "fused": 0.6774
-      },
-      "candidates": 23
-    },
-    {
-      "index": 10,
-      "story_sentence": "Al and Vera argue over selling Charles Haskell's car, with Vera insisting on keeping the money and Al reluctantly agreeing.",
-      "aligned_window": [
-        3040.0,
-        3070.0
-      ],
-      "window_similarity": 0.5094,
-      "peak_segment_id": 669,
-      "timestamp": 3065.41,
-      "timestamp_hms": "00:51:05",
-      "segment_end": 3066.93,
-      "transcript": "You're my wife, Vera Haskell.",
-      "emotion_label": "neutral",
-      "scores": {
-        "semantic": 0.9841,
-        "centrality": 0.6972,
-        "text_emotion": 0.2679,
-        "audio": 0.6598,
-        "visual": 0.3006,
-        "fused": 0.6825
-      },
-      "candidates": 28
-    },
-    {
-      "index": 11,
-      "story_sentence": "They head to a used car lot to attempt the sale.",
-      "aligned_window": [
-        3070.0,
-        3100.0
-      ],
-      "window_similarity": 0.3916,
-      "peak_segment_id": 680,
-      "timestamp": 3094.76,
-      "timestamp_hms": "00:51:34",
-      "segment_end": 3101.79,
-      "transcript": "we're interested in selling a car if the price is right well if it's in good",
-      "emotion_label": "joy",
-      "scores": {
-        "semantic": 0.9022,
-        "centrality": 0.3329,
-        "text_emotion": 0.93,
-        "audio": 0.4019,
-        "visual": 0.681,
-        "fused": 0.7127
+        "fused": 0.6928
       },
       "candidates": 13
     },
     {
-      "index": 12,
-      "story_sentence": "Al reluctantly calls the police, threatening to implicate Vera if he gets caught, leading to a tense argument as Vera tries to convince him not to.",
+      "index": 16,
+      "story_sentence": "They argue about their predicament, with Al maintaining his innocence.",
+      "aligned_window": [
+        2750.0,
+        2780.0
+      ],
+      "window_similarity": 0.2275,
+      "peak_segment_id": 602,
+      "timestamp": 2766.22,
+      "timestamp_hms": "00:46:06",
+      "segment_end": 2767.58,
+      "transcript": "What got us on this subject anyway?",
+      "emotion_label": "surprise",
+      "scores": {
+        "semantic": 0.6145,
+        "centrality": 0.6569,
+        "text_emotion": 0.7165,
+        "audio": 0.7206,
+        "visual": 0.2306,
+        "fused": 0.5945
+      },
+      "candidates": 34
+    },
+    {
+      "index": 17,
+      "story_sentence": "Vera threatens Al, forcing him to stay.",
+      "aligned_window": [
+        2980.0,
+        3010.0
+      ],
+      "window_similarity": 0.4741,
+      "peak_segment_id": 649,
+      "timestamp": 2997.68,
+      "timestamp_hms": "00:49:57",
+      "segment_end": 3001.18,
+      "transcript": "But Vera, unfortunately, was just as rotten in the morning",
+      "emotion_label": "disgust",
+      "scores": {
+        "semantic": 0.9225,
+        "centrality": 0.5987,
+        "text_emotion": 0.832,
+        "audio": 0.5865,
+        "visual": 0.2528,
+        "fused": 0.7095
+      },
+      "candidates": 16
+    },
+    {
+      "index": 18,
+      "story_sentence": "Al argues with Vera over the car's price.",
+      "aligned_window": [
+        2990.0,
+        3020.0
+      ],
+      "window_similarity": 0.4923,
+      "peak_segment_id": 653,
+      "timestamp": 3009.77,
+      "timestamp_hms": "00:50:09",
+      "segment_end": 3012.11,
+      "transcript": "So what? The dealers will be there all day?",
+      "emotion_label": "surprise",
+      "scores": {
+        "semantic": 0.725,
+        "centrality": 0.5576,
+        "text_emotion": 0.871,
+        "audio": 0.7084,
+        "visual": 0.455,
+        "fused": 0.6788
+      },
+      "candidates": 14
+    },
+    {
+      "index": 19,
+      "story_sentence": "Al and Vera argue over the car, Al decides to keep it, proposes a plan to impersonate Haskell, and threatens Vera.",
+      "aligned_window": [
+        3280.0,
+        3310.0
+      ],
+      "window_similarity": 0.4682,
+      "peak_segment_id": 731,
+      "timestamp": 3325.83,
+      "timestamp_hms": "00:55:25",
+      "segment_end": 3326.55,
+      "transcript": "Oh, grow up, Vera.",
+      "emotion_label": "neutral",
+      "scores": {
+        "semantic": 0.5623,
+        "centrality": 0.4617,
+        "text_emotion": 0.6968,
+        "audio": 0.6974,
+        "visual": 0.7249,
+        "fused": 0.612
+      },
+      "candidates": 32
+    },
+    {
+      "index": 20,
+      "story_sentence": "Al stands firm on his decision, while Vera becomes increasingly desperate.",
       "aligned_window": [
         3400.0,
         3430.0
       ],
-      "window_similarity": 0.5166,
+      "window_similarity": 0.396,
+      "peak_segment_id": 763,
+      "timestamp": 3382.95,
+      "timestamp_hms": "00:56:22",
+      "segment_end": 3385.29,
+      "transcript": "Vera, please, you're talking too loud.",
+      "emotion_label": "disgust",
+      "scores": {
+        "semantic": 0.8637,
+        "centrality": 0.7581,
+        "text_emotion": 0.7121,
+        "audio": 0.658,
+        "visual": 0.5268,
+        "fused": 0.7437
+      },
+      "candidates": 25
+    },
+    {
+      "index": 21,
+      "story_sentence": "Al and Vera argue intensely about Vera's plan to call the police and Al's decision to keep the car, leading to a heated confrontation in the room.",
+      "aligned_window": [
+        3410.0,
+        3440.0
+      ],
+      "window_similarity": 0.4603,
       "peak_segment_id": 777,
       "timestamp": 3423.16,
       "timestamp_hms": "00:57:03",
@@ -286,54 +502,113 @@
       "transcript": "This was a death watch for Vera.",
       "emotion_label": "fear",
       "scores": {
-        "semantic": 0.8242,
+        "semantic": 0.8411,
         "centrality": 0.611,
         "text_emotion": 0.8346,
         "audio": 0.6477,
         "visual": 0.4542,
-        "fused": 0.7118
+        "fused": 0.7185
       },
-      "candidates": 28
+      "candidates": 29
     },
     {
-      "index": 13,
-      "story_sentence": "Al frantically tries to destroy evidence, realizing he's guilty and must leave town, while reflecting on his predicament and the impossibility of returning to his old life.",
+      "index": 22,
+      "story_sentence": "Vera's threats to involve the police escalate the tension, while Al's insistence on keeping the car despite the risks further strains their relationship.",
       "aligned_window": [
-        3810.0,
-        3840.0
+        3720.0,
+        3750.0
       ],
-      "window_similarity": 0.351,
-      "peak_segment_id": 893,
-      "timestamp": 3805.49,
-      "timestamp_hms": "01:03:25",
-      "segment_end": 3810.39,
-      "transcript": "In a jury room, every last man of you would go down shouting that she had me over a barrel,",
+      "window_similarity": 0.4634,
+      "peak_segment_id": 877,
+      "timestamp": 3728.41,
+      "timestamp_hms": "01:02:08",
+      "segment_end": 3731.51,
+      "transcript": "Please open the door. Vera, open the door.",
+      "emotion_label": "neutral",
+      "scores": {
+        "semantic": 0.8831,
+        "centrality": 0.7205,
+        "text_emotion": 0.4033,
+        "audio": 0.9647,
+        "visual": 0.653,
+        "fused": 0.7645
+      },
+      "candidates": 17
+    },
+    {
+      "index": 23,
+      "story_sentence": "Al kills Vera accidentally, and now the police suspect him of her murder.",
+      "aligned_window": [
+        3800.0,
+        3830.0
+      ],
+      "window_similarity": 0.52,
+      "peak_segment_id": 891,
+      "timestamp": 3799.75,
+      "timestamp_hms": "01:03:19",
+      "segment_end": 3801.75,
+      "transcript": "And now, after killing Vera without really meaning to do it,",
       "emotion_label": "anger",
       "scores": {
-        "semantic": 0.7257,
-        "centrality": 0.8845,
-        "text_emotion": 0.9282,
-        "audio": 0.6956,
-        "visual": 0.7462,
-        "fused": 0.7785
+        "semantic": 1.0,
+        "centrality": 0.5732,
+        "text_emotion": 0.8675,
+        "audio": 0.7683,
+        "visual": 0.793,
+        "fused": 0.8503
       },
-      "candidates": 26
+      "candidates": 23
+    },
+    {
+      "index": 24,
+      "story_sentence": "Al contemplates his next move, planning to destroy evidence and flee Bakersfield to avoid being recognized, while hoping fate will spare him by not stopping him on the road.",
+      "aligned_window": [
+        3930.0,
+        3960.0
+      ],
+      "window_similarity": 0.3494,
+      "peak_segment_id": 929,
+      "timestamp": 3956.06,
+      "timestamp_hms": "01:05:56",
+      "segment_end": 3959.12,
+      "transcript": "Because Al Roberts was listed as dead and had to stay dead.",
+      "emotion_label": "sadness",
+      "scores": {
+        "semantic": 1.0,
+        "centrality": 0.4081,
+        "text_emotion": 0.8865,
+        "audio": 0.5785,
+        "visual": 0.1866,
+        "fused": 0.709
+      },
+      "candidates": 9
     }
   ],
   "alignment_path": [
-    15,
-    38,
+    7,
+    16,
+    35,
+    58,
     60,
-    90,
-    127,
-    164,
+    94,
+    103,
+    126,
+    166,
     195,
-    219,
-    242,
-    280,
-    283,
+    196,
+    198,
+    225,
+    243,
+    244,
+    256,
+    274,
+    275,
+    304,
     316,
-    356
+    317,
+    348,
+    355,
+    366
   ],
   "windows": [
     {

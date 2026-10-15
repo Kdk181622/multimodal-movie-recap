@@ -1,0 +1,114 @@
+21:02:01 | INFO | === 1. Ingest & A/V extraction ===
+21:02:01 | INFO | Input video already present: detour_1945.mp4
+21:02:01 | INFO | Audio extracted -> audio_16k_mono.wav
+21:02:01 | INFO | === 2. Speech-to-text ===
+21:02:01 | INFO | Using cached transcript: transcript.json
+21:02:01 | INFO | === 3. Multimodal features ===
+21:02:01 | INFO | Features ready: 312 shot boundaries detected
+21:02:01 | INFO | === 4. Summarisation ===
+21:03:09 | INFO | TensorFlow version 2.20.0 available.
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+21:03:15 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+21:03:15 | INFO | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+21:03:15 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:16 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+21:03:17 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:17 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8525.68it/s]
+21:03:17 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+21:03:18 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+21:03:18 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+21:03:18 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+21:03:18 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:18 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:19 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+21:03:19 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+21:03:20 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+21:03:20 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+21:03:20 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+21:03:20 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+21:03:27 | INFO | Chunk 1/13 (00:02:03-00:07:02) [notes]
+21:06:08 | INFO | Chunk 2/13 (00:07:03-00:11:54) [notes]
+21:07:57 | INFO | Chunk 3/13 (00:12:18-00:17:17) [notes]
+21:09:48 | INFO | Chunk 4/13 (00:17:18-00:22:03) [notes]
+21:12:26 | INFO | Chunk 5/13 (00:22:10-00:27:02) [notes]
+21:15:14 | INFO | Chunk 6/13 (00:27:11-00:31:57) [notes]
+21:17:38 | INFO | Chunk 7/13 (00:31:57-00:36:50) [notes]
+21:20:07 | INFO | Chunk 8/13 (00:36:50-00:41:50) [notes]
+21:22:50 | INFO | Chunk 9/13 (00:41:54-00:46:53) [notes]
+21:25:05 | INFO | Chunk 10/13 (00:46:58-00:51:46) [notes]
+21:27:20 | INFO | Chunk 11/13 (00:51:46-00:56:45) [notes]
+21:30:21 | INFO | Chunk 12/13 (00:56:48-01:01:48) [notes]
+21:33:29 | INFO | Chunk 13/13 (01:01:48-01:07:24) [notes]
+21:35:43 | INFO | Editor pass over 22 draft sentences
+21:40:01 | INFO | Summary story: 13 sentences, 125 words (ollama:qwen2.5:7b)
+21:40:01 | INFO | === 5. Peak points & time index ===
+21:40:36 | INFO | Peak  1 @ 00:04:08  fused=0.66  | Al grapples with his memories and feelings.
+21:40:36 | INFO | Peak  2 @ 00:08:13  fused=0.64  | Al struggles with Sue's decision to leave for Hollywood.
+21:40:36 | INFO | Peak  3 @ 00:17:07  fused=0.65  | Al calls Sue in Los Angeles and begins his journey by thumbing rides.
+21:40:36 | INFO | Peak  4 @ 00:21:25  fused=0.65  | Al drives with Charles Haskell Jr., reflecting on his past.
+21:40:36 | INFO | Peak  5 @ 00:24:37  fused=0.67  | Al hides the body to avoid suspicion.
+21:40:36 | INFO | Peak  6 @ 00:31:12  fused=0.75  | Al drives to the state line, pretends to be Haskell Jr., and finds mon
+21:40:36 | INFO | Peak  7 @ 00:36:07  fused=0.61  | Al picks up Vera, who is Haskell's accomplice.
+21:40:36 | INFO | Peak  8 @ 00:40:55  fused=0.73  | Al tells Vera his story and decides to sell the car.
+21:40:36 | INFO | Peak  9 @ 00:44:13  fused=0.74  | Al takes a bath, drinks, and discusses philosophy with Vera.
+21:40:36 | INFO | Peak 10 @ 00:49:57  fused=0.70  | Vera threatens Al's freedom.
+21:40:36 | INFO | Peak 11 @ 00:56:48  fused=0.81  | Al resists Vera's scheme, insisting on freedom.
+21:40:36 | INFO | Peak 12 @ 01:02:08  fused=0.80  | Vera insists Al sell the car, and Al threatens to call the police.
+21:40:36 | INFO | Peak 13 @ 01:05:56  fused=0.71  | Al plans to destroy evidence and leave Bakersfield permanently.
+21:40:37 | INFO | === 6. Segment planning ===
+21:40:37 | INFO | Imported existing <module 'comtypes.gen' from 'C:\\Users\\HP PC\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+21:40:37 | INFO | Using writeable comtypes cache directory: 'C:\Users\HP PC\AppData\Local\Programs\Python\Python310\lib\site-packages\comtypes\gen'
+21:40:37 | INFO | Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: Typelib different than module
+21:40:37 | INFO | # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+21:40:37 | INFO | # Generating comtypes.gen.SpeechLib
+21:40:56 | INFO | Planned 13 clips, 404.8 s of footage (budget 494.3 s, target 32.0 s per clip)
+21:40:56 | INFO | === 7. Recap rendering (OpenCV) ===
+21:41:09 | INFO | Clip  1/13  00:03:49-00:04:20  -> recap 00:00:09
+21:41:13 | INFO | Clip  2/13  00:08:05-00:08:38  -> recap 00:00:45
+21:41:18 | INFO | Clip  3/13  00:16:38-00:17:10  -> recap 00:01:23
+21:41:21 | INFO | Clip  4/13  00:21:24-00:21:56  -> recap 00:02:01
+21:41:25 | INFO | Clip  5/13  00:24:15-00:24:48  -> recap 00:02:37
+21:41:29 | INFO | Clip  6/13  00:31:12-00:31:44  -> recap 00:03:17
+21:41:33 | INFO | Clip  7/13  00:35:42-00:36:14  -> recap 00:03:55
+21:41:38 | INFO | Clip  8/13  00:40:28-00:41:00  -> recap 00:04:32
+21:41:42 | INFO | Clip  9/13  00:44:13-00:44:43  -> recap 00:05:09
+21:41:45 | INFO | Clip 10/13  00:49:46-00:50:16  -> recap 00:05:43
+21:41:49 | INFO | Clip 11/13  00:56:40-00:57:14  -> recap 00:06:18
+21:41:53 | INFO | Clip 12/13  01:02:07-01:02:32  -> recap 00:06:57
+21:41:57 | INFO | Clip 13/13  01:05:50-01:06:18  -> recap 00:07:27
+21:43:44 | INFO | Recap written: movie_recap.mp4 (479.7 s = 00:07:59)
+21:43:44 | INFO | === 8. Evaluation ===
+Traceback (most recent call last):
+  File "E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\run_pipeline.py", line 26, in main
+    run(args.config, args.url, fresh, args.skip_eval)
+  File "E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\recap\pipeline.py", line 105, in run
+    ev = evaluate(cfg, segs, summary, feats, pk, render_info, video_info["duration_seconds"])
+  File "E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\recap\evaluate.py", line 151, in evaluate
+    summary_eval = {name: text_metrics(text, reference, model) for name, text in systems.items()}
+  File "E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\recap\evaluate.py", line 151, in <dictcomp>
+    summary_eval = {name: text_metrics(text, reference, model) for name, text in systems.items()}
+  File "E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\recap\evaluate.py", line 53, in text_metrics
+    import sacrebleu
+ModuleNotFoundError: No module named 'sacrebleu'
+
+Pipeline failed: No module named 'sacrebleu'
+wrote E:\AIML@ REVA\Module_8_Multimodal AI Systems Speech, Text, and Conversational Agents\Assignment\Movie_Recap_Multimodal\notebooks\Movie_Recap_Walkthrough.ipynb with 71 cells

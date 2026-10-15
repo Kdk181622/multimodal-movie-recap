@@ -1,0 +1,244 @@
+{
+  "reference": {
+    "source": "Wikipedia - Detour (1945 film), Plot section",
+    "words": 526
+  },
+  "summary_vs_reference": {
+    "Summary story (ours)": {
+      "bleu4": 0.0297,
+      "bleu1": 0.2894,
+      "bleu4_nltk": 0.0297,
+      "sacrebleu": 0.0259,
+      "precisions": [
+        0.5739,
+        0.108,
+        0.0228,
+        0.0086
+      ],
+      "brevity_penalty": 0.5043,
+      "rouge1": 0.3942,
+      "rouge2": 0.0655,
+      "rougeL": 0.1814,
+      "semantic_similarity": 0.856,
+      "plot_coverage@0.5": 0.56,
+      "words": 315
+    },
+    "Extractive TextRank": {
+      "bleu4": 0.0154,
+      "bleu1": 0.234,
+      "bleu4_nltk": 0.0154,
+      "sacrebleu": 0.0113,
+      "precisions": [
+        0.4332,
+        0.0681,
+        0.0082,
+        0.0027
+      ],
+      "brevity_penalty": 0.5402,
+      "rouge1": 0.2854,
+      "rouge2": 0.0461,
+      "rougeL": 0.1258,
+      "semantic_similarity": 0.4593,
+      "plot_coverage@0.5": 0.16,
+      "words": 322
+    },
+    "Lead-N (first words)": {
+      "bleu4": 0.0126,
+      "bleu1": 0.2161,
+      "bleu4_nltk": 0.0126,
+      "sacrebleu": 0.0074,
+      "precisions": [
+        0.365,
+        0.0283,
+        0.0077,
+        0.0026
+      ],
+      "brevity_penalty": 0.5919,
+      "rouge1": 0.2047,
+      "rouge2": 0.0099,
+      "rougeL": 0.0962,
+      "semantic_similarity": 0.2897,
+      "plot_coverage@0.5": 0.0,
+      "words": 315
+    },
+    "Uniform segments": {
+      "bleu4": 0.0145,
+      "bleu1": 0.1973,
+      "bleu4_nltk": 0.0145,
+      "sacrebleu": 0.0098,
+      "precisions": [
+        0.3932,
+        0.0541,
+        0.0114,
+        0.0029
+      ],
+      "brevity_penalty": 0.5018,
+      "rouge1": 0.2619,
+      "rouge2": 0.0368,
+      "rougeL": 0.1248,
+      "semantic_similarity": 0.4591,
+      "plot_coverage@0.5": 0.08,
+      "words": 315
+    },
+    "Random segments": {
+      "bleu4": 0.0104,
+      "bleu1": 0.221,
+      "bleu4_nltk": 0.0104,
+      "sacrebleu": 0.0059,
+      "precisions": [
+        0.4222,
+        0.0472,
+        0.0028,
+        0.0028
+      ],
+      "brevity_penalty": 0.5235,
+      "rouge1": 0.2665,
+      "rouge2": 0.0221,
+      "rougeL": 0.1149,
+      "semantic_similarity": 0.4157,
+      "plot_coverage@0.5": 0.12,
+      "words": 315
+    }
+  },
+  "constraints": {
+    "film_duration_seconds": 4058.29,
+    "recap_duration_seconds": 531.96,
+    "under_10_minutes": true,
+    "compression_ratio": 7.63,
+    "footage_seconds": 392.55,
+    "n_peaks": 13
+  },
+  "ablation": {
+    "text_only_profile": {
+      "semantic": 0.8418,
+      "centrality": 0.6771,
+      "text_emotion": 0.5621,
+      "audio": 0.5124,
+      "visual": 0.4425
+    },
+    "multimodal_profile": {
+      "semantic": 0.8029,
+      "centrality": 0.6658,
+      "text_emotion": 0.779,
+      "audio": 0.5286,
+      "visual": 0.46
+    },
+    "peaks_changed": 5,
+    "mean_shift_seconds": 3.41,
+    "text_only_timestamps": [
+      "00:04:19",
+      "00:07:58",
+      "00:13:10",
+      "00:17:54",
+      "00:24:13",
+      "00:30:21",
+      "00:36:07",
+      "00:39:40",
+      "00:43:35",
+      "00:51:05",
+      "00:51:34",
+      "00:56:51",
+      "01:03:25"
+    ]
+  },
+  "recap_fidelity": {
+    "overall_bleu": 0.8317,
+    "mean_clip_bleu": 0.7954,
+    "median_clip_bleu": 0.8709,
+    "peak_hit_rate@0.6": 1.0,
+    "mean_narration_bleu": 0.9854,
+    "clips": [
+      {
+        "peak": 1,
+        "bleu": 0.9236,
+        "peak_line_recall": 1.0,
+        "expected": "You can't, you know. No matter how hard you try. You can change the scenery, but sooner or later you'll get a whiff of perfume where somebody will say a certain phrase or maybe hum something. Then you're licked again. I can't believe that you're in love with me. I used to love that song once. So did the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it too. Those were the days.",
+        "heard": "You can't, you know. No matter how hard you try. You can change the scenery. But sooner or later you'll get a whiff of perfume where somebody will say a certain phrase or maybe hum something. Then you're licked again! I can't believe that you're in love with me. I used to love that song once. Sort of the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it too. Those were the days."
+      },
+      {
+        "peak": 2,
+        "bleu": 0.8851,
+        "peak_line_recall": 0.8571,
+        "expected": "Yes, that's right. In the Bush League. I don't get you. We've been struck out. It's a funny way to talk, darling. Don't you want to marry me? Al, look, I love you. You know I do. And I want to marry you. But? But not now. Only after we've made it good. Sunday I'm going away. Oh, I know you'll think it's silly. That's why I hesitated to tell you. But I'm going to California. I want to try my luck in Hollywood. That's the most stupid thing I ever heard of.",
+        "heard": "Yes, that's right. In the bush league. I don't get you. We've been struck out. It's a funny way to talk, darling. Don't you want to marry me? Look, I love you. You know I do and I want to marry you. But? But not now. Only after we've been good. Sunday I'm going away. I know you'll think it's silly. That's why I hesitated to tell you. But I'm going to California. I want to try my luck in Hollywood. That's the most stupid thing I ever heard of."
+      },
+      {
+        "peak": 3,
+        "bleu": 0.651,
+        "peak_line_recall": 1.0,
+        "expected": "This is Al. Oh, baby, it's great to hear from you, too. What's that? You do? Oh, me too, darling. I thought I'd go batty without you. I just had to... Huh? You're working as a hashlinger. Gee, honey, that's tough. Those guys out in Hollywood don't know the real thing when it's right in front of them. you just stick it out Sue baby keep going around those casting offices I'm sure you'll click no don't try to stop me just expect me train who knows train plane",
+        "heard": "This is Al. Oh, baby, it's great to hear from you, too. What's that? You do? Oh, me too, darling. I thought I'd go batty without you. I just had to... Huh? You're working as a hashlinger. Gee, honey, that's tough. Those guys out in Hollywood don't know the real thing when it's right in front of them. You just stick it out, Sue, baby. Keep going around to those casting offices. I'm sure you'll click. Look, I'll tell you what. You stay put out there. I'll come to you. No, don't try to stop me. Just expect me. Train? Who knows, train, plane, bus, magic, car,"
+      },
+      {
+        "peak": 4,
+        "bleu": 0.5152,
+        "peak_line_recall": 1.0,
+        "expected": "Tarzan's mate looks like you lost the Bob certainly wasn't a draw. You know there ought to be a law against James with claws. I tossed her out of the car in her ear. Was I wrong. Give a lift to a tomato you expected to be nice don't you. After all what kind of dames some rides. Sunday school teachers. A little witch. She must have thought she was riding with some fall guy. Me who's been booking horses around race",
+        "heard": "She must have been Tarzan's mate. Looks like you lost the bob. He certainly wasn't a draw. You know, there ought to be a law against James with claws. Yeah. I tossed her out of the car in her ear. Was I wrong? You give a lift to a tomato, you expect her to be nice, don't you? Yeah. After all, what kind of a dame some rides? Sunday school teachers? Yeah. A little witch. She must have thought she was riding with some foreguy. The me who's been poking horses around racetracks since I was..."
+      },
+      {
+        "peak": 5,
+        "bleu": 0.6642,
+        "peak_line_recall": 1.0,
+        "expected": "But I know what you're going to hand me even before you open your mouths. You're going to tell me you don't believe my story about Haskell died and give me that don't make me laugh expression on your smug faces I saw it once he was dead and I was in for it who wouldn't believe he fell out of the car why if Haskell came to which of course he couldn't even he would swear I conked him over the head for his dough yes I was in for it instinct told me to run but then I realized it was hopeless there were lots of people back down the road who could identify me that gas station guy and the",
+        "heard": "But I know what you're going to hand me even before you open your mouths. You're going to tell me you don't believe my story of how Haskell died and give me that don't-make-me-laugh expression on your smug faces. I saw it once he was dead, and I was in for it. Who would believe he fell out of the car? Why, if Haskell came too, which of course he couldn't even, he would swear I conked him over the head for his doe. Yes, I was in for it. Instinct told me to run, but then I realized it was hopeless. There were lots of people back down the road who could identify me. That gas station guy and the waitress."
+      },
+      {
+        "peak": 6,
+        "bleu": 0.8709,
+        "peak_line_recall": 0.9474,
+        "expected": "Every minute I had to be Charles Haskell was dangerous. Not have to be Charles Haskell until I got to some city where I could leave the car and be swallowed up.",
+        "heard": "lose. Every minute I had to be Charles Haskell was dangerous. I'd have to be Charles Haskell until I got to some city where I could leave the car and be swallowed up."
+      },
+      {
+        "peak": 7,
+        "bleu": 0.9383,
+        "peak_line_recall": 1.0,
+        "expected": "He picked me up outside of Shreveport. You rode? You heard me. Then it all came back to me. All the talk about dueling and scars and scratches. There was no doubt about it. Vera must be the woman Haskell had mentioned. She must have passed me while I slept. Well? Well, I'm waiting. My goose was cooked. She had me. That Haskell guy wasn't dead yet. He wasn't stretched out stiff and cold in any Arizona gully. He was sitting right there in the car laughing like mad while he haunted me.",
+        "heard": "Anna, he picked me up outside of Shreveport. You rode? You heard me. Then it all came back to me. All the talk about dueling and scars and scratches. There was no doubt about it. Vera must be the woman Haskell had mentioned. She must have passed me while I slept. Well? While I'm waiting. My goose was cooked. She had me. That Haskell guy wasn't dead yet. He wasn't stretched out stiff and cold in any Arizona gully. He was sitting right there in the car, laughing like mad while he haunted me."
+      },
+      {
+        "peak": 8,
+        "bleu": 0.9519,
+        "peak_line_recall": 1.0,
+        "expected": "Don't you know a deserted automobile always rates an investigation? Huh? Look, the cops find a car. Then they get curious. They wonder where the owner is. So all right, they don't trace Haskell. They trace you. I never thought of that. The only safe way to get rid of the car is to sell it to a dealer. Get it registered under a new name. Say stop at the next store. I want to get a bottle and do some shopping before we hit L.A. Okay. Since we find a place, I'll drop you off and pick you up later. Nothing doing. You're coming in, too. From now on, you and I are like the Siamese twins.",
+        "heard": "Dope. Don't you know a deserted automobile always rates an investigation? Huh? Look, the cops find a car. Then they get curious. They wonder where the owner is. So all right, they don't trace Haskell. They trace you. I never thought of that. The only safe way to get rid of the car is to sell it to a dealer. Get it registered under a new name. Say stop at the next store. I want to get a bottle and do some shopping before we hit LA. Okay. Since we find a place, I'll drop you off and pick you up later. Nothing doing. You're coming in too. From now on, you and I are like the Siamese twins."
+      },
+      {
+        "peak": 9,
+        "bleu": 0.9118,
+        "peak_line_recall": 1.0,
+        "expected": "Swell. That's the spirit. He's dead and no moment around will bring him back. Anyway, I never could understand this worrying about something that's over and done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right. So it'll make you sociable? You didn't kill him.",
+        "heard": "Swallow. That's the spirit. He's dead and no moment around, I'll bring him back. Anyway, I never could understand this worrying about something that's all been done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right. So it'll make you sociable? You didn't kill him."
+      },
+      {
+        "peak": 10,
+        "bleu": 0.7456,
+        "peak_line_recall": 1.0,
+        "expected": "If we can get $2,000, I don't know but don't worry I'll squeeze as much out of this guy as I can I'd rather go cheap without a fight He might think we've stolen the car and listen don't make any slips and call me Roberts. That'll cook us I don't need you to tell me that You better just sit by and keep your mouth closed. Remember, we're both in the suit if anything happens. Forget it and drive. You're my wife, Vera Haskell. Look, after the deal's closed, let's go back to that place on Hollywood Boulevard, where I saw the fur jacket. I won't lie to you.",
+        "heard": "Did we get $2,000? I don't know, but don't worry. I'll squeeze as much out of this guy as I can. I'll let it go cheap without a fight he might think we've stolen the car. And listen, don't make any slips and call me Roberts. That'll cook us. I don't need you to tell me that. You better just sit by and keep your mouth closed. Remember we're both in the soup if anything happens. Forget it and drive. You're my wife, Vera Haskell. Look, after the deal's closed, let's go back to that place on Hollywood Boulevard, where I saw the fur jacket. I want to buy it."
+      },
+      {
+        "peak": 11,
+        "bleu": 0.4708,
+        "peak_line_recall": 1.0,
+        "expected": "Good afternoon. What can I do for you? we're interested in selling a car if the price is right well if it's in good mechanical condition it should blue book for about 1600 only take a look at this motor 1600 are you kidding well maybe 1850 before I let it go for 1850 I'll",
+        "heard": "Good afternoon. What can I do for you? We're interested in selling a car. If the price is right. Well, if it's in good mechanical condition, it should blue book for about $1,600. Tony, take a look at this motor. $1,600? Are you kidding? Well, maybe eighteen fifty. Before I let it go for eighteen fifty, I'll wreck it and collect the"
+      },
+      {
+        "peak": 12,
+        "bleu": 0.9412,
+        "peak_line_recall": 1.0,
+        "expected": "Well, wait till we read that old man Haskell's dead. Then you show up, like you read in New York that he was sick? No. I suppose he doesn't die. He will. I know he will. Something tells me. But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera.",
+        "heard": "Well, wait till we read that old man Haskell's dead, and you'll show up. Like you read in New York that he was sick? No. I suppose he doesn't die. He will. I know he will. Something tells me. But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera."
+      },
+      {
+        "peak": 13,
+        "bleu": 0.8705,
+        "peak_line_recall": 1.0,
+        "expected": "I know. I want myself. In the Haskell business, how many of you would believe he fell out of the car? And now, after killing Vera without really meaning to do it, how many of you would believe it wasn't premeditated? In a jury room, every last man of you would go down shouting that she had me over a barrel, and my only out was force, and more still. So quiet that for a while I wondered if I had suddenly gone deaf. It was pure fear, of course, and that was hysterical.",
+        "heard": "I know. I'm on myself. In the Haskell business, how many of you would believe he fell out of the car? And now, after killing Vera without really meaning to do it, how many of you would believe it wasn't premeditated? In a jury room. Every last man of you would go down shouting that she had me over a barrel, and my only out was force. The room was still. So quiet that for a while I wondered if I had suddenly gone deaf. It was pure fear, of course. And that was hysterical."
+      }
+    ]
+  }
+}

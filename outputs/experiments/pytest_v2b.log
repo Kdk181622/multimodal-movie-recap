@@ -1,0 +1,10 @@
+...........................                                              [100%]
+============================== warnings summary ===============================
+tests/test_text_peaks_segments.py::test_textrank_and_extractive
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+tests/test_text_peaks_segments.py::test_textrank_and_extractive
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+27 passed, 2 warnings in 35.27s

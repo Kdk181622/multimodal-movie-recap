@@ -7,7 +7,7 @@ from docx import Document
 from docx.shared import Pt, RGBColor
 
 DOCS = Path(__file__).resolve().parent
-PLAYBACK_SLIDE, PLAYBACK_SECONDS = 11, 42  # embedded recap excerpt on slide 11
+PLAYBACK_SLIDE, PLAYBACK_SECONDS = 11, 21  # embedded recap excerpt on slide 11
 
 notes = json.loads((DOCS / "speaker_notes.json").read_text(encoding="utf-8"))
 spoken = sum(n["seconds"] for n in notes)

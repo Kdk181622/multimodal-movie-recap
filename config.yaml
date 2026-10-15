@@ -40,9 +40,21 @@ summary:
   # Near-zero temperature keeps the LLM output deterministic (see Day 4 notes).
   temperature: 0.0
   seed: 42
-  # Each ~5 min chunk contributes 1-2 story sentences, written with the story so far as context.
+  # Each ~5 min chunk contributes exactly this many story sentences (3 for the final chunk), written with the story so far as context.
   chunk_seconds: 300
   sentences_per_chunk: 2
+  # "notes" (final, v2): each chunk call writes grounded event notes ("who - does what - to whom (quote)")
+  # and then the story sentences from those notes. "rolling": sentences only (run E, kept for the ablation).
+  method: "notes"
+  # Editor pass: one extra LLM call checks the draft story against all notes, fixes role errors,
+  # removes repeated events and restores missing key events (deaths, arrests, the ending).
+  revise: true
+  # Character-entry check: no character may be named before the name is first spoken in the transcript;
+  # offending sentences are repaired by one targeted LLM call (REPAIR_PROMPT in recap/summarize.py).
+  entry_check: true
+  # Key-event check: chunks whose dialogue mentions a death, murder or the police must be covered by the story;
+  # a missing event is added by one targeted LLM call (KEY_EVENT_PROMPT in recap/summarize.py).
+  key_event_check: true
 
 peaks:
   embedding_model: "sentence-transformers/all-MiniLM-L6-v2"

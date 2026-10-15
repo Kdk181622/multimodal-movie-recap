@@ -12,8 +12,10 @@ YouTube Video -> Movie -> Audio + Video -> Transcript -> Summary Story -> Peak P
              -> Time Index -> Video Segment Extraction -> Movie Recap (< 10 min) -> BLEU Evaluation
 ```
 
-**Explanation videos:** [`docs/Project_Explanation_Video.mp4`](docs/Project_Explanation_Video.mp4) (12 min 39 s, US-English voice) and
-[`docs/Explanation_Video_Karthikeyan_K.mp4`](docs/Explanation_Video_Karthikeyan_K.mp4) (16 min 08 s, Indian-English voice); see section 7b.
+**Public repository:** <https://github.com/Kdk181622/multimodal-movie-recap>  
+**Student:** Karthikeyan K · **Faculty:** Dr. J. B. Simha
+
+**Explanation video:** [`docs/Explanation_Video_Karthikeyan_K.mp4`](docs/Explanation_Video_Karthikeyan_K.mp4) (see section 7b).
 
 ![Pipeline architecture](docs/architecture.png)
 
@@ -24,7 +26,7 @@ YouTube Video -> Movie -> Audio + Video -> Transcript -> Summary Story -> Peak P
 | | |
 |---|---|
 | **Input** | *Detour* (1945, dir. Edgar G. Ulmer), a public-domain film noir on YouTube: <https://www.youtube.com/watch?v=tap67KjjPu8> (67 min 38 s) |
-| **Output** | `outputs/detour_1945/movie_recap.mp4`: an 8 min 51 s recap with chapter narration, plus the transcript, summary story, peak points, time index, edit decision list and evaluation |
+| **Output** | `outputs/detour_1945/movie_recap.mp4`: an 8 min 44 s recap with chapter narration, plus the transcript, summary story, peak points, time index, edit decision list and evaluation |
 | **Why this film** | Public domain, so recap clips can be shared without copyright risk. It has a strong plot and heavy voice-over narration (good for speech-to-text), and a well-known human-written plot summary exists to serve as the BLEU reference |
 
 Objectives (from the assignment brief):
@@ -44,7 +46,7 @@ The design follows the session's guidance: **test each component in isolation, t
 | 2 A/V extraction | `recap/ingest.py` | Demuxes the soundtrack to 16 kHz mono WAV (ASR) and MP3 | ffmpeg (bundled by imageio-ffmpeg) |
 | 3 Speech-to-text | `recap/transcribe.py` | Timestamped transcript with word-level times, SRT export | faster-whisper `small.en` (int8, CTranslate2) |
 | 4 Multimodal signals | `recap/features.py` | **Audio** arousal (RMS loudness, onset strength, amplitude fluctuation); **video** motion + HSV-histogram shot-cut detection; **text** emotion intensity | librosa, OpenCV, DistilRoBERTa emotion model |
-| 5 Summary story | `recap/summarize.py` | 5-minute chunks summarised in 1–2 sentences each by a local LLM, with the story so far as rolling context, cast-list grounding and a near-duplicate filter. TextRank extractive summariser as fallback/baseline | Ollama + Qwen2.5-7B-Instruct (temperature 0), sentence-transformers |
+| 5 Summary story | `recap/summarize.py` | 5-minute chunks with the story so far as rolling context. Per chunk the LLM first writes grounded **event notes** ("who - does what - to whom (quote)"), then exactly 2 sentences from them. An **editor pass** checks the whole draft against all notes. Two **deterministic checks** follow: a **key-event check** (a death or murder in the dialogue must be in the story; a missing one is added by one targeted call) and a **character-entry check** (no character named before the name is first spoken; offenders are repaired). TextRank extractive summariser as fallback/baseline | Ollama + Qwen2.5-7B-Instruct (temperature 0), sentence-transformers |
 | 6 Peak points | `recap/peaks.py` | Each story sentence is aligned to the film (monotonic dynamic-programming alignment restricted to its source chunk), then the peak segment is chosen by **post-fusion of 5 signals**: semantic similarity, TextRank centrality, text emotion, audio arousal, visual activity | sentence-transformers MiniLM, NumPy |
 | 7 Time index | `recap/peaks.py`, `recap/segments.py` | Whisper timestamp of the peak → clip window grown with on-topic neighbouring dialogue, snapped to detected shot cuts, kept chronological and non-overlapping, held within the duration budget | NumPy |
 | 8 Segment extraction & recap | `recap/render.py` | **OpenCV** frame-accurate seeking, reading and annotation (original timecode, peak badge, film-position bar); chapter cards carry the story sentences with offline TTS narration; audio assembled sample-locked to the frames; ffmpeg only muxes/encodes | OpenCV, Pillow, pyttsx3, soundfile |
@@ -83,7 +85,7 @@ Movie_Recap_Multimodal/
 
 ## 4. Setup
 
-Tested on Windows 11, Python 3.14, CPU only (8 cores, 24 GB RAM). No GPU or system ffmpeg is needed.
+Tested on Windows 11, Python 3.10 (also 3.12-3.14), CPU only (8 cores, 24 GB RAM). No GPU or system ffmpeg is needed.
 
 ```bash
 python -m venv .venv
@@ -105,7 +107,7 @@ python run_pipeline.py                                   # full run with config.
 python run_pipeline.py --url "https://www.youtube.com/watch?v=..."   # another film
 python run_pipeline.py --fresh summary.json peaks.json   # recompute selected stages
 python run_pipeline.py --fresh all                       # recompute everything
-python -m pytest -q tests                                # 23 component tests
+python -m pytest -q tests                                # 27 component tests
 ```
 
 For another film, also update `input.title`, `input.cast`, `input.local_path`,
@@ -113,7 +115,11 @@ For another film, also update `input.title`, `input.cast`, `input.local_path`,
 
 Slow stages cache their results as JSON in the output folder, so downstream stages can be tuned
 quickly. Measured on the reference machine: download 2 min, transcription 22 min, features 2 min,
-LLM summary 31 min (Qwen2.5-7B; about 14 min with qwen2.5:3b), peaks + rendering 4 min, evaluation 6 min.
+LLM summary about 33 min (Qwen2.5-7B, notes + editor + checks; about 14 min with qwen2.5:3b), peaks + rendering 4 min,
+evaluation 6-18 min (the fidelity check re-transcribes every clip).
+
+On Windows, `RUN_V2_PIPELINE.bat` runs the pipeline, the tests and the notebook in one go and writes its progress to
+`outputs/experiments/run_v2_status.txt`.
 
 ## 6. Expected input and output
 
@@ -139,33 +145,40 @@ LLM summary 31 min (Qwen2.5-7B; about 14 min with qwen2.5:3b), peaks + rendering
 All numbers below come from `outputs/detour_1945/evaluation.json` (the full write-up is in
 [`outputs/detour_1945/REPORT.md`](outputs/detour_1945/REPORT.md)).
 
-**Recap:** 67 min 38 s film → **8 min 51 s recap** (under 10 minutes ✔, 7.6× compression), 13 peak points,
-6.5 minutes of original footage plus 13 narrated chapter cards.
+**Recap:** 67 min 38 s film → **8 min 44 s recap** (under 10 minutes ✔, 7.7× compression), 24 peak points,
+5.5 minutes of original footage plus 24 narrated chapter cards.
 
 **Summary story vs. the human reference plot (Wikipedia)**
 
-| System | BLEU-4 | sacreBLEU | BLEU-1 | ROUGE-L | Semantic similarity |
-|---|---|---|---|---|---|
-| **Summary story (ours, Qwen2.5-7B)** | **0.030** | **0.026** | **0.289** | **0.181** | **0.856** |
-| Extractive TextRank | 0.015 | 0.011 | 0.234 | 0.126 | 0.459 |
-| Lead-N (first words) | 0.013 | 0.007 | 0.216 | 0.096 | 0.290 |
-| Uniform segments | 0.015 | 0.010 | 0.197 | 0.125 | 0.459 |
-| Random segments | 0.010 | 0.006 | 0.221 | 0.115 | 0.416 |
+| System | BLEU-4 | sacreBLEU | BLEU-1 | ROUGE-L | Semantic similarity | Plot coverage |
+|---|---|---|---|---|---|---|
+| **Summary story (ours, Qwen2.5-7B v2)** | **0.040** | **0.035** | **0.407** | **0.191** | **0.810** | **0.56** |
+| Extractive TextRank | 0.021 | 0.016 | 0.324 | 0.134 | 0.452 | 0.16 |
+| Lead-N (first words) | 0.016 | 0.010 | 0.285 | 0.107 | 0.305 | 0.00 |
+| Uniform segments | 0.014 | 0.007 | 0.271 | 0.124 | 0.465 | 0.08 |
+| Random segments | 0.015 | 0.010 | 0.294 | 0.119 | 0.377 | 0.12 |
 
-The story beats every baseline on all nine reported metrics. Absolute BLEU is low for every system
-because BLEU counts exact 4-word overlaps and independent summaries rarely share phrasing; the story is
-also shorter than the reference (brevity penalty 0.50).
+The story beats every baseline on every reported metric. Absolute BLEU is low for every system because
+BLEU counts exact 4-word overlaps and independent summaries rarely share phrasing (brevity penalty 0.76).
 
 **Recap fidelity** (each clip cut from the finished recap and transcribed again): mean clip BLEU
-**0.795** (median 0.871, above the 0.7 threshold from class), peak-line hit rate **100%**, narration
-BLEU 0.985. This verifies the summary → peak → time index → segment chain end to end.
+**0.73** (median 0.77, above the 0.7 threshold from class), peak-line hit rate **92%**, narration
+BLEU 0.97. This verifies the summary → peak → time index → segment chain end to end.
 
-**Ablation:** multimodal fusion moved 5 of 13 peaks (mean 3.4 s) compared with text-only selection,
-raising the emotion intensity of the chosen moments from 0.56 to 0.78 at a small semantic cost (0.84 → 0.80).
+**Ablation:** multimodal fusion moved 13 of 24 peaks (mean 12 s) compared with text-only selection,
+raising the emotion intensity of the chosen moments from 0.50 to 0.77 at a semantic cost (0.87 → 0.75).
 
-**Model selection:** five summariser configurations were compared
-([`outputs/experiments/SUMMARY_EXPERIMENTS.md`](outputs/experiments/SUMMARY_EXPERIMENTS.md)); Qwen2.5-7B
-with rolling context was the only one producing a coherent story from start to end.
+**Model selection** ([`outputs/experiments/SUMMARY_EXPERIMENTS.md`](outputs/experiments/SUMMARY_EXPERIMENTS.md)):
+
+| Run | Summariser | Words | BLEU-4 | ROUGE-L | Semantic | Plot coverage | Main problem |
+|---|---|---|---|---|---|---|---|
+| E | 7B, rolling context | 315 | 0.030 | 0.181 | 0.856 | 0.56 | Vera named 14 min early; police threat reversed; no climax |
+| v2b | 7B, notes + editor + checks | 213 | 0.020 | 0.189 | 0.851 | 0.52 | 4 chunks lost their story text; too short (brevity penalty 0.25) |
+| v2c | + story fallback, 2 sentences per chunk | 405 | 0.041 | 0.192 | 0.838 | 0.64 | Added sentences in first person, partly invented |
+| **Final** | + strict key-event prompt and first-person guard | 410 | **0.040** | **0.191** | 0.810 | 0.56 | 3 role errors left (no speaker labels) |
+
+The final version was chosen because it is the only one with a correct climax and no invented events; v2c's higher
+plot coverage came with invented details ("in a fit of rage, on the roadside").
 
 ![timeline](outputs/detour_1945/timeline.png)
 
@@ -176,34 +189,33 @@ with rolling context was the only one producing a coherent story from start to e
 - `docs/Speaker_Script.docx`: word-for-word narration plus recording steps, about 16.5 minutes including the
   excerpt (built by `docs/make_speaker_script.py` from `docs/speaker_notes.json`)
 - `notebooks/Movie_Recap_Walkthrough.ipynb`: executed stage-by-stage walkthrough for a live demo
-- `docs/Project_Explanation_Video.mp4`: **project explanation video (12 min 39 s, Full HD, inside the required 8-20 minutes)**.
-  It walks through all 15 slides and covers the problem statement, objectives, proposed solution, architecture,
-  technologies, implementation, summary and peak-point identification, timestamp mapping and segment extraction,
-  the final recap output (with the 42 s excerpt played on slide 11), evaluation results, and conclusions.
-  The narration is the text of `docs/Speaker_Script.docx`, voiced with the offline Piper TTS model (en-US ryan-high);
-  the per-slide narration tracks are in `docs/video_narration/`.
-- `docs/Explanation_Video_Karthikeyan_K.mp4`: alternative explanation video (16 min 08 s, Full HD) with the same
-  15 slides and script, voiced by the neural Indian-English voice en-IN-PrabhatNeural, with the 42 s recap excerpt
-  shown full screen after slide 11. Built by `docs/make_explanation_video.py` from the exported slide images and
-  `docs/speaker_notes.json`.
+- `docs/Explanation_Video_Karthikeyan_K.mp4`: **project explanation video (16 min 11 s, inside the required 8-20 minutes)**, Full HD, Indian-English neural voice.
+  It walks through all 15 slides: problem statement, objectives, proposed solution, architecture, technologies,
+  implementation, summary and peak-point identification, timestamp mapping and segment extraction, the final recap
+  (with the recap excerpt played full screen), evaluation results, and conclusions. Built by
+  `docs/make_explanation_video.py` from the slide images and `docs/speaker_notes.json`.
 
 ## 8. Testing
 
 `tests/` checks every component on a synthetic 8-second movie with known structure (a hard cut at
 4 s, a loud burst at 5–6 s) and on hand-made transcripts:
 BLEU against textbook values and NLTK · audio extraction · shot-cut detection · audio arousal peak ·
-TextRank · monotonic alignment · peak fusion · clip budgeting (order, no overlap, peak contained) ·
+TextRank · notes/editor parsing · key-event check · character-entry check · monotonic alignment · peak fusion · clip budgeting (order, no overlap, peak contained) ·
 OpenCV frame-accurate seeking · recap A/V sync · TTS → Whisper round trip.
 
 ## 9. Limitations and future work
 
-- A 7-billion-parameter LLM on a CPU still makes occasional role errors (2 of 13 sentences) because the
-  transcript has no speaker labels; speaker diarisation or a larger model would improve the story.
+- A 7-billion-parameter LLM on a CPU still makes role errors (3 of 24 sentences: an anecdote taken as a current
+  event, Vera called "Haskell" once, and who accuses whom reversed twice) because the transcript has no speaker
+  labels. The key-event and character-entry checks remove the errors they can detect; speaker diarisation would
+  address the rest.
 - BLEU against an independently written plot summary is naturally low for any abstractive summary
   (different wording for the same events); semantic similarity and the baselines give the fairer picture.
 - Visual features are low-level (motion, cuts). A vision-language model (e.g. CLIP) could match story
   sentences to frames directly, which would help scenes without dialogue.
-- Narration uses the offline OS voice; a neural TTS would sound more natural.
+- Recap narration uses the offline OS voice; a neural TTS would sound more natural.
+- With 24 story sentences, two sentences of one chunk sometimes choose neighbouring peaks, giving two short clips of
+  one scene; merging same-scene peaks into one longer clip is a planned improvement.
 
 ## 10. References
 

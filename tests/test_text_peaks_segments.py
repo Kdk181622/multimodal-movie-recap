@@ -5,7 +5,8 @@ import pytest
 
 from recap.peaks import build_windows, find_peaks, monotonic_alignment
 from recap.segments import plan_clips
-from recap.summarize import chunk_segments, extractive_summary, split_sentences, textrank_scores
+from recap.summarize import (chunk_segments, extractive_summary, parse_notes_story, parse_revision, split_sentences,
+                             textrank_scores)
 
 EMB = "sentence-transformers/all-MiniLM-L6-v2"
 
@@ -22,6 +23,25 @@ def _cfg(tmp_path):
 def test_split_sentences():
     assert split_sentences("Al leaves. Vera arrives! Is it over? Yes.") == ["Al leaves.", "Vera arrives!", "Is it over?", "Yes."]
     assert split_sentences("Mr. Haskell drives. Charles Haskell Jr. sleeps.") == ["Mr. Haskell drives.", "Charles Haskell Jr. sleeps."]
+
+
+def test_parse_notes_story():
+    notes, story = parse_notes_story('- Haskell - gives a ride - to Al ("hop in")\n'
+                                     '- Haskell - describes - a woman who scratched him ("tossed her out")\n'
+                                     'STORY: A driver, Haskell, gives Al a ride. He shows scratches from a hitchhiker.')
+    assert len(notes) == 2 and notes[0].startswith("Haskell")
+    assert story == "A driver, Haskell, gives Al a ride. He shows scratches from a hitchhiker."
+    # A response without the STORY marker still yields notes and a story
+    notes, story = parse_notes_story('1. Al - kills - Vera by accident ("killing Vera")\nAl accidentally kills Vera.')
+    assert notes == ['Al - kills - Vera by accident ("killing Vera")'] and story == "Al accidentally kills Vera."
+
+
+def test_parse_revision_keeps_time_order_and_rejects_bad_output():
+    raw = "[1] Al plays piano in a club.\n[3] Haskell picks Al up on the road.\n[2] Sue leaves for Hollywood.\nnoise"
+    assert parse_revision(raw, n_chunks=13, min_sentences=2) == [
+        (0, "Al plays piano in a club."), (1, "Sue leaves for Hollywood."), (2, "Haskell picks Al up on the road.")]
+    assert parse_revision("Sorry, I cannot help.", n_chunks=13, min_sentences=2) is None
+    assert parse_revision("[99] Out of range tag here.", n_chunks=13, min_sentences=1) is None
 
 
 def test_chunking_covers_all_segments(fake_segments):
@@ -92,3 +112,42 @@ def test_plan_clips_budget_and_order(fake_segments, tmp_path):
     for c, p in zip(clips, peaks):
         seg = fake_segments[p["peak_segment_id"]]
         assert c["start"] <= seg["start"] + 0.5 and c["end"] >= seg["end"] - 0.5, "clip must contain its peak"
+
+
+def test_character_entry_check_flags_names_before_entry():
+    from recap.summarize import cast_characters, check_and_repair_entries, entry_violations, first_mentions
+
+    cast = "Al Roberts (the narrator, a pianist); Charles Haskell Jr. (a driver); Vera (a hitchhiker)"
+    segs = [{"start": 10.0, "end": 12.0, "text": "My name is Al."},
+            {"start": 100.0, "end": 103.0, "text": "Haskell gave me a ride."},
+            {"start": 500.0, "end": 503.0, "text": "Vera got into the car."}]
+    chars = cast_characters(cast)
+    assert [c["tokens"] for c in chars] == [["Al", "Roberts"], ["Charles", "Haskell"], ["Vera"]] and chars[0]["narrator"]
+    first = first_mentions(segs, chars)
+    assert first["Vera"] == 500.0 and first["Charles Haskell Jr."] == 100.0
+    # Vera is named in a scene that ends at 200 s, before her name is first spoken (500 s)
+    assert entry_violations("Al picks up Vera on the road.", 200.0, chars, first) == ["Vera"]
+    assert entry_violations("Haskell gives Al a ride.", 200.0, chars, first) == []
+    # Without the LLM the offending sentence is dropped when its chunk has another sentence
+    chunks = [{"start": 0.0, "end": 200.0, "text": ""}]
+    sents = [{"text": "Al picks up Vera on the road.", "chunk": 0}, {"text": "Haskell gives Al a ride.", "chunk": 0}]
+    audit = check_and_repair_entries(sents, chunks, segs, {"input": {"cast": cast, "title": "T"}, "summary": {}}, use_llm=False)
+    assert [a["action"] for a in audit] == ["dropped"] and [s["text"] for s in sents] == ["Haskell gives Al a ride."]
+
+
+def test_key_event_check_needs_strong_evidence():
+    from recap.summarize import check_key_events, key_lines
+
+    segs = [{"id": 0, "start": 10.0, "end": 12.0, "text": "I was dead tired and the cops are no friends of mine."},
+            {"id": 1, "start": 20.0, "end": 22.0, "text": "I didn't kill him."},
+            {"id": 2, "start": 70.0, "end": 72.0, "text": "And now, after killing Vera without meaning to,"},
+            {"id": 3, "start": 75.0, "end": 77.0, "text": "She was dead, and I was her murderer."}]
+    chunks = [{"index": 0, "start": 0.0, "end": 30.0, "segment_ids": [0, 1], "text": ""},
+              {"index": 1, "start": 60.0, "end": 90.0, "segment_ids": [2, 3], "text": ""}]
+    assert key_lines(chunks[0], segs) == []                  # casual talk and a negation are not evidence
+    assert len(key_lines(chunks[1], segs)) == 2
+    sents = [{"text": "Al drives on.", "chunk": 0}, {"text": "Al argues with Vera about the car.", "chunk": 1}]
+    audit = check_key_events(sents, chunks, segs, {"input": {"title": "T"}, "summary": {}}, use_llm=False)
+    assert [(a["chunk"], a["action"]) for a in audit] == [(1, "flagged")]
+    sents[1]["text"] = "Al pulls the cord and finds Vera dead."
+    assert check_key_events(sents, chunks, segs, {"input": {"title": "T"}, "summary": {}}, use_llm=False) == []

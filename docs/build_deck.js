@@ -10,6 +10,9 @@ const A = (f) => path.join(ROOT, "docs", "slide_assets", f);
 const notes = JSON.parse(fs.readFileSync(path.join(__dirname, "speaker_notes.json"), "utf8"));
 const ev = JSON.parse(fs.readFileSync(path.join(OUT, "evaluation.json"), "utf8"));
 const summ = JSON.parse(fs.readFileSync(path.join(OUT, "summary.json"), "utf8"));
+const pk = JSON.parse(fs.readFileSync(path.join(OUT, "peaks.json"), "utf8"));
+const clipsJ = JSON.parse(fs.readFileSync(path.join(OUT, "clips.json"), "utf8"));
+const evE = JSON.parse(fs.readFileSync(path.join(OUT, "..", "experiments", "evaluation_qwen2.5-7b_runE.json"), "utf8"));
 const timings = JSON.parse(fs.readFileSync(path.join(OUT, "..", "experiments", "timings_reference.json"), "utf8"));
 
 const THEME = {
@@ -176,7 +179,7 @@ tech.forEach(([h, t], i) => {
 s = addSlide("CONTENT", "Solution");
 s.addText("Implementation: test, cache, then integrate", { placeholder: "title" });
 const steps = [
-  ["Test each component", "23 automated tests; a synthetic movie with a known cut (4 s) and loud burst (5 s)"],
+  ["Test each component", "27 automated tests; a synthetic movie with a known cut (4 s) and loud burst (5 s), plus the two story checks"],
   ["Cache slow stages", "transcript, features, summary and peaks saved as JSON"],
   ["One config file", "models, fusion weights and the duration budget in config.yaml"],
 ];
@@ -211,20 +214,21 @@ sig.forEach(([h, t], i) => {
 // ---------------------------------------------------------------- 8 summary
 pres.addSection({ title: "Method" });
 s = addSlide("CONTENT", "Method");
-s.addText("Summary story: rolling-context summarisation", { placeholder: "title" });
+s.addText("Summary story: grounded notes, editor and two checks", { placeholder: "title" });
 const sm = [
-  "13 chunks of ~5 min; 1-2 sentences each",
-  "Story so far passed as context (no speaker labels in the transcript)",
-  "Cast list from the credits; a name is used only if spoken",
-  "Near-duplicate sentences filtered out",
+  "13 chunks of ~5 min: notes \"who - does what - to whom (quote)\", then 2 sentences",
+  "Editor pass: fixes roles, removes repeats, restores missing events",
+  "Key-event check: a death or murder in the dialogue must be in the story",
+  "Character-entry check: no name before it is first spoken",
 ];
 sm.forEach((t, i) => {
   badge(s, 0.5, 1.25 + i * 0.75, i + 1, 0.38);
   s.addText(t, body({ x: 1.05, y: 1.25 + i * 0.75, w: 3.3, h: 0.65, fontSize: 13, valign: "middle" }));
 });
 card(s, 4.6, 1.15, 4.9, 3.8);
-s.addText("From the generated story (13 sentences, 315 words)", body({ x: 4.8, y: 1.28, w: 4.5, h: 0.3, fontSize: 12, bold: true, color: C.accent5 }));
-const pick = [1, 4, 6, 12];
+s.addText(`From the generated story (${summ.story_sentences.length} sentences, ${summ.story.split(/\s+/).length} words)`, body({ x: 4.8, y: 1.28, w: 4.5, h: 0.3, fontSize: 12, bold: true, color: C.accent5 }));
+const nS = summ.story_sentences.length;
+const pick = [1, Math.round(nS * 0.35), Math.round(nS * 0.65), nS - 1];
 const chunks = summ.chunks;
 const ts = (sec) => `${String(Math.floor(sec / 60)).padStart(2, "0")}:${String(Math.floor(sec % 60)).padStart(2, "0")}`;
 pick.forEach((k, i) => {
@@ -258,8 +262,12 @@ s.addChart(pres.charts.BAR, [{ name: "weight", labels: ["Semantic", "Centrality"
 // ---------------------------------------------------------------- 10 mapping
 s = addSlide("CONTENT", "Method");
 s.addText("Timestamp mapping and segment extraction", { placeholder: "title" });
-const chain = [["Story sentence 5", "\"Al realizes he must hide Haskell's body…\""], ["Source chunk", "22:10-27:02"], ["Peak line", "\"…fell out of the car…\""],
-  ["Time index", "00:24:13"], ["Film clip", "23:55-24:28"], ["Recap slot", "OpenCV seek / read / write"]];
+const EX = 22; // worked example: the climax sentence
+const P5 = pk.peaks[EX], C5 = clipsJ.find((c) => c.peak === P5.index), K5 = chunks[summ.sentence_chunks[EX]];
+const clip = (t, n) => (t.length > n ? t.slice(0, n - 1) + "…" : t);
+const chain = [[`Story sentence ${EX + 1}`, `"${clip(P5.story_sentence, 46)}"`], ["Source chunk", `${ts(K5.start)}-${ts(K5.end)}`],
+  ["Peak line", `"${clip(P5.transcript, 40)}"`], ["Time index", P5.timestamp_hms], ["Film clip", `${ts(C5.start)}-${ts(C5.end)}`],
+  ["Recap slot", "OpenCV seek / read / write"]];
 chain.forEach(([h, t], i) => {
   const x = 0.5 + i * 1.53;
   card(s, x, 1.15, 1.38, 1.15, i === 3 ? C.accent1 : C.background2);
@@ -276,11 +284,11 @@ pres.addSection({ title: "Results" });
 s = addSlide("CONTENT", "Results");
 s.addText("Final movie recap output", { placeholder: "title" });
 s.addImage({ path: A("recap_card.jpg"), x: 0.5, y: 1.1, w: 3.6, h: 2.7, altText: "Chapter card narrating a story sentence" });
-// Embedded 42 s excerpt (chapter card 5 + clip 5) so the recap plays inside the slide show while recording.
+// Embedded 21 s excerpt (chapter card 23 + clip 23, the climax) so the recap plays inside the slide show while recording.
 s.addMedia({ type: "video", path: A("recap_excerpt.mp4"), x: 4.25, y: 1.1, w: 3.6, h: 2.7,
   cover: "image/jpeg;base64," + fs.readFileSync(A("recap_clip.jpg")).toString("base64") });
 s.addText("Chapter card (narrated story sentence)", body({ x: 0.5, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
-s.addText("▶ Click to play: 42 s excerpt (chapter 5 + its clip)", body({ x: 4.25, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
+s.addText("▶ Click to play: 21 s excerpt (chapter 23, the climax, + its clip)", body({ x: 4.25, y: 3.85, w: 3.6, h: 0.3, fontSize: 11, color: C.accent5 }));
 stat(s, 8.1, 1.05, 1.5, mmss(cons.recap_duration_seconds), "recap (< 10:00)");
 stat(s, 8.1, 2.3, 1.5, (cons.footage_seconds / 60).toFixed(1), "minutes of original footage");
 stat(s, 8.1, 3.55, 1.5, `${cons.compression_ratio.toFixed(1)}×`, "compression");
@@ -335,17 +343,17 @@ s = addSlide("CONTENT", "Results");
 s.addText("Model comparison: choosing the summariser", { placeholder: "title" });
 const head = ["Configuration", "Story", "BLEU-4", "Semantic", "Clip BLEU", "Verdict"];
 const rowsM = [
-  ["3B, single rewrite step", "46 sentences", "-", "-", "-", "Ignored length, invented events"],
   ["3B, rolling context", "26 sentences", "0.047", "0.78", "-", "Role confusion"],
   ["3B, + cast list", "24 sentences", "0.050", "0.85", "0.70", "Names in wrong scenes"],
   ["3B, + name grounding", "24 sentences", "0.040", "0.81", "0.74", "Copies its own sentences"],
-  ["7B, rolling + grounding (chosen)", `${summ.story_sentences.length} sentences`, fmt(sv["Summary story (ours)"].bleu4), fmt(sv["Summary story (ours)"].semantic_similarity, 2), fmt(fid.mean_clip_bleu, 2), "Coherent full plot arc"],
+  ["7B, rolling context (run E)", "13 sentences", fmt(evE.summary_vs_reference["Summary story (ours)"].bleu4), fmt(evE.summary_vs_reference["Summary story (ours)"].semantic_similarity, 2), fmt(evE.recap_fidelity.mean_clip_bleu, 2), "Vera named too early; no climax"],
+  ["7B, notes + editor + checks (chosen)", `${summ.story_sentences.length} sentences`, fmt(sv["Summary story (ours)"].bleu4), fmt(sv["Summary story (ours)"].semantic_similarity, 2), fmt(fid.mean_clip_bleu, 2), "Grounded roles, climax and ending"],
   ["TextRank (extractive)", "same length", fmt(sv["Extractive TextRank"].bleu4), fmt(sv["Extractive TextRank"].semantic_similarity, 2), "-", "No story; fallback only"],
 ];
 s.addTable([head, ...rowsM].map((r, i) => r.map((c, j) => ({ text: c, options: {
   bold: i === 0 || i === 5, color: HEX.dk2, fill: { color: i === 0 ? HEX.lt2 : i === 5 ? "FBE9CC" : HEX.lt1 }, align: j === 0 || j === 5 ? "left" : "center" } }))),
   { x: 0.5, y: 1.15, w: 9.0, colW: [2.45, 1.25, 0.9, 1.0, 1.0, 2.4], fontSize: 12, fontFace: "Calibri", border: { type: "solid", pt: 0.5, color: "D9D8D3" }, rowH: 0.42 });
-s.addText("The 7B model is ~2× slower (31 vs ~14 min) but is the only version whose story follows the film from start to end. Its BLEU-4 is lower only because it writes fewer words.",
+s.addText(`BLEU-4 ${fmt(evE.summary_vs_reference["Summary story (ours)"].bleu4)} (run E) → ${fmt(sv["Summary story (ours)"].bleu4)} (chosen). Grounded notes and two rule-based checks fix the early naming of Vera and restore the climax; three role errors remain without speaker labels.`,
   body({ x: 0.5, y: 4.25, w: 9.0, h: 0.7, fontSize: 13 }));
 
 // ---------------------------------------------------------------- 15 conclusion
@@ -354,11 +362,13 @@ s = addSlide("DARK_END", "Conclusion");
 s.addText("Key observations and conclusion", { placeholder: "title" });
 stat(s, 0.5, 1.15, 2.1, mmss(cons.recap_duration_seconds), "recap from a 67:38 film, CPU only", true);
 stat(s, 0.5, 2.45, 2.1, fmt(fid.mean_clip_bleu, 2), "clip fidelity BLEU", true);
-stat(s, 0.5, 3.75, 2.1, "9 / 9", "metrics where the story beats every baseline", true);
+const mkeys = ["bleu4", "bleu1", "bleu4_nltk", "sacrebleu", "rouge1", "rouge2", "rougeL", "semantic_similarity", "plot_coverage@0.5"];
+const wins = mkeys.filter((m) => Object.keys(sv).filter((n) => !n.includes("ours")).every((n) => sv["Summary story (ours)"][m] > sv[n][m])).length;
+stat(s, 0.5, 3.75, 2.1, `${wins} / ${mkeys.length}`, "metrics where the story beats every baseline", true);
 const obs = [
   ["Carry the time index through every stage", "chunk span → aligned window → peak line → clip → recap slot makes every claim traceable"],
   ["Modalities complement each other", "text picks the scene; audio, video and emotion pick the moment"],
-  ["BLEU needs company", "use baselines and semantic similarity to judge abstractive summaries"],
+  ["Rules check the language model", "simple transcript checks caught a missing climax and a character named too early; BLEU needs baselines and a factual review"],
   ["Next steps", "speaker diarisation, CLIP frame matching, a FastAPI service"],
 ];
 obs.forEach(([h, t], i) => {

@@ -1,10 +1,10 @@
 {
   "1. Ingest & A/V extraction": 0.1,
   "2. Speech-to-text": 0.1,
-  "3. Multimodal features": 0.1,
-  "4. Summarisation": 0.0,
-  "5. Peak points & time index": 0.0,
-  "6. Segment planning": 78.1,
-  "7. Recap rendering (OpenCV)": 177.1,
-  "8. Evaluation": 332.8
+  "3. Multimodal features": 0.0,
+  "4. Summarisation": 242.1,
+  "5. Peak points & time index": 27.5,
+  "6. Segment planning": 11.2,
+  "7. Recap rendering (OpenCV)": 130.2,
+  "8. Evaluation": 1111.5
 }

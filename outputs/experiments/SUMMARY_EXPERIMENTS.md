@@ -22,3 +22,27 @@ Cost: 7B summary took 30.6 min on CPU (13 chunks, about 2.3 min each) vs. about 
 
 Saved artefacts: `summary_qwen2.5-3b_grounded.json` + `evaluation_qwen2.5-3b_grounded.json` (run D),
 `summary_qwen2.5-7b.json` (run E), `run_qwen2.5-7b.log`, `run_final.log`.
+
+## Version 2: grounding the story (15 Oct 2026)
+
+Run E had three factual problems found on review against the Wikipedia plot: Vera is named in the scene where Haskell
+gives Al a ride (her name is first spoken 14 minutes later), Al rather than Vera threatens to call the police, and the
+climax (Vera's accidental death) and the ending are missing. Version 2 adds grounded notes, an editor pass and two
+deterministic checks (`recap/summarize.py`). Same transcript, features, peak, render and evaluation code.
+
+| Run | Change | Story | BLEU-4 | BLEU-1 | ROUGE-L | Semantic | Plot coverage | Recap | Clip BLEU | Observed problems |
+|---|---|---|---|---|---|---|---|---|---|---|
+| v2a | notes + editor (Python 3.10 without sacreBLEU) | 13 sentences, 125 words | - | - | - | - | - | - | - | Vague sentences; evaluation crashed (missing library). Saved as `summary_qwen2.5-7b_v2a.json` |
+| v2b | + key-event and character-entry checks | 15 sentences, 213 words | 0.0195 | 0.158 | 0.189 | 0.851 | 0.52 | 8:41 | 0.786 | 4 of 13 chunks returned notes but no story; added sentences invented details ("in a fit of rage, on the roadside", "Al confesses") |
+| v2c | + story-from-notes fallback, exactly 2 sentences per chunk, stricter key-event prompt | 24 sentences, 405 words | 0.0406 | 0.406 | 0.192 | 0.838 | 0.64 | 8:42 | 0.715 | Added sentences written in the first person ("I kill Vera accidentally") and one invented ("knocked him over the railing") |
+| **Final** | + third-person/no-quote rules and a deterministic guard that rejects first-person or copied additions (checks re-run on the v2c notes and editor output) | **24 sentences, 410 words** | **0.0403** | **0.407** | **0.191** | 0.810 | 0.56 | **8:44** | **0.731** | 3 role errors remain (see below) |
+
+Selection: **final**. It is the only version with a correct climax ("Al kills Vera accidentally, and now the police
+suspect him of her murder"), no character named before entry, and no first-person or invented additions. v2c has a higher
+plot coverage, but it comes from sentences with invented details, so it was rejected on factual review.
+
+Remaining errors (no speaker labels in the transcript): sentence 6 treats Haskell's anecdote about a hitchhiker as Al's
+own action; sentence 10 calls Vera "Haskell"; sentences 12 and 14 reverse who accuses whom of killing Haskell.
+
+Cost: v2 summary 32.8 min of CPU time for the full LLM run (`run_v2c.log`, 16:56:55 to 17:29:45); re-running only the
+checks on cached notes (`RECAP_REUSE_DRAFT`) takes about 4 minutes.

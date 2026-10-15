@@ -1,0 +1,5 @@
+{
+  "v2_full_llm_summary_minutes": 32.8,
+  "source": "outputs/experiments/run_v2c.log: stage 4 started 16:56:55, summary written 17:29:45 (13 notes calls, editor, key-event and entry checks)",
+  "final_run_checks_only_minutes": 4.0
+}

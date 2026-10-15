@@ -1,0 +1,260 @@
+{
+  "reference": {
+    "source": "Wikipedia - Detour (1945 film), Plot section",
+    "words": 526
+  },
+  "summary_vs_reference": {
+    "Summary story (ours)": {
+      "bleu4": 0.0195,
+      "bleu1": 0.1582,
+      "bleu4_nltk": 0.0195,
+      "sacrebleu": 0.017,
+      "precisions": [
+        0.624,
+        0.164,
+        0.0281,
+        0.0121
+      ],
+      "brevity_penalty": 0.2536,
+      "rouge1": 0.3205,
+      "rouge2": 0.0714,
+      "rougeL": 0.189,
+      "semantic_similarity": 0.851,
+      "plot_coverage@0.5": 0.52,
+      "words": 213
+    },
+    "Extractive TextRank": {
+      "bleu4": 0.0078,
+      "bleu1": 0.1116,
+      "bleu4_nltk": 0.0078,
+      "sacrebleu": 0.0054,
+      "precisions": [
+        0.44,
+        0.064,
+        0.008,
+        0.004
+      ],
+      "brevity_penalty": 0.2536,
+      "rouge1": 0.2207,
+      "rouge2": 0.0332,
+      "rougeL": 0.1159,
+      "semantic_similarity": 0.4811,
+      "plot_coverage@0.5": 0.16,
+      "words": 216
+    },
+    "Lead-N (first words)": {
+      "bleu4": 0.006,
+      "bleu1": 0.1172,
+      "bleu4_nltk": 0.006,
+      "sacrebleu": 0.0033,
+      "precisions": [
+        0.3696,
+        0.0254,
+        0.0036,
+        0.0036
+      ],
+      "brevity_penalty": 0.3171,
+      "rouge1": 0.148,
+      "rouge2": 0.0,
+      "rougeL": 0.0726,
+      "semantic_similarity": 0.2798,
+      "plot_coverage@0.5": 0.0,
+      "words": 213
+    },
+    "Uniform segments": {
+      "bleu4": 0.0058,
+      "bleu1": 0.0939,
+      "bleu4_nltk": 0.0058,
+      "sacrebleu": 0.0032,
+      "precisions": [
+        0.4219,
+        0.0591,
+        0.0042,
+        0.0043
+      ],
+      "brevity_penalty": 0.2227,
+      "rouge1": 0.1777,
+      "rouge2": 0.0198,
+      "rougeL": 0.0931,
+      "semantic_similarity": 0.4062,
+      "plot_coverage@0.5": 0.0,
+      "words": 198
+    },
+    "Random segments": {
+      "bleu4": 0.0057,
+      "bleu1": 0.0986,
+      "bleu4_nltk": 0.0057,
+      "sacrebleu": 0.0032,
+      "precisions": [
+        0.4292,
+        0.05,
+        0.0042,
+        0.0042
+      ],
+      "brevity_penalty": 0.2297,
+      "rouge1": 0.2139,
+      "rouge2": 0.0195,
+      "rougeL": 0.1028,
+      "semantic_similarity": 0.3676,
+      "plot_coverage@0.5": 0.0,
+      "words": 213
+    }
+  },
+  "constraints": {
+    "film_duration_seconds": 4058.29,
+    "recap_duration_seconds": 521.25,
+    "under_10_minutes": true,
+    "compression_ratio": 7.79,
+    "footage_seconds": 410.96,
+    "n_peaks": 15
+  },
+  "ablation": {
+    "text_only_profile": {
+      "semantic": 0.9154,
+      "centrality": 0.5822,
+      "text_emotion": 0.5556,
+      "audio": 0.5541,
+      "visual": 0.4541
+    },
+    "multimodal_profile": {
+      "semantic": 0.8537,
+      "centrality": 0.6307,
+      "text_emotion": 0.7776,
+      "audio": 0.5718,
+      "visual": 0.535
+    },
+    "peaks_changed": 7,
+    "mean_shift_seconds": 11.69,
+    "text_only_timestamps": [
+      "00:04:19",
+      "00:07:35",
+      "00:12:18",
+      "00:20:28",
+      "00:24:13",
+      "00:30:44",
+      "00:36:07",
+      "00:36:33",
+      "00:37:15",
+      "00:43:35",
+      "00:49:57",
+      "00:56:51",
+      "00:57:03",
+      "01:01:33",
+      "01:03:19"
+    ]
+  },
+  "recap_fidelity": {
+    "overall_bleu": 0.8243,
+    "mean_clip_bleu": 0.7857,
+    "median_clip_bleu": 0.8231,
+    "peak_hit_rate@0.6": 0.9333,
+    "mean_narration_bleu": 0.9784,
+    "clips": [
+      {
+        "peak": 1,
+        "bleu": 0.8835,
+        "peak_line_recall": 1.0,
+        "expected": "No matter how hard you try. You can change the scenery, but sooner or later you'll get a whiff of perfume where somebody will say a certain phrase or maybe hum something. Then you're licked again. I can't believe that you're in love with me. I used to love that song once. So did the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it too. Those were the days.",
+        "heard": "No matter how hard you try, you can change the scenery. But sooner or later, you'll get a whiff of perfume when somebody will say a certain phrase or maybe hum something. Then you're licked again. I can't believe that you're in love with me. I used to love that song once. So did the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it, too. Those were the days."
+      },
+      {
+        "peak": 2,
+        "bleu": 0.5237,
+        "peak_line_recall": 0.7143,
+        "expected": "We've been struck out. It's a funny way to talk, darling. Don't you want to marry me? Al, look, I love you. You know I do. And I want to marry you. But? But not now. Only after we've made it good. Sunday I'm going away. Oh, I know you'll think it's silly. That's why I hesitated to tell you. But I'm going to California. I want to try my luck in Hollywood. That's the most stupid thing I ever heard of. Don't you know millions of people go out there every year",
+        "heard": "get you we've been struck out. Funny way to talk down and you want to marry me and I love you you know I do and I want to marry you but but not now only after we've been good. Sunday I'm going away. I know you think it's silly that's why I hesitated to tell you but I'm going to California I want to try my luck and how. That's the most stupid thing I ever heard of don't you know millions of people go out there every year and wind up"
+      },
+      {
+        "peak": 3,
+        "bleu": 0.8069,
+        "peak_line_recall": 1.0,
+        "expected": "Long distance. I'd like to put a call through to Los Angeles. Miss Harvey, Sue Harvey, H-A-R-P-E-Y. The number is Crestview 65723.",
+        "heard": "Long distance. I'd like to put a call through to Los Angeles. Miss Harvey. Sue Harvey. H-A-R-P-E-Y. The number is Christview 65723."
+      },
+      {
+        "peak": 4,
+        "bleu": 0.6542,
+        "peak_line_recall": 0.8889,
+        "expected": "There's a horse running in Santa Anita named Prior Bicycle. It means to order me if I'm on him. Make it all right He did most of the talking during the half-hour. We were in the place. I ate He rambled on about his old man whom we hadn't heard from since he ran away as a kid Now we happen to become a bookie and then all about how he got rooked in Miami One race 38 grand they cleaned out my book. How do you like that? That was tough luck. Yeah, and I'm supposed to be the smart guy. Well, you just wait",
+        "heard": "Wednesday, the horse running in Santa Anita named Private Bicycle. He can sell it to me if I'm on him. He'll make it all right. He did most of the talking during the half hour we were in the place. I ate. He rambled on about his old man whom we hadn't heard from since he ran away as a kid. Now we happen to become a bookie. And then all about how he got roped in Miami. One race, 38 grand. They cleaned out my book. How do you like that? That was tough luck. Yeah, and I'm supposed to be the smart guy. Well, you just wait. I'm going back to Florida next season with all kind"
+      },
+      {
+        "peak": 5,
+        "bleu": 0.7928,
+        "peak_line_recall": 1.0,
+        "expected": "instinct told me to run but then I realized it was hopeless there were lots of people back down the road who could identify me that gas station guy and the waitress would be in a worse spot then trying to explain why I beat it the The next possibility was to sit tight and tell the truth when the cops came. But that would be crazy. He'd laugh at the truth. He'd not have my head in the noose. So what else was there to do but hide the body and get away in the car? I couldn't leave the car there with him in the gully. That would be like erecting a tombstone.",
+        "heard": "Instinct told me to run, but then I realized it was hopeless. There were lots of people back down the road who could identify me. That gas station guy and the waitress. It would be in the worst spot then, trying to explain why I beat it. The next possibility was to sit tight and tell the truth when the cops came. But that would be crazy. They'd laugh at the truth, not having my head in the noose. So what else was there to do but hide the body and get away in the car? I couldn't leave the car there with him in the gully. That would be like erecting a tombstone."
+      },
+      {
+        "peak": 6,
+        "bleu": 0.8934,
+        "peak_line_recall": 1.0,
+        "expected": "Every minute I had to be Charles Haskell was dangerous. Not have to be Charles Haskell until I got to some city where I could leave the car and be swallowed up.",
+        "heard": "lose every minute I had to be Charles Haskell was dangerous not have to be Charles Haskell until I got to some city where I could leave the car and be swallowed up"
+      },
+      {
+        "peak": 7,
+        "bleu": 0.5129,
+        "peak_line_recall": 0.5,
+        "expected": "You rode? You heard me. Then it all came back to me. All the talk about dueling and scars and scratches. There was no doubt about it. Vera must be the woman Haskell had mentioned. She must have passed me while I slept. Well? Well, I'm waiting. My goose was cooked. She had me. That Haskell guy wasn't dead yet. He wasn't stretched out stiff and cold in any Arizona gully. He was sitting right there in the car laughing like mad while he haunted me.",
+        "heard": "a street port you wrote you heard me and it all came back. All the talk about doing the scars and scratches. There was no doubt about it there must be the woman has to imagine she must have passed me while I slept well. While I'm waiting I guess was cooked. That has go guy wasn't dead yet he wasn't stretched out stiff and cold in any Arizona gully he was sitting right there in the car laughing like mad while It's always haunted me."
+      },
+      {
+        "peak": 8,
+        "bleu": 0.7726,
+        "peak_line_recall": 1.0,
+        "expected": "It couldn't have been Helen, or Mary, or Evelyn, or Ruth. It had to be the very last person I should ever have met. That's life. Whichever way you turn, fate sticks out a foot to tribute. I told her everything, but she didn't believe my story. I should have saved my breath. That's the greatest cock-and-bull story I ever heard. So he fell out of his car say who do you think you're talking to a hick listen mister?",
+        "heard": "Couldn't have been Helen, or Mary, or Evelyn, or Ruth. It had to be the very last person I should ever have met. That's life. Whichever way you turn, fate sticks out a foot to tribute. I told her everything, but she didn't believe my story. I should have saved my breath. That's the greatest cockamole story I ever heard. So he fell out of his car."
+      },
+      {
+        "peak": 9,
+        "bleu": 0.6542,
+        "peak_line_recall": 1.0,
+        "expected": "So he fell out of his car say who do you think you're talking to a hick listen mister? I've been around and I know a wrong guy when I see one What'd you do kiss him with a wrench now wait a minute what I told you was true you see that's why I had to do It you think I killed him well the cops would have thought so too. Yeah, well, maybe they still think so What makes you so sure I'll shut up about this girl. I'm innocent. Give me a break. Will you? It won't do me any good having you pinched the cops are no friends of mine",
+        "heard": "Do you think you're talking to a hick listen mister I've been around and I know a wrong guy when I see one what you do because I'm with a wrench now wait a minute what I told you was true you see that's why I had to do it you think I killed him well I can't would have thought so too yeah well maybe they still think so what makes you so sure I'll shut up about this girl I'm innocent give me a break will you. Won't do me any good having your pension the cops are no friends of mine."
+      },
+      {
+        "peak": 10,
+        "bleu": 0.9137,
+        "peak_line_recall": 1.0,
+        "expected": "Swell. That's the spirit. He's dead and no moment around will bring him back. Anyway, I never could understand this worrying about something that's over and done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right. So it'll make you sociable? You didn't kill him.",
+        "heard": "Swallow. That's the spirit. He's dead and no moment in the round will bring him back. Anyway, I never could understand this worrying about something that's over and done with. Now look, Vera, for the last time I didn't kill him. Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right. So it'll make you sociable? You didn't kill him."
+      },
+      {
+        "peak": 11,
+        "bleu": 0.8416,
+        "peak_line_recall": 1.0,
+        "expected": "or else she'd make some supreme class A sacrifice for me and die. Sue and I would ball a little over a grave and make some crack about there as good in all of us. But Vera, unfortunately, was just as rotten in the morning as she'd been the night before. All right, all right, I'm coming. Look, Vera, it's almost noon. So what? The dealers will be there all day? They'll be there all year, too, but they're just gonna wait that long. Shut up. You make us like a husband.",
+        "heard": "or else she'd make some supreme class A sacrifice for me and die. Sue and I would fall a little over her grave and make some crack about there as good in all of us. But Vera, unfortunately, was just as rotten in the morning as she'd been the night before. All right, all right, I'm coming. Look, Mary, it's almost noon. So what? The dealers will be there all day? They'll be there all year too, but they don't wait that long. Shut up. You make it like a husband."
+      },
+      {
+        "peak": 12,
+        "bleu": 0.8231,
+        "peak_line_recall": 1.0,
+        "expected": "Look in the paper there. Personal fortune assessed at over 15 million. He'll leave plenty, I tell you. Maybe he cut off his son. How do we know? It's out, Vera. I won't have anything to do with it. I think you will. Look, Vera, I'll do anything within reason. But not that. So forget it. Find yourself another stooge. You sack! You'll be fixed for the rest of your life as Charlie Haskell. You can take your inheritance and go away. No more worrying about the rent, no sweating, scheming, wondering where your next meal's coming from. Think about that, Roberts!",
+        "heard": "The old boy has scads of dough. Look in the paper there. Personal fortune, assessed at over 15 million. He'll leave plenty, I tell you. Maybe he cut off his son. How do we know? It's out, Vera. I won't have anything to do with it. I think you will. Look, Vera, I'll do anything within reason. But not that. So forget it. I'll find yourself another stooge. You sack! You'll be fixed for the rest of your life as Charlie Haskell. You can take your inheritance and go away. No more worrying about the rent. No sweat and scheming. I'm wondering where your next meal's coming from. Think about that, Robert! Vera."
+      },
+      {
+        "peak": 13,
+        "bleu": 0.9007,
+        "peak_line_recall": 1.0,
+        "expected": "Then you show up, like you read in New York that he was sick? No. I suppose he doesn't die. He will. I know he will. Something tells me. But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera. Maybe it was for me too.",
+        "heard": "Askel's dead. And you show up. Like you read in New York that he was sick? No. Suppose he doesn't die? He will. I know he will. Something tells me. But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera. Maybe it was for me too."
+      },
+      {
+        "peak": 14,
+        "bleu": 0.906,
+        "peak_line_recall": 1.0,
+        "expected": "Right here. I want a phone. I hate you. You're a stinker. You leave me alone. I'll let you alone when you promise to leave the phone where it is. You're drunk. You don't know what you're doing. You're hurting me. Will you promise? All right. You hurt me. I'm sorry, but... It's hot in here. Open up the window. It's not hot. Don't tell me. Not till you do it or do I do it.",
+        "heard": "I want a phone call, please. I hate you. You're a stinker. You leave me alone. I'll let you alone when you promise to leave the phone where it is. You're drunk. You don't know what you're doing. You're hurting me. Will you promise? All right. You hurt me. I'm sorry, but... It's hot in here. Open up the window. It's not hot. Don't tell me. Now do you do it or do I do it?"
+      },
+      {
+        "peak": 15,
+        "bleu": 0.9066,
+        "peak_line_recall": 1.0,
+        "expected": "In the Haskell business, how many of you would believe he fell out of the car? And now, after killing Vera without really meaning to do it, how many of you would believe it wasn't premeditated? In a jury room, every last man of you would go down shouting that she had me over a barrel, and my only out was force, and more still. So quiet that for a while I wondered if I had suddenly gone deaf. It was pure fear, of course, and that was hysterical. But without making a sound.",
+        "heard": "In the Haskell business, how many of you would believe he fell out of the car? And now, after killing Vera without really meaning to do it, how many of you would believe it wasn't premeditated? In a jury room, every last man of you would go down shouting that she had me over a barrel, and my only out was force. The room was still. So quiet that for a while I wondered if I had suddenly gone deaf. It was pure fear, of course. And that was hysterical, but without making a sound."
+      }
+    ]
+  }
+}

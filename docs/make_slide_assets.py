@@ -36,7 +36,7 @@ def frame_at(path, t):
 
 # 1. Recap frames: chapter card, clip with badges, intro card
 edl = pd.read_csv(OUT / "recap_edl.csv")
-card, clip = edl[edl.type == "chapter"].iloc[4], edl[edl.type == "clip"].iloc[4]
+card, clip = edl[edl.type == "chapter"].iloc[22], edl[edl.type == "clip"].iloc[22]  # chapter 23: the climax
 recap = OUT / "movie_recap.mp4"
 cv2.imwrite(str(ASSETS / "recap_card.jpg"), frame_at(recap, card.recap_start + 3))
 cv2.imwrite(str(ASSETS / "recap_clip.jpg"), frame_at(recap, clip.recap_start + 2))

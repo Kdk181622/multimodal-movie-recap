@@ -1,0 +1,332 @@
+{
+  "reference": {
+    "source": "Wikipedia - Detour (1945 film), Plot section",
+    "words": 526
+  },
+  "summary_vs_reference": {
+    "Summary story (ours)": {
+      "bleu4": 0.0406,
+      "bleu1": 0.4056,
+      "bleu4_nltk": 0.0406,
+      "sacrebleu": 0.0355,
+      "precisions": [
+        0.5401,
+        0.1236,
+        0.0196,
+        0.0065
+      ],
+      "brevity_penalty": 0.751,
+      "rouge1": 0.4166,
+      "rouge2": 0.094,
+      "rougeL": 0.1919,
+      "semantic_similarity": 0.8375,
+      "plot_coverage@0.5": 0.64,
+      "words": 405
+    },
+    "Extractive TextRank": {
+      "bleu4": 0.0205,
+      "bleu1": 0.3241,
+      "bleu4_nltk": 0.0205,
+      "sacrebleu": 0.0156,
+      "precisions": [
+        0.4222,
+        0.0661,
+        0.0085,
+        0.0021
+      ],
+      "brevity_penalty": 0.7677,
+      "rouge1": 0.3187,
+      "rouge2": 0.0507,
+      "rougeL": 0.1341,
+      "semantic_similarity": 0.4523,
+      "plot_coverage@0.5": 0.16,
+      "words": 411
+    },
+    "Lead-N (first words)": {
+      "bleu4": 0.0158,
+      "bleu1": 0.2831,
+      "bleu4_nltk": 0.0158,
+      "sacrebleu": 0.0096,
+      "precisions": [
+        0.3476,
+        0.0325,
+        0.0061,
+        0.002
+      ],
+      "brevity_penalty": 0.8144,
+      "rouge1": 0.2464,
+      "rouge2": 0.0157,
+      "rougeL": 0.1075,
+      "semantic_similarity": 0.3082,
+      "plot_coverage@0.5": 0.0,
+      "words": 405
+    },
+    "Uniform segments": {
+      "bleu4": 0.0153,
+      "bleu1": 0.2942,
+      "bleu4_nltk": 0.0153,
+      "sacrebleu": 0.0103,
+      "precisions": [
+        0.414,
+        0.0498,
+        0.0045,
+        0.0023
+      ],
+      "brevity_penalty": 0.7106,
+      "rouge1": 0.287,
+      "rouge2": 0.0274,
+      "rougeL": 0.1276,
+      "semantic_similarity": 0.4887,
+      "plot_coverage@0.5": 0.04,
+      "words": 381
+    },
+    "Random segments": {
+      "bleu4": 0.0148,
+      "bleu1": 0.2892,
+      "bleu4_nltk": 0.0148,
+      "sacrebleu": 0.0099,
+      "precisions": [
+        0.3895,
+        0.0416,
+        0.0044,
+        0.0022
+      ],
+      "brevity_penalty": 0.7426,
+      "rouge1": 0.2961,
+      "rouge2": 0.0244,
+      "rougeL": 0.1171,
+      "semantic_similarity": 0.3735,
+      "plot_coverage@0.5": 0.12,
+      "words": 405
+    }
+  },
+  "constraints": {
+    "film_duration_seconds": 4058.29,
+    "recap_duration_seconds": 521.82,
+    "under_10_minutes": true,
+    "compression_ratio": 7.78,
+    "footage_seconds": 330.39,
+    "n_peaks": 24
+  },
+  "ablation": {
+    "text_only_profile": {
+      "semantic": 0.8695,
+      "centrality": 0.6385,
+      "text_emotion": 0.5324,
+      "audio": 0.5709,
+      "visual": 0.3718
+    },
+    "multimodal_profile": {
+      "semantic": 0.7589,
+      "centrality": 0.6618,
+      "text_emotion": 0.768,
+      "audio": 0.5616,
+      "visual": 0.4978
+    },
+    "peaks_changed": 13,
+    "mean_shift_seconds": 14.31,
+    "text_only_timestamps": [
+      "00:03:39",
+      "00:04:13",
+      "00:08:13",
+      "00:12:18",
+      "00:13:17",
+      "00:18:25",
+      "00:20:12",
+      "00:24:13",
+      "00:31:12",
+      "00:36:07",
+      "00:36:18",
+      "00:36:23",
+      "00:40:55",
+      "00:43:39",
+      "00:43:41",
+      "00:46:08",
+      "00:49:57",
+      "00:50:47",
+      "00:54:37",
+      "00:56:22",
+      "00:56:51",
+      "01:02:08",
+      "01:03:47",
+      "01:05:56"
+    ]
+  },
+  "recap_fidelity": {
+    "overall_bleu": 0.7998,
+    "mean_clip_bleu": 0.7146,
+    "median_clip_bleu": 0.7867,
+    "peak_hit_rate@0.6": 0.9167,
+    "mean_narration_bleu": 0.9665,
+    "clips": [
+      {
+        "peak": 1,
+        "bleu": 0.6769,
+        "peak_line_recall": 1.0,
+        "expected": "Yeah, what's eating you? That music, it stinks! Oh, you don't like it, huh? No, turn it off! Wait a minute, pal. That was mine, you see. This is a free country. And I play whatever I wanted. Sure, and if you don't like it, you don't have to listen to it.",
+        "heard": "Yeah, what's eating you? That music, it stinks. Oh, you don't like it, huh? No, turn it off. Wait a minute, pal. That was my nickel, see? This is a free country. I'd like to play whatever I wanted. Sure. If you don't like it, you don't have to listen to it. And you can leave..."
+      },
+      {
+        "peak": 2,
+        "bleu": 1.0,
+        "peak_line_recall": 1.0,
+        "expected": "I used to love that song once. So did the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it too. Those were the days.",
+        "heard": "I used to love that song once. So did the customers back in the old break at Dawn Club in New York. I can't remember a night when I didn't get at least three requests for it. Sue, she was always selling it too. Those were the days."
+      },
+      {
+        "peak": 3,
+        "bleu": 0.84,
+        "peak_line_recall": 1.0,
+        "expected": "Al, look, I love you. You know I do. And I want to marry you. But? But not now. Only after we've made it good. Sunday I'm going away. Oh, I know you'll think it's silly. That's why I hesitated to tell you.",
+        "heard": "Al, look, I love you. You know I do, and I want to marry you. What? But not now. Only after we've been good. Sunday I'm going away. Oh, I know you'll think it's silly. That's why I hesitated to tell you."
+      },
+      {
+        "peak": 4,
+        "bleu": 0.1548,
+        "peak_line_recall": 1.0,
+        "expected": "you'll click no don't try to stop me just expect me train who knows train plane bus magic carpet I'll be there if I have to crawl I have to travel by pogo stick",
+        "heard": "I'm sure you'll click. Look, I'll tell you what. You stay put out there. I'll come to you. No, don't try to stop me. Just expect me. Train? Who knows? Train, plane, bus, magic carpet. I'll be there..."
+      },
+      {
+        "peak": 5,
+        "bleu": 0.4858,
+        "peak_line_recall": 1.0,
+        "expected": "bus magic carpet I'll be there if I have to crawl I have to travel by pogo stick and then let's get married right away huh that's the stuff that's what I've been",
+        "heard": "I have to crawl, I have to travel by pogo stick, and then let's get married right away, huh? That's the stuff. That's what I've been wanting to hear you say."
+      },
+      {
+        "peak": 6,
+        "bleu": 0.4716,
+        "peak_line_recall": 0.75,
+        "expected": "my dad owned a couple of Franco Prussian sabers kept them on the wall for decorations. One day of the kid and I took them down the old man was around at a door. You get me in the arm here. Pretty mean cut.",
+        "heard": "Yeah, I was just kidding, of course. My dad owned a couple of Franco Prussian sabers, kept them on the wall for decorations. Now, one day, a little kid and I took them down, and the old man wasn't around, had a duel. He got me in the arm here. Pretty mean cut."
+      },
+      {
+        "peak": 7,
+        "bleu": 0.816,
+        "peak_line_recall": 1.0,
+        "expected": "If I got him down on me, I'd buy a ticket to Hollywood. I'll wait out here for you, mister. Well, there's no money. Don't worry about paying for it. This time it's on me. Well, that's what you're... Ask him. Take nothing out of it. If you make your first million, maybe you can do the same for me. Come on, New York.",
+        "heard": "If I got him down on me, I'd buy a ticket to Hollywood. I'll wait out here for you, mister. If it's the money, don't worry about paying for it. This time it's on me. Oh, that's wonderful. Ask him. Take nothing out of it. If you make your first million, maybe you can do the same for me. Come on, New York."
+      },
+      {
+        "peak": 8,
+        "bleu": 0.4309,
+        "peak_line_recall": 0.9286,
+        "expected": "about Haskell died and give me that don't make me laugh expression on your smug faces I saw it once he was dead and I was in for it who wouldn't believe he fell out of the car why if Haskell came to which of course he couldn't even he",
+        "heard": "Leave my story of how Haskell died, and give me that don't-make-me-laugh expression on your smug faces. I saw it once he was dead, and I was in for it. Who would believe he fell out of the car? Why, if Haskell came too, which of course he couldn't even, he was where I call..."
+      },
+      {
+        "peak": 9,
+        "bleu": 0.8725,
+        "peak_line_recall": 1.0,
+        "expected": "And then I found out from a letter Haskell was cutting around in his bag that he wasn't the open-handed, easygoing bigshot who went around buying dinners for strange hitchhikers. Before I got done reading it, I saw him more as a chisler.",
+        "heard": "And then I found out from a letter Haskell was cutting around in his bag that he wasn't the open-handed, easy-going big shot who went around buying dinners for strange hitchhikers. Before I got done reading it, I saw him more as a chisler."
+      },
+      {
+        "peak": 10,
+        "bleu": 0.6973,
+        "peak_line_recall": 1.0,
+        "expected": "He was sitting right there in the car laughing like mad while he haunted me. There was nothing I could say. It was her move.",
+        "heard": "He was sitting right there in the car, laughing like mad while he haunted me. Well? There was nothing I could say."
+      },
+      {
+        "peak": 11,
+        "bleu": 0.7954,
+        "peak_line_recall": 0.1667,
+        "expected": "It was her move. Vera, whatever her name was, it was just my luck picking her up on the road. It couldn't have been Helen, or Mary, or Evelyn, or Ruth.",
+        "heard": "It was her move. Vera, whatever her name was, was just my luck picking her up on the road. Couldn't have been Helen, or Mary, or Evelyn or Ruth."
+      },
+      {
+        "peak": 12,
+        "bleu": 0.9024,
+        "peak_line_recall": 1.0,
+        "expected": "I should have saved my breath. That's the greatest cock-and-bull story I ever heard. So he fell out of his car say who do you think you're talking to a hick listen mister? I've been around and I know a wrong guy when I see one",
+        "heard": "I should have saved my breath that's the greatest cock-and-bull story I ever heard so he fell out of his car Say who do you think you're talking to a hick listen mister? I've been around and I know a wrong guy when I see one"
+      },
+      {
+        "peak": 13,
+        "bleu": 0.8877,
+        "peak_line_recall": 1.0,
+        "expected": "Vera wasn't kidding with that Siamese twins crack. She rented a little apartment as Mrs. Charles Haskell. When I objected to this, she explained that it was on account of the car. A dealer might think something was funny if he called in front of her using different names.",
+        "heard": "Vera wasn't kidding with that Siamese twins' crack. She rented a little apartment as Mrs. Charles Haskell. When I objected to this, she explained that it was on account of the car. A dealer might think something was funny if he called and found her using different names."
+      },
+      {
+        "peak": 14,
+        "bleu": 0.7382,
+        "peak_line_recall": 0.25,
+        "expected": "Anyway, I never could understand this worrying about something that's over and done with. Now look Vera, for the last time I didn't kill him. Haskell was a sick man.",
+        "heard": "Anyway, I never could understand this worrying about something that's all been done with. Now look Vera, for the last time I didn't kill it. Haskell was a..."
+      },
+      {
+        "peak": 15,
+        "bleu": 0.6204,
+        "peak_line_recall": 1.0,
+        "expected": "Haskell was a sick man. Maybe he was dead before he fell out of the car. I don't know. Sure, Sherry, died of old age. All right.",
+        "heard": "Maybe it was there before he fell out of the car. I don't know. Sure, Sherry died of old age. All right."
+      },
+      {
+        "peak": 16,
+        "bleu": 0.5421,
+        "peak_line_recall": 1.0,
+        "expected": "It's only a question of when. What got us on this subject anyway? We'll be discussing politics next. Yeah. Where'd you hide the butts? On the table, sucker.",
+        "heard": "it's only a question of when but what got us on this subject anyway we'll be discussing politics next yeah where'd you hide the butts on the table sucker"
+      },
+      {
+        "peak": 17,
+        "bleu": 1.0,
+        "peak_line_recall": 1.0,
+        "expected": "But Vera, unfortunately, was just as rotten in the morning as she'd been the night before. All right, all right, I'm coming.",
+        "heard": "But Vera, unfortunately, was just as rotten in the morning as she'd been the night before. All right, all right, I'm coming."
+      },
+      {
+        "peak": 18,
+        "bleu": 0.9486,
+        "peak_line_recall": 1.0,
+        "expected": "Look, Vera, it's almost noon. So what? The dealers will be there all day? They'll be there all year, too, but they're just gonna wait that long. Shut up. You make us like a husband.",
+        "heard": "Look, Mira, it's almost noon. So what? The dealers will be there all day? They'll be there all year, too, but they're just gonna wait that long. Shut up. You make us like a husband."
+      },
+      {
+        "peak": 19,
+        "bleu": 0.8672,
+        "peak_line_recall": 1.0,
+        "expected": "Oh, grow up, Vera. Don't you think a father knows his own son? And there must be other relatives. So a father won't have to know you. Well, wait till he gives up the ghost. He's an old geezer and he won't pull through. And as far as other relatives are concerned, they haven't seen you in 15 or 20 years. Eat. I'm not hungry.",
+        "heard": "for a while. Oh, grow up, Vera. Don't you think a father knows his own son? And there must be other relatives. So father won't have to know you. Well, Whaley gives up the ghost. He's an old geezer and he won't pull through. And as far as other relatives are concerned, they haven't seen you in 15 or 20 years. Eight. I'm not hungry."
+      },
+      {
+        "peak": 20,
+        "bleu": 0.2128,
+        "peak_line_recall": 1.0,
+        "expected": "Think about that, Roberts! Vera, please, you're talking too loud. Unless I'm splitting 50-50 with you. Sure, why not? We're both alike. Both born in the same gutter. Take it easy, Vera. There's people around here. You don't know where you're talking. Well, wait till we read that old man Haskell's dead.",
+        "heard": "Coming from think about that Robert Vera. Please you're talking too loud on this I'm splitting fifty fifty with you sure why not we're both alike both born the same God I take it easy Vera there's people around here you don't know you're talking. Well we don't we read the old man has posted."
+      },
+      {
+        "peak": 21,
+        "bleu": 0.778,
+        "peak_line_recall": 1.0,
+        "expected": "Vera was taking it for granted I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera. Maybe it was for me too.",
+        "heard": "I would have no part of her scheme. Vera was taking it for granted, I would. Neither of us had our mind on the cards as we played that night. I knew we were just trying to kill time between newspaper editions. This was a death watch for Vera. Maybe it was for me, too."
+      },
+      {
+        "peak": 22,
+        "bleu": 0.7999,
+        "peak_line_recall": 1.0,
+        "expected": "Please open the door. Vera, open the door. Don't use the phone. Listen to me. I don't like you, Roberts. You're no gentleman, see? You hurt my hand. And I'm going to get even with you. If you don't open the door, I'm going to kick it down, Vera.",
+        "heard": "Vera, open the door, please open the door. Vera, open the door, don't use the phone, listen to me. I don't like you, Roberts. You're no gentleman, see? You hurt my hand, and I'm going to get even with you. If you don't open the door, I'm going to kick it down, Vera."
+      },
+      {
+        "peak": 23,
+        "bleu": 0.6892,
+        "peak_line_recall": 1.0,
+        "expected": "And now, after killing Vera without really meaning to do it, how many of you would believe it wasn't premeditated? In a jury room, every last man of you would go down shouting that she had me over a barrel, and my only out was force, and more still.",
+        "heard": "car and now after killing Vera without really meaning to do it how many of you would believe it wasn't premeditated in a jury room every last man of you would go down shouting that she had me over a barrel and my only out was force the room was still."
+      },
+      {
+        "peak": 24,
+        "bleu": 0.9219,
+        "peak_line_recall": 1.0,
+        "expected": "The problems weren't solved. I had to stay away from New York for all time. Because Al Roberts was listed as dead and had to stay dead. And I could never go back to Hollywood. Someone might recognize me as Haskell.",
+        "heard": "My problems weren't solved. I had to stay away from New York for all time because Al Roberts was listed as dead and had to stay dead. And I could never go back to Hollywood. Someone might recognize me as Haskell."
+      }
+    ]
+  }
+}

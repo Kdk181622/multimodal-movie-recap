@@ -11,3 +11,9 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .venv/
+
+# Local helper scripts and build scratch
+_*.bat
+docs/slide_png/
+docs/_video_build/
+outputs/experiments/_commit_msg.txt

@@ -95,7 +95,7 @@ def main(slides_dir: Path, output: Path) -> None:
             print(f"recap excerpt: {duration(seg):5.1f} s")
 
     listing = work / "segments.txt"
-    listing.write_text("".join(f"file '{s.as_posix()}'\n" for s in segments), encoding="utf-8")
+    listing.write_text("".join(f"file '{s.resolve().as_posix()}'\n" for s in segments), encoding="utf-8")
     run(["-f", "concat", "-safe", "0", "-i", str(listing), "-c", "copy", "-movflags", "+faststart", str(output)])
     total = duration(output)
     print(f"wrote {output} ({total / 60:.1f} min)")

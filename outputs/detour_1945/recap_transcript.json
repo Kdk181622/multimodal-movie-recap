@@ -3,1558 +3,1351 @@
     {
       "id": 0,
       "start": 0.0,
-      "end": 3.94,
+      "end": 3.92,
       "text": "An AI-generated recap of Deetur, 1945",
-      "avg_logprob": -0.501,
-      "no_speech_prob": 0.005,
+      "avg_logprob": -0.465,
+      "no_speech_prob": 0.007,
       "words": []
     },
     {
       "id": 0,
       "start": 5.51,
-      "end": 11.79,
-      "text": "Al plays a song that reminds him of his girlfriend, Sue, causing him distress and leading him",
-      "avg_logprob": -0.117,
-      "no_speech_prob": 0.014,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 11.79,
-      "end": 13.29,
-      "text": "to argue with the club's owner.",
-      "avg_logprob": -0.117,
-      "no_speech_prob": 0.014,
+      "end": 10.39,
+      "text": "Al complains about the music at his club, causing a conflict with the DJ.",
+      "avg_logprob": -0.12,
+      "no_speech_prob": 0.011,
       "words": []
     },
     {
       "id": 0,
-      "start": 15.09,
-      "end": 17.95,
-      "text": "You can't, you know. No matter how hard you try.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 11.81,
+      "end": 13.41,
+      "text": "Yeah, what's eating you?",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 1,
-      "start": 18.89,
-      "end": 19.87,
-      "text": "You can change the scenery.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 13.51,
+      "end": 14.450000000000001,
+      "text": "That music, it stinks.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 2,
-      "start": 20.79,
-      "end": 22.810000000000002,
-      "text": "But sooner or later you'll get a whiff of perfume",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 14.61,
+      "end": 15.370000000000001,
+      "text": "Oh, you don't like it, huh?",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 3,
-      "start": 22.810000000000002,
-      "end": 25.09,
-      "text": "where somebody will say a certain phrase or maybe hum something.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 15.57,
+      "end": 16.27,
+      "text": "No, turn it off.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 4,
-      "start": 26.03,
-      "end": 27.23,
-      "text": "Then you're licked again!",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 16.61,
+      "end": 17.21,
+      "text": "Wait a minute, pal.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 5,
-      "start": 29.59,
-      "end": 31.490000000000002,
-      "text": "I can't believe that you're in love with me.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "start": 17.75,
+      "end": 18.67,
+      "text": "That was my nickel, see?",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
       "words": []
     },
     {
       "id": 6,
-      "start": 32.33,
-      "end": 33.65,
+      "start": 19.310000000000002,
+      "end": 20.19,
+      "text": "This is a free country.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 21.05,
+      "end": 21.950000000000003,
+      "text": "I'd like to play whatever I wanted.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 25.17,
+      "end": 25.450000000000003,
+      "text": "Sure.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
+      "words": []
+    },
+    {
+      "id": 9,
+      "start": 25.67,
+      "end": 27.310000000000002,
+      "text": "If you don't like it, you don't have to listen to it.",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
+      "words": []
+    },
+    {
+      "id": 10,
+      "start": 27.43,
+      "end": 27.910000000000004,
+      "text": "And you can leave...",
+      "avg_logprob": -0.256,
+      "no_speech_prob": 0.059,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 27.93,
+      "end": 33.37,
+      "text": "Al reflects on his time at the old break at Dawn Club, missing his former life and his",
+      "avg_logprob": -0.19,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 33.37,
+      "end": 34.13,
+      "text": "girlfriend Sue.",
+      "avg_logprob": -0.19,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 35.86,
+      "end": 37.62,
       "text": "I used to love that song once.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "avg_logprob": -0.161,
+      "no_speech_prob": 0.035,
       "words": []
     },
     {
-      "id": 7,
-      "start": 34.47,
-      "end": 37.05,
-      "text": "Sort of the customers back in the old break at Dawn Club in New York.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "id": 1,
+      "start": 38.26,
+      "end": 40.739999999999995,
+      "text": "So did the customers back in the old break at Dawn Club in New York.",
+      "avg_logprob": -0.161,
+      "no_speech_prob": 0.035,
       "words": []
     },
     {
-      "id": 8,
-      "start": 37.81,
-      "end": 40.93,
+      "id": 2,
+      "start": 41.76,
+      "end": 44.739999999999995,
       "text": "I can't remember a night when I didn't get at least three requests for it.",
-      "avg_logprob": -0.13,
-      "no_speech_prob": 0.113,
+      "avg_logprob": -0.161,
+      "no_speech_prob": 0.035,
       "words": []
     },
     {
-      "id": 9,
-      "start": 41.73,
-      "end": 44.57,
+      "id": 3,
+      "start": 45.54,
+      "end": 48.26,
       "text": "Sue, she was always selling it too.",
-      "avg_logprob": -0.341,
-      "no_speech_prob": 0.089,
+      "avg_logprob": -0.161,
+      "no_speech_prob": 0.035,
       "words": []
     },
     {
-      "id": 10,
-      "start": 45.59,
-      "end": 46.47,
+      "id": 4,
+      "start": 49.16,
+      "end": 50.16,
       "text": "Those were the days.",
-      "avg_logprob": -0.341,
-      "no_speech_prob": 0.089,
+      "avg_logprob": -0.161,
+      "no_speech_prob": 0.035,
       "words": []
     },
     {
       "id": 0,
-      "start": 47.15,
-      "end": 52.33,
-      "text": "Al's girlfriend Sue decides to leave for Hollywood, causing a heated argument about",
-      "avg_logprob": -0.121,
-      "no_speech_prob": 0.006,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 52.33,
-      "end": 54.949999999999996,
-      "text": "their future plans and leaving Al dejected and bitter.",
-      "avg_logprob": -0.121,
-      "no_speech_prob": 0.006,
+      "start": 50.85,
+      "end": 55.75,
+      "text": "Al loses his appetite at the club, while Sue decides to leave for Hollywood.",
+      "avg_logprob": -0.11,
+      "no_speech_prob": 0.015,
       "words": []
     },
     {
       "id": 0,
-      "start": 56.36,
-      "end": 59.12,
-      "text": "Yes, that's right. In the bush league.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
+      "start": 57.16,
+      "end": 60.699999999999996,
+      "text": "Al, look, I love you. You know I do, and I want to marry you.",
+      "avg_logprob": -0.232,
+      "no_speech_prob": 0.016,
       "words": []
     },
     {
       "id": 1,
-      "start": 59.98,
-      "end": 60.74,
-      "text": "I don't get you.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
+      "start": 61.279999999999994,
+      "end": 61.44,
+      "text": "What?",
+      "avg_logprob": -0.232,
+      "no_speech_prob": 0.016,
       "words": []
     },
     {
       "id": 2,
-      "start": 61.1,
-      "end": 62.36,
-      "text": "We've been struck out.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 63.8,
-      "end": 66.82,
-      "text": "It's a funny way to talk, darling. Don't you want to marry me?",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 67.14,
-      "end": 70.32,
-      "text": "Look, I love you. You know I do and I want to marry you.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 70.84,
-      "end": 71.08,
-      "text": "But?",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 71.68,
-      "end": 74.64,
+      "start": 62.16,
+      "end": 65.0,
       "text": "But not now. Only after we've been good.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
+      "avg_logprob": -0.232,
+      "no_speech_prob": 0.016,
       "words": []
     },
     {
-      "id": 7,
-      "start": 75.88,
-      "end": 77.06,
+      "id": 3,
+      "start": 66.25999999999999,
+      "end": 67.42,
       "text": "Sunday I'm going away.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 78.25999999999999,
-      "end": 81.96000000000001,
-      "text": "I know you'll think it's silly. That's why I hesitated to tell you.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 82.53999999999999,
-      "end": 85.92,
-      "text": "But I'm going to California. I want to try my luck in Hollywood.",
-      "avg_logprob": -0.161,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 86.84,
-      "end": 88.86,
-      "text": "That's the most stupid thing I ever heard of.",
-      "avg_logprob": -0.291,
-      "no_speech_prob": 0.041,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 89.32,
-      "end": 95.61999999999999,
-      "text": "Al calls Sue, learns she's working as a hash-linger in Hollywood, and decides to hitchhike to",
-      "avg_logprob": -0.162,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 95.61999999999999,
-      "end": 100.1,
-      "text": "Los Angeles, reflecting on the dangers and unpredictability of thumbing rides.",
-      "avg_logprob": -0.162,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 102.07,
-      "end": 102.88999999999999,
-      "text": "This is Al.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 103.94999999999999,
-      "end": 105.47,
-      "text": "Oh, baby, it's great to hear from you, too.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 106.00999999999999,
-      "end": 106.86999999999999,
-      "text": "What's that? You do?",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 107.52999999999999,
-      "end": 108.36999999999999,
-      "text": "Oh, me too, darling.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
+      "avg_logprob": -0.232,
+      "no_speech_prob": 0.016,
       "words": []
     },
     {
       "id": 4,
-      "start": 109.25,
-      "end": 110.77,
-      "text": "I thought I'd go batty without you.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
+      "start": 68.6,
+      "end": 72.28,
+      "text": "Oh, I know you'll think it's silly. That's why I hesitated to tell you.",
+      "avg_logprob": -0.232,
+      "no_speech_prob": 0.016,
       "words": []
     },
     {
-      "id": 5,
-      "start": 110.83,
-      "end": 112.14999999999999,
-      "text": "I just had to... Huh?",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
+      "id": 0,
+      "start": 72.94,
+      "end": 78.66,
+      "text": "Al continues his journey by thumbing rides, hoping to reach Los Angeles despite the risks.",
+      "avg_logprob": -0.099,
+      "no_speech_prob": 0.009,
       "words": []
     },
     {
-      "id": 6,
-      "start": 113.83,
-      "end": 115.30999999999999,
-      "text": "You're working as a hashlinger.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 116.28999999999999,
-      "end": 117.21,
-      "text": "Gee, honey, that's tough.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 117.49,
-      "end": 120.14999999999999,
-      "text": "Those guys out in Hollywood don't know the real thing when it's right in front of them.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 121.03,
-      "end": 122.28999999999999,
-      "text": "You just stick it out, Sue, baby.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 122.80999999999999,
-      "end": 124.14999999999999,
-      "text": "Keep going around to those casting offices.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 11,
-      "start": 124.69,
-      "end": 125.50999999999999,
+      "id": 0,
+      "start": 80.11,
+      "end": 81.21,
       "text": "I'm sure you'll click.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
+      "avg_logprob": -0.214,
+      "no_speech_prob": 0.126,
       "words": []
     },
     {
-      "id": 12,
-      "start": 126.47,
-      "end": 128.59,
+      "id": 1,
+      "start": 82.37,
+      "end": 84.28999999999999,
       "text": "Look, I'll tell you what. You stay put out there. I'll come to you.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
+      "avg_logprob": -0.214,
+      "no_speech_prob": 0.126,
       "words": []
     },
     {
-      "id": 13,
-      "start": 129.45,
-      "end": 131.41,
+      "id": 2,
+      "start": 85.23,
+      "end": 87.25,
       "text": "No, don't try to stop me. Just expect me.",
-      "avg_logprob": -0.129,
-      "no_speech_prob": 0.448,
-      "words": []
-    },
-    {
-      "id": 14,
-      "start": 132.14999999999998,
-      "end": 135.10999999999999,
-      "text": "Train? Who knows, train, plane, bus, magic, car,",
-      "avg_logprob": -0.6,
-      "no_speech_prob": 0.638,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 135.13,
-      "end": 140.82999999999998,
-      "text": "Al picks up Vera, a hitchhiker, and debates whether to keep her or drop her off, deciding",
-      "avg_logprob": -0.104,
-      "no_speech_prob": 0.019,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 140.82999999999998,
-      "end": 145.65,
-      "text": "to continue driving her to Los Angeles, hoping it will bring him closer to Sioux.",
-      "avg_logprob": -0.104,
-      "no_speech_prob": 0.019,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 146.98,
-      "end": 149.72,
-      "text": "She must have been Tarzan's mate. Looks like you lost the bob.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 150.72,
-      "end": 151.54,
-      "text": "He certainly wasn't a draw.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 152.92,
-      "end": 155.67999999999998,
-      "text": "You know, there ought to be a law against James with claws.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
+      "avg_logprob": -0.214,
+      "no_speech_prob": 0.126,
       "words": []
     },
     {
       "id": 3,
-      "start": 156.16,
-      "end": 156.33999999999997,
-      "text": "Yeah.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
+      "start": 87.83,
+      "end": 91.43,
+      "text": "Train? Who knows? Train, plane, bus, magic carpet. I'll be there...",
+      "avg_logprob": -0.214,
+      "no_speech_prob": 0.126,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 91.46,
+      "end": 95.38,
+      "text": "Al calls his girlfriend Sue, promising to see her soon.",
+      "avg_logprob": -0.218,
+      "no_speech_prob": 0.011,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 96.76,
+      "end": 99.32000000000001,
+      "text": "I have to crawl, I have to travel by pogo stick,",
+      "avg_logprob": -0.246,
+      "no_speech_prob": 0.009,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 100.02000000000001,
+      "end": 102.78,
+      "text": "and then let's get married right away, huh?",
+      "avg_logprob": -0.246,
+      "no_speech_prob": 0.009,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 105.68,
+      "end": 106.44,
+      "text": "That's the stuff.",
+      "avg_logprob": -0.246,
+      "no_speech_prob": 0.009,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 107.0,
+      "end": 108.28,
+      "text": "That's what I've been wanting to hear you say.",
+      "avg_logprob": -0.246,
+      "no_speech_prob": 0.009,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 109.11,
+      "end": 115.13,
+      "text": "Al throws a hitchhiker out of his car, then reminisces about his father's sabres, hinting",
+      "avg_logprob": -0.135,
+      "no_speech_prob": 0.008,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 115.13,
+      "end": 116.11,
+      "text": "at a violent pest.",
+      "avg_logprob": -0.135,
+      "no_speech_prob": 0.008,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 117.52,
+      "end": 118.86,
+      "text": "Yeah, I was just kidding, of course.",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 119.46,
+      "end": 121.58,
+      "text": "My dad owned a couple of Franco Prussian sabers,",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 121.94,
+      "end": 123.34,
+      "text": "kept them on the wall for decorations.",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 124.86,
+      "end": 126.75999999999999,
+      "text": "Now, one day, a little kid and I took them down,",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
       "words": []
     },
     {
       "id": 4,
-      "start": 157.04,
-      "end": 158.44,
-      "text": "I tossed her out of the car in her ear.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
+      "start": 126.96,
+      "end": 128.88,
+      "text": "and the old man wasn't around, had a duel.",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
       "words": []
     },
     {
       "id": 5,
-      "start": 159.92,
-      "end": 160.45999999999998,
-      "text": "Was I wrong?",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
+      "start": 130.78,
+      "end": 131.94,
+      "text": "He got me in the arm here.",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
       "words": []
     },
     {
       "id": 6,
-      "start": 161.5,
-      "end": 164.06,
-      "text": "You give a lift to a tomato, you expect her to be nice, don't you?",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 164.33999999999997,
-      "end": 164.5,
-      "text": "Yeah.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 165.54,
-      "end": 167.48,
-      "text": "After all, what kind of a dame some rides?",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 168.2,
-      "end": 168.78,
-      "text": "Sunday school teachers?",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 169.45999999999998,
-      "end": 169.64,
-      "text": "Yeah.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 11,
-      "start": 171.48,
-      "end": 172.38,
-      "text": "A little witch.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 12,
-      "start": 173.54,
-      "end": 175.54,
-      "text": "She must have thought she was riding with some foreguy.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
-      "words": []
-    },
-    {
-      "id": 13,
-      "start": 176.38,
-      "end": 179.18,
-      "text": "The me who's been poking horses around racetracks since I was...",
-      "avg_logprob": -0.548,
-      "no_speech_prob": 0.661,
+      "start": 133.06,
+      "end": 133.74,
+      "text": "Pretty mean cut.",
+      "avg_logprob": -0.354,
+      "no_speech_prob": 0.013,
       "words": []
     },
     {
       "id": 0,
-      "start": 179.21,
-      "end": 184.79000000000002,
-      "text": "Al realizes he must hide Charles Haskell's body and take his car to avoid being implicated,",
-      "avg_logprob": -0.134,
-      "no_speech_prob": 0.014,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 185.37,
-      "end": 187.47,
-      "text": "deciding to drive away despite the risks.",
-      "avg_logprob": -0.134,
-      "no_speech_prob": 0.014,
+      "start": 134.37,
+      "end": 137.69,
+      "text": "Al feels optimistic about reaching Hollywood soon.",
+      "avg_logprob": -0.295,
+      "no_speech_prob": 0.011,
       "words": []
     },
     {
       "id": 0,
-      "start": 189.42,
-      "end": 192.0,
-      "text": "But I know what you're going to hand me even before you open your mouths.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
+      "start": 139.6,
+      "end": 142.26,
+      "text": "If I got him down on me, I'd buy a ticket to Hollywood.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
       "words": []
     },
     {
       "id": 1,
-      "start": 193.1,
-      "end": 195.39999999999998,
-      "text": "You're going to tell me you don't believe my story of how Haskell died",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
+      "start": 143.7,
+      "end": 144.78,
+      "text": "I'll wait out here for you, mister.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
       "words": []
     },
     {
       "id": 2,
-      "start": 195.39999999999998,
-      "end": 198.5,
-      "text": "and give me that don't-make-me-laugh expression on your smug faces.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
+      "start": 145.29999999999998,
+      "end": 146.95999999999998,
+      "text": "If it's the money, don't worry about paying for it.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
       "words": []
     },
     {
       "id": 3,
-      "start": 202.1,
-      "end": 205.01999999999998,
+      "start": 147.18,
+      "end": 147.82,
+      "text": "This time it's on me.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 148.2,
+      "end": 148.73999999999998,
+      "text": "Oh, that's wonderful.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 149.14,
+      "end": 150.38,
+      "text": "Ask him. Take nothing out of it.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 150.54,
+      "end": 152.28,
+      "text": "If you make your first million, maybe you can do the same for me.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 152.57999999999998,
+      "end": 153.04,
+      "text": "Come on, New York.",
+      "avg_logprob": -0.187,
+      "no_speech_prob": 0.161,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 153.65,
+      "end": 160.07,
+      "text": "Al hides Haskell's body in a gully, contemplating the consequences of his actions, fearing he",
+      "avg_logprob": -0.155,
+      "no_speech_prob": 0.02,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 160.07,
+      "end": 161.75,
+      "text": "might be identified by the police.",
+      "avg_logprob": -0.155,
+      "no_speech_prob": 0.02,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 163.16,
+      "end": 167.76,
+      "text": "Leave my story of how Haskell died, and give me that don't-make-me-laugh expression on your smug faces.",
+      "avg_logprob": -0.297,
+      "no_speech_prob": 0.025,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 171.34,
+      "end": 174.26,
       "text": "I saw it once he was dead, and I was in for it.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
+      "avg_logprob": -0.297,
+      "no_speech_prob": 0.025,
       "words": []
     },
     {
-      "id": 4,
-      "start": 205.61999999999998,
-      "end": 206.89999999999998,
+      "id": 2,
+      "start": 174.84,
+      "end": 176.12,
       "text": "Who would believe he fell out of the car?",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 207.45999999999998,
-      "end": 209.35999999999999,
-      "text": "Why, if Haskell came too, which of course he couldn't even,",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 209.45999999999998,
-      "end": 211.04,
-      "text": "he would swear I conked him over the head for his doe.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 211.66,
-      "end": 212.88,
-      "text": "Yes, I was in for it.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 214.51999999999998,
-      "end": 216.92,
-      "text": "Instinct told me to run, but then I realized it was hopeless.",
-      "avg_logprob": -0.133,
-      "no_speech_prob": 0.087,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 216.92,
-      "end": 219.32,
-      "text": "There were lots of people back down the road who could identify me.",
-      "avg_logprob": -0.303,
-      "no_speech_prob": 0.243,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 219.61999999999998,
-      "end": 220.92,
-      "text": "That gas station guy and the waitress.",
-      "avg_logprob": -0.303,
-      "no_speech_prob": 0.243,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 221.35,
-      "end": 226.93,
-      "text": "Al drives to the California state line, where he hides Charles Haskell's body and takes",
-      "avg_logprob": -0.116,
-      "no_speech_prob": 0.03,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 226.93,
-      "end": 232.69,
-      "text": "his car, then checks into a hotel to rest and gather information, discovering Haskell was",
-      "avg_logprob": -0.116,
-      "no_speech_prob": 0.03,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 232.69,
-      "end": 233.37,
-      "text": "a con artist.",
-      "avg_logprob": -0.116,
-      "no_speech_prob": 0.03,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 234.8,
-      "end": 238.86,
-      "text": "lose. Every minute I had to be Charles Haskell was dangerous. I'd have to be",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.177,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 238.86,
-      "end": 241.56,
-      "text": "Charles Haskell until I got to some city where I could leave the car and be",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.177,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 241.56,
-      "end": 242.06,
-      "text": "swallowed up.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.177,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 242.81,
-      "end": 248.99,
-      "text": "Al picks up Vera, who turns out to be Charles Haskell's accomplice, complicating his plan",
-      "avg_logprob": -0.137,
-      "no_speech_prob": 0.011,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 248.99,
-      "end": 250.01,
-      "text": "to avoid suspicion.",
-      "avg_logprob": -0.137,
-      "no_speech_prob": 0.011,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 251.48,
-      "end": 253.6,
-      "text": "Anna, he picked me up outside of Shreveport.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 254.26,
-      "end": 254.85999999999999,
-      "text": "You rode?",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 254.98,
-      "end": 255.56,
-      "text": "You heard me.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "avg_logprob": -0.297,
+      "no_speech_prob": 0.025,
       "words": []
     },
     {
       "id": 3,
-      "start": 256.3,
-      "end": 257.76,
-      "text": "Then it all came back to me.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "start": 176.7,
+      "end": 179.28,
+      "text": "Why, if Haskell came too, which of course he couldn't even, he was where I call...",
+      "avg_logprob": -0.297,
+      "no_speech_prob": 0.025,
       "words": []
     },
     {
-      "id": 4,
-      "start": 258.42,
-      "end": 260.53999999999996,
-      "text": "All the talk about dueling and scars and scratches.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 0,
+      "start": 179.31,
+      "end": 185.43,
+      "text": "Al drives cautiously, suspecting he is being followed, and interacts with an officer who",
+      "avg_logprob": -0.132,
+      "no_speech_prob": 0.04,
       "words": []
     },
     {
-      "id": 5,
-      "start": 261.53999999999996,
-      "end": 263.08,
-      "text": "There was no doubt about it.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 1,
+      "start": 185.43,
+      "end": 188.51,
+      "text": "confirms his identity as Charles Haskell, Jr.",
+      "avg_logprob": -0.132,
+      "no_speech_prob": 0.04,
       "words": []
     },
     {
-      "id": 6,
-      "start": 263.88,
-      "end": 265.32,
-      "text": "Vera must be the woman Haskell had mentioned.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 2,
+      "start": 188.71,
+      "end": 195.61,
+      "text": "Al finds $768 and a letter that reveals Haskell's deceitful nature, leading him to decide to",
+      "avg_logprob": -0.132,
+      "no_speech_prob": 0.04,
       "words": []
     },
     {
-      "id": 7,
-      "start": 266.26,
-      "end": 267.64,
-      "text": "She must have passed me while I slept.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 3,
+      "start": 195.61,
+      "end": 196.61,
+      "text": "investigate further.",
+      "avg_logprob": -0.132,
+      "no_speech_prob": 0.04,
       "words": []
     },
     {
-      "id": 8,
-      "start": 268.08,
-      "end": 268.42,
-      "text": "Well?",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 0,
+      "start": 197.96,
+      "end": 201.72,
+      "text": "And then I found out from a letter Haskell was cutting around in his bag",
+      "avg_logprob": -0.186,
+      "no_speech_prob": 0.007,
       "words": []
     },
     {
-      "id": 9,
-      "start": 269.88,
-      "end": 270.71999999999997,
-      "text": "While I'm waiting.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 1,
+      "start": 201.72,
+      "end": 204.68,
+      "text": "that he wasn't the open-handed, easy-going big shot",
+      "avg_logprob": -0.186,
+      "no_speech_prob": 0.007,
       "words": []
     },
     {
-      "id": 10,
-      "start": 271.3,
-      "end": 272.09999999999997,
-      "text": "My goose was cooked.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 2,
+      "start": 204.68,
+      "end": 207.16,
+      "text": "who went around buying dinners for strange hitchhikers.",
+      "avg_logprob": -0.186,
+      "no_speech_prob": 0.007,
       "words": []
     },
     {
-      "id": 11,
-      "start": 273.3,
-      "end": 273.9,
-      "text": "She had me.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 3,
+      "start": 208.04000000000002,
+      "end": 210.62,
+      "text": "Before I got done reading it, I saw him more as a chisler.",
+      "avg_logprob": -0.186,
+      "no_speech_prob": 0.007,
       "words": []
     },
     {
-      "id": 12,
-      "start": 275.09999999999997,
-      "end": 276.5,
-      "text": "That Haskell guy wasn't dead yet.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
+      "id": 0,
+      "start": 211.24,
+      "end": 218.32000000000002,
+      "text": "Al and Vera are in the car together, and Al realizes Vera is Haskell, making him feel trapped and cornered.",
+      "avg_logprob": -0.099,
+      "no_speech_prob": 0.022,
       "words": []
     },
     {
-      "id": 13,
-      "start": 277.46,
-      "end": 279.9,
-      "text": "He wasn't stretched out stiff and cold in any Arizona gully.",
-      "avg_logprob": -0.212,
-      "no_speech_prob": 0.07,
-      "words": []
-    },
-    {
-      "id": 14,
-      "start": 279.9,
-      "end": 283.38,
+      "id": 0,
+      "start": 219.62,
+      "end": 223.48000000000002,
       "text": "He was sitting right there in the car, laughing like mad while he haunted me.",
-      "avg_logprob": -0.259,
-      "no_speech_prob": 0.292,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 283.98,
-      "end": 289.84000000000003,
-      "text": "Al and Vera decide to sell Charles Haskell's car to avoid suspicion, with Vera insisting",
-      "avg_logprob": -0.134,
-      "no_speech_prob": 0.033,
+      "avg_logprob": -0.258,
+      "no_speech_prob": 0.075,
       "words": []
     },
     {
       "id": 1,
-      "start": 289.84000000000003,
-      "end": 292.42,
-      "text": "on accompanying Al to ensure he doesn't get caught.",
-      "avg_logprob": -0.134,
-      "no_speech_prob": 0.033,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 293.79,
-      "end": 297.15000000000003,
-      "text": "Dope. Don't you know a deserted automobile always rates an investigation?",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 298.21000000000004,
-      "end": 298.33000000000004,
-      "text": "Huh?",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
+      "start": 225.16,
+      "end": 225.56,
+      "text": "Well?",
+      "avg_logprob": -0.258,
+      "no_speech_prob": 0.075,
       "words": []
     },
     {
       "id": 2,
-      "start": 299.37,
-      "end": 301.77000000000004,
-      "text": "Look, the cops find a car. Then they get curious.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 302.33000000000004,
-      "end": 303.55,
-      "text": "They wonder where the owner is.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 304.07,
-      "end": 306.89000000000004,
-      "text": "So all right, they don't trace Haskell. They trace you.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 307.49,
-      "end": 308.53000000000003,
-      "text": "I never thought of that.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 309.21000000000004,
-      "end": 311.69,
-      "text": "The only safe way to get rid of the car is to sell it to a dealer.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 312.17,
-      "end": 313.43,
-      "text": "Get it registered under a new name.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 314.23,
-      "end": 315.31,
-      "text": "Say stop at the next store.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 315.57000000000005,
-      "end": 317.85,
-      "text": "I want to get a bottle and do some shopping before we hit LA.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 318.65000000000003,
-      "end": 321.45000000000005,
-      "text": "Okay. Since we find a place, I'll drop you off and pick you up later.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 11,
-      "start": 321.85,
-      "end": 323.41,
-      "text": "Nothing doing. You're coming in too.",
-      "avg_logprob": -0.297,
-      "no_speech_prob": 0.069,
-      "words": []
-    },
-    {
-      "id": 12,
-      "start": 323.79,
-      "end": 326.03000000000003,
-      "text": "From now on, you and I are like the Siamese twins.",
-      "avg_logprob": -0.237,
-      "no_speech_prob": 0.037,
+      "start": 226.32,
+      "end": 227.52,
+      "text": "There was nothing I could say.",
+      "avg_logprob": -0.258,
+      "no_speech_prob": 0.075,
       "words": []
     },
     {
       "id": 0,
-      "start": 326.63,
-      "end": 332.43,
-      "text": "Al and Vera discuss their situation, with Vera urging Al to sell the car and leave quickly,",
-      "avg_logprob": -0.124,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 332.93,
-      "end": 336.07,
-      "text": "while Al struggles with his guilt and the reality of their predicament.",
-      "avg_logprob": -0.124,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 338.23,
-      "end": 338.59,
-      "text": "Swallow.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 339.11,
-      "end": 339.67,
-      "text": "That's the spirit.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 341.59,
-      "end": 343.53,
-      "text": "He's dead and no moment around, I'll bring him back.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 347.15,
-      "end": 350.87,
-      "text": "Anyway, I never could understand this worrying about something that's all been done with.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 350.95,
-      "end": 352.75,
-      "text": "Now look Vera, for the last time I didn't kill him.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 353.21,
-      "end": 354.17,
-      "text": "Haskell was a sick man.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 354.69,
-      "end": 355.85,
-      "text": "Maybe he was dead before he fell out of the car.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 355.95,
-      "end": 356.46999999999997,
-      "text": "I don't know.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 356.90999999999997,
-      "end": 358.73,
-      "text": "Sure, Sherry, died of old age.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 359.93,
-      "end": 360.45,
-      "text": "All right.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 361.87,
-      "end": 363.15,
-      "text": "So it'll make you sociable?",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 11,
-      "start": 364.96999999999997,
-      "end": 366.13,
-      "text": "You didn't kill him.",
-      "avg_logprob": -0.213,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 366.8,
-      "end": 372.76,
-      "text": "Al and Vera argue over selling Charles Haskell's car, with Vera insisting on keeping the money",
-      "avg_logprob": -0.171,
-      "no_speech_prob": 0.012,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 372.76,
-      "end": 374.16,
-      "text": "and Al reluctantly agreeing.",
-      "avg_logprob": -0.171,
-      "no_speech_prob": 0.012,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 376.21999999999997,
-      "end": 377.41999999999996,
-      "text": "Did we get $2,000?",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 378.28,
-      "end": 379.2,
-      "text": "I don't know, but don't worry.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 379.62,
-      "end": 381.38,
-      "text": "I'll squeeze as much out of this guy as I can.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 382.02,
-      "end": 384.59999999999997,
-      "text": "I'll let it go cheap without a fight he might think we've stolen the car.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 385.34,
-      "end": 388.06,
-      "text": "And listen, don't make any slips and call me Roberts.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 388.52,
-      "end": 389.12,
-      "text": "That'll cook us.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 389.59999999999997,
-      "end": 390.97999999999996,
-      "text": "I don't need you to tell me that.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 391.5,
-      "end": 393.3,
-      "text": "You better just sit by and keep your mouth closed.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 393.94,
-      "end": 395.88,
-      "text": "Remember we're both in the soup if anything happens.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 396.03999999999996,
-      "end": 396.86,
-      "text": "Forget it and drive.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 10,
-      "start": 397.5,
-      "end": 399.0,
-      "text": "You're my wife, Vera Haskell.",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 11,
-      "start": 400.7,
-      "end": 403.82,
-      "text": "Look, after the deal's closed, let's go back to that place on Hollywood Boulevard,",
-      "avg_logprob": -0.131,
-      "no_speech_prob": 0.108,
-      "words": []
-    },
-    {
-      "id": 12,
-      "start": 403.82,
-      "end": 406.46,
-      "text": "where I saw the fur jacket. I want to buy it.",
-      "avg_logprob": -0.572,
-      "no_speech_prob": 0.298,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 407.11,
-      "end": 409.95,
-      "text": "They head to a used car lot to attempt the sale.",
-      "avg_logprob": -0.225,
-      "no_speech_prob": 0.018,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 411.78,
-      "end": 413.44,
-      "text": "Good afternoon. What can I do for you?",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 413.82,
-      "end": 415.21999999999997,
-      "text": "We're interested in selling a car.",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 415.5,
-      "end": 416.38,
-      "text": "If the price is right.",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 419.55999999999995,
-      "end": 421.29999999999995,
-      "text": "Well, if it's in good mechanical condition,",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 421.47999999999996,
-      "end": 423.23999999999995,
-      "text": "it should blue book for about $1,600.",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 424.85999999999996,
-      "end": 425.71999999999997,
-      "text": "Tony, take a look at this motor.",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 426.44,
-      "end": 428.17999999999995,
-      "text": "$1,600? Are you kidding?",
-      "avg_logprob": -0.178,
-      "no_speech_prob": 0.045,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 439.79999999999995,
-      "end": 441.02,
-      "text": "Well, maybe eighteen fifty.",
-      "avg_logprob": -0.522,
-      "no_speech_prob": 0.099,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 442.02,
-      "end": 443.96,
-      "text": "Before I let it go for eighteen fifty, I'll wreck it and collect the",
-      "avg_logprob": -0.522,
-      "no_speech_prob": 0.099,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 443.98,
-      "end": 449.76,
-      "text": "Al reluctantly calls the police, threatening to implicate Vera if he gets caught, leading",
-      "avg_logprob": -0.113,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 449.76,
-      "end": 453.12,
-      "text": "to a tense argument as Vera tries to convince him not to.",
-      "avg_logprob": -0.113,
-      "no_speech_prob": 0.009,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 454.93,
-      "end": 458.40999999999997,
-      "text": "Well, wait till we read that old man Haskell's dead, and you'll show up.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 458.99,
-      "end": 460.39,
-      "text": "Like you read in New York that he was sick?",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 461.55,
-      "end": 464.05,
-      "text": "No. I suppose he doesn't die.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 464.25,
-      "end": 466.09,
-      "text": "He will. I know he will. Something tells me.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 468.77,
-      "end": 473.31,
-      "text": "But as much as I insisted I would have no part of her scheme, Vera was taking it for granted I would.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 475.72999999999996,
-      "end": 478.40999999999997,
-      "text": "Neither of us had our mind on the cards as we played that night.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 479.34999999999997,
-      "end": 482.16999999999996,
-      "text": "I knew we were just trying to kill time between newspaper editions.",
-      "avg_logprob": -0.173,
-      "no_speech_prob": 0.097,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 483.16999999999996,
-      "end": 484.81,
-      "text": "This was a death watch for Vera.",
-      "avg_logprob": -0.392,
-      "no_speech_prob": 0.224,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 485.45,
-      "end": 491.01,
-      "text": "Al frantically tries to destroy evidence, realizing he's guilty and must leave town,",
-      "avg_logprob": -0.16,
-      "no_speech_prob": 0.012,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 491.53,
-      "end": 495.84999999999997,
-      "text": "while reflecting on his predicament and the impossibility of returning to his old life.",
-      "avg_logprob": -0.16,
-      "no_speech_prob": 0.012,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 497.77000000000004,
-      "end": 499.97,
-      "text": "I know. I'm on myself.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 1,
-      "start": 501.25,
-      "end": 503.65000000000003,
-      "text": "In the Haskell business, how many of you would believe he fell out of the car?",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 2,
-      "start": 504.39000000000004,
-      "end": 506.35,
-      "text": "And now, after killing Vera without really meaning to do it,",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 3,
-      "start": 506.79,
-      "end": 508.71000000000004,
-      "text": "how many of you would believe it wasn't premeditated?",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 4,
-      "start": 510.17,
-      "end": 511.05,
-      "text": "In a jury room.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 5,
-      "start": 511.93,
-      "end": 516.11,
-      "text": "Every last man of you would go down shouting that she had me over a barrel, and my only out was force.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 6,
-      "start": 518.49,
-      "end": 519.63,
-      "text": "The room was still.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 7,
-      "start": 521.23,
-      "end": 523.85,
-      "text": "So quiet that for a while I wondered if I had suddenly gone deaf.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 8,
-      "start": 525.01,
-      "end": 526.0500000000001,
-      "text": "It was pure fear, of course.",
-      "avg_logprob": -0.193,
-      "no_speech_prob": 0.136,
-      "words": []
-    },
-    {
-      "id": 9,
-      "start": 526.0500000000001,
-      "end": 527.65,
-      "text": "And that was hysterical.",
-      "avg_logprob": -0.417,
-      "no_speech_prob": 0.101,
-      "words": []
-    },
-    {
-      "id": 0,
-      "start": 528.29,
-      "end": 530.5899999999999,
-      "text": "That was the AI recap of the film.",
-      "avg_logprob": -0.29,
+      "start": 228.56,
+      "end": 233.02,
+      "text": "The situation is worsening for Al as he must now deal with Haskell's presence.",
+      "avg_logprob": -0.194,
       "no_speech_prob": 0.011,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 234.47,
+      "end": 240.03,
+      "text": "It was her move. Vera, whatever her name was, was just my luck picking her up on the road.",
+      "avg_logprob": -0.307,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 241.21,
+      "end": 243.67,
+      "text": "Couldn't have been Helen, or Mary, or Evelyn or Ruth.",
+      "avg_logprob": -0.307,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 244.28,
+      "end": 248.9,
+      "text": "Al believes Vera might have killed the man they picked up, though she denies it.",
+      "avg_logprob": -0.144,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 250.56,
+      "end": 253.24,
+      "text": "Whichever way you turn, fate sticks out a foot to Trippie.",
+      "avg_logprob": -0.259,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 258.72,
+      "end": 261.04,
+      "text": "I told her everything, but she didn't believe my story.",
+      "avg_logprob": -0.259,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 261.58,
+      "end": 262.54,
+      "text": "I should have saved my breath.",
+      "avg_logprob": -0.259,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 263.3,
+      "end": 265.44,
+      "text": "That's the greatest cock-a-mole story I ever heard.",
+      "avg_logprob": -0.259,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 265.78000000000003,
+      "end": 266.74,
+      "text": "So he fell out of his...",
+      "avg_logprob": -0.259,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 266.77,
+      "end": 272.39,
+      "text": "Al and Vera argue in a Hollywood apartment about selling the car to avoid suspicion, with",
+      "avg_logprob": -0.136,
+      "no_speech_prob": 0.015,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 272.39,
+      "end": 274.60999999999996,
+      "text": "Al reluctantly agreeing to share the profits.",
+      "avg_logprob": -0.136,
+      "no_speech_prob": 0.015,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 276.11,
+      "end": 278.85,
+      "text": "Vera wasn't kidding with that Siamese twins crack.",
+      "avg_logprob": -0.2,
+      "no_speech_prob": 0.003,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 279.79,
+      "end": 282.91,
+      "text": "She rented a little apartment as Mrs. Charles Haskell.",
+      "avg_logprob": -0.2,
+      "no_speech_prob": 0.003,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 284.05,
+      "end": 286.97,
+      "text": "When I objected to this, she explained that it was on account of the car.",
+      "avg_logprob": -0.2,
+      "no_speech_prob": 0.003,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 287.71000000000004,
+      "end": 291.23,
+      "text": "A dealer might think something was funny if he called in front of her using different names.",
+      "avg_logprob": -0.2,
+      "no_speech_prob": 0.003,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 291.96,
+      "end": 296.79999999999995,
+      "text": "Al suspects Vera might have accidentally caused the man's death by pushing him out",
+      "avg_logprob": -0.135,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 296.79999999999995,
+      "end": 297.26,
+      "text": "of the car.",
+      "avg_logprob": -0.135,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 299.34000000000003,
+      "end": 303.06,
+      "text": "Anyway, I never could understand this worrying about something that's all been done with.",
+      "avg_logprob": -0.329,
+      "no_speech_prob": 0.196,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 303.14000000000004,
+      "end": 305.88,
+      "text": "Now look Vera, for the last time I didn't kill it. Haskell was a...",
+      "avg_logprob": -0.329,
+      "no_speech_prob": 0.196,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 305.91,
+      "end": 310.85,
+      "text": "Al cleans himself in the bathtub, feeling refreshed but still trapped with Vera.",
+      "avg_logprob": -0.183,
+      "no_speech_prob": 0.016,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 312.89,
+      "end": 314.97,
+      "text": "Maybe he was there before he fell out of the car. I don't know.",
+      "avg_logprob": -0.326,
+      "no_speech_prob": 0.21,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 315.39,
+      "end": 317.25,
+      "text": "Sure, Sherry died of old age.",
+      "avg_logprob": -0.326,
+      "no_speech_prob": 0.21,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 318.39,
+      "end": 318.95,
+      "text": "All right.",
+      "avg_logprob": -0.326,
+      "no_speech_prob": 0.21,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 319.55,
+      "end": 323.57,
+      "text": "They argue about their predicament, with Al maintaining his innocence.",
+      "avg_logprob": -0.192,
+      "no_speech_prob": 0.015,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 325.06,
+      "end": 332.12,
+      "text": "it's only a question of when but what's got us on this subject anyway we'll be",
+      "avg_logprob": -0.242,
+      "no_speech_prob": 0.23,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 332.12,
+      "end": 340.6,
+      "text": "discussing politics next yeah where'd you hide the butts on the table sucker",
+      "avg_logprob": -0.242,
+      "no_speech_prob": 0.23,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 341.14,
+      "end": 344.28,
+      "text": "Vera threatens Al, forcing him to stay.",
+      "avg_logprob": -0.379,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 345.55,
+      "end": 349.63,
+      "text": "But Vera, unfortunately, was just as rotten in the morning",
+      "avg_logprob": -0.283,
+      "no_speech_prob": 0.007,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 349.63,
+      "end": 350.93,
+      "text": "as she'd been the night before.",
+      "avg_logprob": -0.283,
+      "no_speech_prob": 0.007,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 353.45,
+      "end": 354.79,
+      "text": "All right, all right, I'm coming.",
+      "avg_logprob": -0.283,
+      "no_speech_prob": 0.007,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 355.12,
+      "end": 357.9,
+      "text": "Al argues with Vera over the car's price.",
+      "avg_logprob": -0.352,
+      "no_speech_prob": 0.017,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 359.29,
+      "end": 360.65000000000003,
+      "text": "Look, Mira, it's almost noon.",
+      "avg_logprob": -0.356,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 362.53000000000003,
+      "end": 364.73,
+      "text": "So what? The dealers will be there all day?",
+      "avg_logprob": -0.356,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 364.97,
+      "end": 366.85,
+      "text": "They'll be there all year, too, but they just don't wait that long.",
+      "avg_logprob": -0.356,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 367.23,
+      "end": 368.67,
+      "text": "Shut up. You make us like a husband.",
+      "avg_logprob": -0.356,
+      "no_speech_prob": 0.01,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 369.27,
+      "end": 375.46999999999997,
+      "text": "Al and Vera argue over the car, Al decides to keep it, proposes a plan to impersonate",
+      "avg_logprob": -0.173,
+      "no_speech_prob": 0.032,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 375.46999999999997,
+      "end": 377.31,
+      "text": "Haskell, and threatens Vera.",
+      "avg_logprob": -0.173,
+      "no_speech_prob": 0.032,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 379.12,
+      "end": 381.84,
+      "text": "Don't grow up, Vera. Don't you think a father knows his own son?",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 382.46,
+      "end": 383.26,
+      "text": "And there must be other relatives.",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 383.44,
+      "end": 385.96,
+      "text": "So a father won't have to know you. Well, Whaley gives up the ghost.",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 386.26,
+      "end": 387.84,
+      "text": "He's an old geezer and he won't pull through.",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 388.38,
+      "end": 392.0,
+      "text": "And as far as other relatives are concerned, they haven't seen you in 15 or 20 years.",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 393.74,
+      "end": 394.0,
+      "text": "Eight.",
+      "avg_logprob": -0.213,
+      "no_speech_prob": 0.175,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 394.49,
+      "end": 399.39,
+      "text": "Al stands firm on his decision, while Vero becomes increasingly desperate.",
+      "avg_logprob": -0.188,
+      "no_speech_prob": 0.012,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 400.77,
+      "end": 402.21,
+      "text": "Think about that, Roberts!",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 402.59,
+      "end": 404.87,
+      "text": "Vera, please, you're talking too loud.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 405.72999999999996,
+      "end": 407.13,
+      "text": "Unless I'm splitting 50-50 with you.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 407.45,
+      "end": 408.04999999999995,
+      "text": "Sure, why not?",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 408.37,
+      "end": 409.87,
+      "text": "We're both alike, both born the same God.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 410.04999999999995,
+      "end": 410.93,
+      "text": "Take it easy, Vera.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 6,
+      "start": 411.49,
+      "end": 412.27,
+      "text": "There's people around here.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 7,
+      "start": 412.37,
+      "end": 412.96999999999997,
+      "text": "You don't know where you're talking.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 8,
+      "start": 414.45,
+      "end": 416.57,
+      "text": "Well, wait till we read that old man Haskell's dead.",
+      "avg_logprob": -0.208,
+      "no_speech_prob": 0.219,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 417.18,
+      "end": 422.06,
+      "text": "Al and Vera argue intensely about Vera's plan to call the police and Al's decision",
+      "avg_logprob": -0.102,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 422.06,
+      "end": 425.66,
+      "text": "to keep the car, leading to a heated confrontation in the room.",
+      "avg_logprob": -0.102,
+      "no_speech_prob": 0.022,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 427.03,
+      "end": 430.34999999999997,
+      "text": "I would have no part of her scheme. Vera was taking it for granted, I would.",
+      "avg_logprob": -0.165,
+      "no_speech_prob": 0.03,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 432.78999999999996,
+      "end": 435.46999999999997,
+      "text": "Neither of us had our mind on the cards as we played that night.",
+      "avg_logprob": -0.165,
+      "no_speech_prob": 0.03,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 436.54999999999995,
+      "end": 439.22999999999996,
+      "text": "I knew we were just trying to kill time between newspaper editions.",
+      "avg_logprob": -0.165,
+      "no_speech_prob": 0.03,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 440.28999999999996,
+      "end": 441.90999999999997,
+      "text": "This was a death watch for Vera.",
+      "avg_logprob": -0.165,
+      "no_speech_prob": 0.03,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 443.51,
+      "end": 444.54999999999995,
+      "text": "Maybe it was for me too.",
+      "avg_logprob": -0.165,
+      "no_speech_prob": 0.03,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 445.55,
+      "end": 451.01,
+      "text": "Vera�s threats to involve the police escalate the tension, while Al�s insistence on keeping",
+      "avg_logprob": -0.16,
+      "no_speech_prob": 0.008,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 451.01,
+      "end": 453.87,
+      "text": "the car despite the risks further strains their relationship.",
+      "avg_logprob": -0.16,
+      "no_speech_prob": 0.008,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 455.84999999999997,
+      "end": 460.33,
+      "text": "Vera, open the door! Please open the door! Vera, open the door! Don't use the phone! Listen to me!",
+      "avg_logprob": -0.193,
+      "no_speech_prob": 0.057,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 461.01,
+      "end": 468.43,
+      "text": "I don't like you, Roberts. You know, gentlemen, see? You hurt my hand, and I'm going to get even with you!",
+      "avg_logprob": -0.193,
+      "no_speech_prob": 0.057,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 469.15,
+      "end": 471.15,
+      "text": "If you don't open the door, I'm going to kick it down, Vera!",
+      "avg_logprob": -0.193,
+      "no_speech_prob": 0.057,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 471.74,
+      "end": 476.46000000000004,
+      "text": "Al kills Vera accidentally, and now the police suspect him of her murder.",
+      "avg_logprob": -0.244,
+      "no_speech_prob": 0.009,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 478.41999999999996,
+      "end": 481.88,
+      "text": "in the Haskell business how many of you would believe he fell out of the car and",
+      "avg_logprob": -0.166,
+      "no_speech_prob": 0.074,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 481.88,
+      "end": 484.9,
+      "text": "now after killing Vera without really meaning to do it how many of you would",
+      "avg_logprob": -0.166,
+      "no_speech_prob": 0.074,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 484.9,
+      "end": 490.96,
+      "text": "believe it wasn't premeditated in a jury room every last man of you would go down",
+      "avg_logprob": -0.166,
+      "no_speech_prob": 0.074,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 490.96,
+      "end": 492.88,
+      "text": "shouting that she had me over a barrel and my only",
+      "avg_logprob": -0.166,
+      "no_speech_prob": 0.074,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 492.99,
+      "end": 498.51,
+      "text": "Al contemplates his next move, planning to destroy evidence and flee Baker's field to",
+      "avg_logprob": -0.116,
+      "no_speech_prob": 0.015,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 498.51,
+      "end": 503.49,
+      "text": "avoid being recognized, while hoping fate will spare him by not stopping him on the road.",
+      "avg_logprob": -0.116,
+      "no_speech_prob": 0.015,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 504.84,
+      "end": 506.23999999999995,
+      "text": "My problems weren't solved.",
+      "avg_logprob": -0.225,
+      "no_speech_prob": 0.001,
+      "words": []
+    },
+    {
+      "id": 1,
+      "start": 507.46,
+      "end": 509.96,
+      "text": "I had to stay away from New York for all time",
+      "avg_logprob": -0.225,
+      "no_speech_prob": 0.001,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 510.73999999999995,
+      "end": 513.76,
+      "text": "because Al Roberts was listed as dead and had to stay dead.",
+      "avg_logprob": -0.225,
+      "no_speech_prob": 0.001,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 514.9399999999999,
+      "end": 516.3199999999999,
+      "text": "And I could never go back to Hollywood.",
+      "avg_logprob": -0.225,
+      "no_speech_prob": 0.001,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 517.36,
+      "end": 519.06,
+      "text": "Someone might recognize me as Haskell.",
+      "avg_logprob": -0.225,
+      "no_speech_prob": 0.001,
+      "words": []
+    },
+    {
+      "id": 0,
+      "start": 520.59,
+      "end": 522.85,
+      "text": "That was the AI recap of the film.",
+      "avg_logprob": -0.284,
+      "no_speech_prob": 0.012,
       "words": []
     }
   ]
